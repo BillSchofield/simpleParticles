@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "GLView.h"
+#import "OpenGLCommon.h"
+#import "PolarCoordinatePositionController.h"
+#import "GravityPositionController.h"
+#import "PositionColorController.h"
 
 @interface GLViewController : UIViewController <GLViewDelegate>
 {
 }
+const int numberOfParticles = 1024;
+Vertex3D* particles;
+Color3D* colors;
+PositionColorController* colorController;
+PolarCoordinatePositionController* polarCoordinatesPositionController;
+GravityPositionController* gravityPositionController;
+
 @end

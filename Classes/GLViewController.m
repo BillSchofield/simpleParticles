@@ -8,68 +8,21 @@
 
 #import "GLViewController.h"
 #import "ConstantsAndMacros.h"
-#import "OpenGLCommon.h"
 
 
 @implementation GLViewController
 
-const int numberOfParticles = 1024;
-Vertex3D* particles;
-float* radii;
-float* deltaRadii;
-Color3D* colors;
-
-
-static const GLfloat pi = 3.1415926;
-
-- (void) rotateAndScaleVertex: (GLfloat) radius theta: (GLfloat) theta vertex_p: (Vertex3D *) vertex_p  {
-	vertex_p->x = cos(theta) * radius;
-	vertex_p->y = sin(theta) * radius;
-	vertex_p->z = -3.0;
-
-}
-
 - (void)drawView:(UIView *)theView
 {
-	//move to constructor
-	if (particles == 0){
-		particles = malloc(sizeof(Vertex3D) * numberOfParticles);
-		radii = malloc(sizeof(float) * numberOfParticles);
-		deltaRadii = malloc(sizeof(float) * numberOfParticles);
-		colors = malloc(sizeof(Color3D) * numberOfParticles);
-
-		for (int i=0; i<numberOfParticles; ++i) {
-			radii[i] = cos(2 * 6 * pi * (i%numberOfParticles)/(numberOfParticles));
-			deltaRadii[i] = -0.01;
-			Color3DSet(&colors[i], 
-					   cos(2 * pi * (i%numberOfParticles/1.0)/numberOfParticles/1), 
-					   sin(2 * pi * (i%numberOfParticles/1.0)/numberOfParticles/1), 
-					   tanf(2 * pi * (i%numberOfParticles/1.0)/numberOfParticles/1), 
-					   1.0);
-		}
-	}
-    
-	static GLfloat theta = 0;
-	GLfloat deltaTheta = pi/128;
-	GLfloat thetaIncrement = 2 * pi / numberOfParticles;
-	
+	//polarCoordinatesPositionController.update;
+	gravityPositionController.update;
+	colorController.update;
 	glLoadIdentity();
-
-	theta += deltaTheta;
-
-	for (int i=0; i<numberOfParticles; ++i) 
-	{
-		radii[i] += deltaRadii[i];
-		if (radii[i] < 0 || radii[i] > 1) {
-			deltaRadii[i] *= -1;
-		}
-	}
 	
-	for (int i=0; i<numberOfParticles; ++i) 
-	{
-		Vertex3D* currentVertex = &particles[i];
-		[self rotateAndScaleVertex: radii[i] theta: theta + thetaIncrement * i vertex_p: currentVertex];
-	}
+	// set up camera
+	gluLookAt(0, 3, 0, /* look from camera XYZ */
+			  0, 0, -1, /* look at the origin */
+			  0, 0, 1); /* positive Y up vector */	
 	glVertexPointer(3, GL_FLOAT, 0, particles);
 	glColorPointer(4, GL_FLOAT, 0, colors);
 	glClearColor(0.7, 0.7, 0.7, 1.0);
@@ -101,13 +54,20 @@ static const GLfloat pi = 3.1415926;
 	glMatrixMode(GL_MODELVIEW);
 	
 	glLoadIdentity(); 
+
+	particles = malloc(sizeof(Vertex3D) * numberOfParticles);
+	colors = malloc(sizeof(Color3D) * numberOfParticles);	
+	polarCoordinatesPositionController = [[PolarCoordinatePositionController alloc] init:particles :numberOfParticles];
+	gravityPositionController = [[GravityPositionController alloc] init:particles :numberOfParticles];
+	colorController = [[PositionColorController alloc] init:colors :particles :numberOfParticles];
 }
 - (void)dealloc 
 {
     [super dealloc];
+	free(colorController);
+	free(gravityPositionController);
+	free(polarCoordinatesPositionController);
 	free(colors);
-	free(deltaRadii);
-	free(radii);
 	free(particles);
 }
 @end
