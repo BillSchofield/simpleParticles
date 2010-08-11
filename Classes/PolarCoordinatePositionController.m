@@ -24,7 +24,7 @@ static const GLfloat pi = 3.1415926;
 {
 	vertex_p->x = cos(theta) * radius;
 	vertex_p->y = sin(theta) * radius;
-	vertex_p->z = -3.0;
+	//vertex_p->z = -1.0;
 	
 }
 
@@ -39,6 +39,8 @@ static const GLfloat pi = 3.1415926;
 	{
 		radii[i] = cos(2 * 6 * pi * (i%numberOfParticles)/(numberOfParticles));
 		deltaRadii[i] = -0.01;
+		particles[i].z = -1.0;
+
 	}
 	return self;
 }

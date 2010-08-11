@@ -39,13 +39,13 @@
 
 -(void) update
 {
-/*	for (int i=0; i<numberOfParticles; ++i) 
+	for (int i=0; i<numberOfParticles; ++i) 
 	{		
 		colors[i].red = fabs(particles[i].x);
 		colors[i].green	= fabs(particles[i].y);
 		colors[i].blue = fabs(particles[i].z);
 		colors[i].alpha = 1.0;
-	}*/
+	}
 }
 
 -(void) free

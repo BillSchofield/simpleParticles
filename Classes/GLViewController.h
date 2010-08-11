@@ -19,8 +19,6 @@
 const int numberOfParticles = 1024;
 Vertex3D* particles;
 Color3D* colors;
-PositionColorController* colorController;
-PolarCoordinatePositionController* polarCoordinatesPositionController;
-GravityPositionController* gravityPositionController;
+NSMutableArray *controllers;
 
 @end

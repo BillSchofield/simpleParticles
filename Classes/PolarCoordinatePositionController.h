@@ -7,9 +7,9 @@
 //
 
 #import "OpenGLCommon.h"
+#import "Controller.h"
 
-
-@interface PolarCoordinatePositionController : NSObject 
+@interface PolarCoordinatePositionController : Controller 
 {
 @private
 

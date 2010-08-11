@@ -14,9 +14,10 @@
 
 - (void)drawView:(UIView *)theView
 {
-	//polarCoordinatesPositionController.update;
-	gravityPositionController.update;
-	colorController.update;
+	for (id controller in controllers) 
+	{
+		[controller update];
+	}	
 	glLoadIdentity();
 	
 	// set up camera
@@ -56,17 +57,19 @@
 	glLoadIdentity(); 
 
 	particles = malloc(sizeof(Vertex3D) * numberOfParticles);
-	colors = malloc(sizeof(Color3D) * numberOfParticles);	
-	polarCoordinatesPositionController = [[PolarCoordinatePositionController alloc] init:particles :numberOfParticles];
-	gravityPositionController = [[GravityPositionController alloc] init:particles :numberOfParticles];
-	colorController = [[PositionColorController alloc] init:colors :particles :numberOfParticles];
+	colors = malloc(sizeof(Color3D) * numberOfParticles);
+	controllers = [[NSMutableArray alloc] init];
+	[controllers addObject: [[GravityPositionController alloc] init:particles :numberOfParticles]];
+	[controllers addObject: [[PolarCoordinatePositionController alloc] init:particles :numberOfParticles]];
+	[controllers addObject: [[PositionColorController alloc] init:colors :particles :numberOfParticles]];
 }
 - (void)dealloc 
 {
     [super dealloc];
-	free(colorController);
-	free(gravityPositionController);
-	free(polarCoordinatesPositionController);
+	for (id controller in [controllers reverseObjectEnumerator])
+	{
+		free(controller);
+	}
 	free(colors);
 	free(particles);
 }

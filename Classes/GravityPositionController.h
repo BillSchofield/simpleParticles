@@ -7,9 +7,10 @@
 //
 
 #import "OpenGLCommon.h"
+#import "Controller.h"
 
 
-@interface GravityPositionController : NSObject 
+@interface GravityPositionController : Controller 
 {
 @private
 	
