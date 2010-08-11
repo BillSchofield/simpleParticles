@@ -19,6 +19,9 @@
 		28FD14FE0DC6FC130079059D /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* GLView.m */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		D6AF628412122BA200FFC158 /* GravityPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */; };
+		D6AF628512122BA200FFC158 /* PolarCoordinatePositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */; };
+		D6AF628612122BA200FFC158 /* PositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628312122BA200FFC158 /* PositionColorController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,12 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Particles_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particles_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Particles-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Particles-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D6AF627E12122BA200FFC158 /* GravityPositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityPositionController.h; sourceTree = "<group>"; };
+		D6AF627F12122BA200FFC158 /* GravityPositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityPositionController.m; sourceTree = "<group>"; };
+		D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolarCoordinatePositionController.h; sourceTree = "<group>"; };
+		D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolarCoordinatePositionController.m; sourceTree = "<group>"; };
+		D6AF628212122BA200FFC158 /* PositionColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionColorController.h; sourceTree = "<group>"; };
+		D6AF628312122BA200FFC158 /* PositionColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionColorController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +73,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D6AF627E12122BA200FFC158 /* GravityPositionController.h */,
+				D6AF627F12122BA200FFC158 /* GravityPositionController.m */,
+				D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */,
+				D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */,
+				D6AF628212122BA200FFC158 /* PositionColorController.h */,
+				D6AF628312122BA200FFC158 /* PositionColorController.m */,
 				1D3623240D0F684500981E51 /* ParticlesAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ParticlesAppDelegate.m */,
 				1F92F5E80FDFF83200548BE8 /* ConstantsAndMacros.h */,
@@ -196,6 +211,9 @@
 				28FD14FE0DC6FC130079059D /* GLView.m in Sources */,
 				1F92F5EC0FDFF83200548BE8 /* GLViewController.m in Sources */,
 				1FFE82450FF2AB450003974F /* OpenGLTexture3D.m in Sources */,
+				D6AF628412122BA200FFC158 /* GravityPositionController.m in Sources */,
+				D6AF628512122BA200FFC158 /* PolarCoordinatePositionController.m in Sources */,
+				D6AF628612122BA200FFC158 /* PositionColorController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
