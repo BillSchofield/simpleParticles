@@ -35,12 +35,23 @@
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_COLOR_ARRAY);
-	glDrawArrays(GL_POINTS, 0, numberOfParticles);
+	glDrawArrays(GL_POINTS, 0, 1024);// TODO Fix Constant
 	glDisableClientState(GL_COLOR_ARRAY);
 	glDisableClientState(GL_VERTEX_ARRAY);
 	
 }
 
+- (void) allocateParticles 
+{
+	const int numberOfParticles = 1024;
+	particles = malloc(sizeof(Vertex3D) * numberOfParticles);
+	colors = malloc(sizeof(Color3D) * numberOfParticles);
+	controllers = [[NSMutableArray alloc] init];
+	[controllers addObject: [[GravityPositionController alloc] init:particles :numberOfParticles]];
+	[controllers addObject: [[PolarCoordinatePositionController alloc] init:particles :numberOfParticles]];
+	[controllers addObject: [[PositionColorController alloc] init:colors :particles :numberOfParticles]];
+
+}
 -(void)setupView:(GLView*)view
 {
 	const GLfloat zNear = 0.01, zFar = 1000.0, fieldOfView = 45.0; 
@@ -56,12 +67,8 @@
 	
 	glLoadIdentity(); 
 
-	particles = malloc(sizeof(Vertex3D) * numberOfParticles);
-	colors = malloc(sizeof(Color3D) * numberOfParticles);
-	controllers = [[NSMutableArray alloc] init];
-	[controllers addObject: [[GravityPositionController alloc] init:particles :numberOfParticles]];
-	[controllers addObject: [[PolarCoordinatePositionController alloc] init:particles :numberOfParticles]];
-	[controllers addObject: [[PositionColorController alloc] init:colors :particles :numberOfParticles]];
+	[self allocateParticles];
+
 }
 - (void)dealloc 
 {

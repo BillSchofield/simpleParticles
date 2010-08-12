@@ -15,10 +15,9 @@
 
 @interface GLViewController : UIViewController <GLViewDelegate>
 {
+	Vertex3D* particles;
+	Color3D* colors;
+	NSMutableArray *controllers;
 }
-const int numberOfParticles = 1024;
-Vertex3D* particles;
-Color3D* colors;
-NSMutableArray *controllers;
 
 @end
