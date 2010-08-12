@@ -13,7 +13,6 @@
 @interface GravityPositionController : Controller 
 {
 @private
-	
 	Vertex3D* particles;
 	size_t numberOfParticles;
 	Vertex3D* velocities;

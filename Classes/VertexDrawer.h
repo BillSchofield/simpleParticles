@@ -7,14 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OpenGLCommon.h"
 
 
 @interface VertexDrawer : NSObject {
-
-	
-	
 }
-
--(void)Draw;
+- (void) Draw: (Vertex3D *) vertexArray colorArray: (Color3D *) colorArray numberOfVertices: (int) numberOfVertices;
 
 @end

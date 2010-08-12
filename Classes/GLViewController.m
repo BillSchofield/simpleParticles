@@ -19,9 +19,11 @@
 	// set up camera
 	gluLookAt(0, 3, 0, /* look from camera XYZ */
 			  0, 0, -1, /* look at the origin */
-			  0, 0, 1); /* positive Y up vector */	
+			  0, 0, 1); /* positive Y up vector */
+	
+	VertexDrawer* vertexDrawer = [[VertexDrawer alloc] init];
 
-	[particleEmitter draw ];
+	[particleEmitter draw: vertexDrawer ];
 	
 }
 

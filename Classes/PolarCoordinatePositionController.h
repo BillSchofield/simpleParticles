@@ -12,7 +12,6 @@
 @interface PolarCoordinatePositionController : Controller 
 {
 @private
-
 	float* radii;
 	float* deltaRadii;
 	Vertex3D* particles;
