@@ -14,8 +14,10 @@
 
 @interface ParticleEmitter : NSObject {
 
+	
+	
 }
-const int numberOfParticles = 1024;
+
 Vertex3D* particles;
 Color3D* colors;
 NSMutableArray *controllers;

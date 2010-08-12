@@ -202,64 +202,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>D6F0CADF121374EE0009075B</string>
+				<string>D6F0CB2012137BCD0009075B</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>GLViewController.m</string>
+				<string>ParticleEmitter.h</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>D6F0CAE0121374EE0009075B</string>
+						<string>D6F0CB2112137BCD0009075B</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>GLViewController.m</string>
+						<string>ParticleEmitter.h</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D6F0CAF81213773A0009075B</string>
+						<string>D6F0CB3312137C460009075B</string>
 						<key>history</key>
 						<array>
-							<string>D6F0CAF71213773A0009075B</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {946, 687}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>150 139 946 728 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>D6F0CAF91213773A0009075B</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>GLViewController.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>D6F0CAFA1213773A0009075B</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>GLViewController.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>D6F0CAFB1213773A0009075B</string>
-						<key>history</key>
-						<array>
-							<string>D6F0CAEA121376090009075B</string>
+							<string>D6F0CB3212137C460009075B</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -275,7 +235,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>226 142 1041 723 0 0 1440 878 </string>
+				<string>221 96 1041 723 0 0 1440 878 </string>
 			</dict>
 		</dict>
 	</array>
@@ -354,7 +314,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
+									<integer>21</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -395,7 +355,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GLViewController.m</string>
+								<string>ParticleEmitter.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -403,11 +363,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GLViewController.m</string>
+										<string>ParticleEmitter.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D6F0CAF61213773A0009075B</string>
+										<string>D6F0CB3112137C460009075B</string>
 										<key>history</key>
 										<array>
 											<string>D6AF63011212FF0600FFC158</string>
@@ -418,10 +378,10 @@
 											<string>D6AF6323121301C900FFC158</string>
 											<string>D6AF63381213031400FFC158</string>
 											<string>D6AF63391213031400FFC158</string>
-											<string>D6F0CAD9121374EE0009075B</string>
-											<string>D6F0CAF31213773A0009075B</string>
-											<string>D6F0CAF41213773A0009075B</string>
-											<string>D6F0CAF51213773A0009075B</string>
+											<string>D6F0CB1912137BCD0009075B</string>
+											<string>D6F0CB1A12137BCD0009075B</string>
+											<string>D6F0CB2F12137C460009075B</string>
+											<string>D6F0CB3012137C460009075B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -433,14 +393,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1022, 613}}</string>
+								<string>{{0, 0}, {1022, 507}}</string>
 								<key>RubberWindowFrame</key>
 								<string>9 153 1334 718 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>613pt</string>
+							<string>507pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -453,14 +413,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 618}, {1022, 59}}</string>
+								<string>{{0, 512}, {1022, 165}}</string>
 								<key>RubberWindowFrame</key>
 								<string>9 153 1334 718 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>59pt</string>
+							<string>165pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -622,10 +582,9 @@
 		<string>D6BF16E2120CF8EE00BBD5C2</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>D6F0CAF91213773A0009075B</string>
-		<string>/Users/ThoughtWorks/projects/Particles/Particles.xcodeproj</string>
 		<string>D6FD185D120C85C80092AB0C</string>
-		<string>D6F0CADF121374EE0009075B</string>
+		<string>/Users/ThoughtWorks/projects/Particles/Particles.xcodeproj</string>
+		<string>D6F0CB2012137BCD0009075B</string>
 	</array>
 	<key>WindowString</key>
 	<string>9 153 1334 718 0 0 1440 878 </string>
@@ -649,7 +608,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ParticleEmitter.m</string>
+								<string>GLViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -720,7 +679,7 @@
 			<key>WindowToolGUID</key>
 			<string>D6FD185D120C85C80092AB0C</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

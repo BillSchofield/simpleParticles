@@ -9,15 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "GLView.h"
 #import "OpenGLCommon.h"
-#import "PolarCoordinatePositionController.h"
-#import "GravityPositionController.h"
-#import "PositionColorController.h"
+#import "ParticleEmitter.h"
 
 @interface GLViewController : UIViewController <GLViewDelegate>
 {
-	Vertex3D* particles;
-	Color3D* colors;
-	NSMutableArray *controllers;
+	ParticleEmitter* particleEmitter;
 }
 
 @end

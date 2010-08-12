@@ -7,7 +7,7 @@
 //
 
 #import "ParticleEmitter.h"
-
+const int numberOfParticles = 1024;
 
 @implementation ParticleEmitter
 

@@ -14,10 +14,8 @@
 
 - (void)drawView:(UIView *)theView
 {
-	for (id controller in controllers) 
-	{
-		[controller update];
-	}	
+	[particleEmitter update];
+	
 	glLoadIdentity();
 	
 	// set up camera
@@ -41,17 +39,6 @@
 	
 }
 
-- (void) allocateParticles 
-{
-	const int numberOfParticles = 1024;
-	particles = malloc(sizeof(Vertex3D) * numberOfParticles);
-	colors = malloc(sizeof(Color3D) * numberOfParticles);
-	controllers = [[NSMutableArray alloc] init];
-	[controllers addObject: [[GravityPositionController alloc] init:particles :numberOfParticles]];
-	[controllers addObject: [[PolarCoordinatePositionController alloc] init:particles :numberOfParticles]];
-	[controllers addObject: [[PositionColorController alloc] init:colors :particles :numberOfParticles]];
-
-}
 -(void)setupView:(GLView*)view
 {
 	const GLfloat zNear = 0.01, zFar = 1000.0, fieldOfView = 45.0; 
@@ -67,17 +54,12 @@
 	
 	glLoadIdentity(); 
 
-	[self allocateParticles];
+	particleEmitter = [[ParticleEmitter alloc] init];
 
 }
 - (void)dealloc 
 {
+	free(particleEmitter);
     [super dealloc];
-	for (id controller in [controllers reverseObjectEnumerator])
-	{
-		free(controller);
-	}
-	free(colors);
-	free(particles);
 }
 @end
