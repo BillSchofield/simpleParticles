@@ -30,6 +30,7 @@
 		D6AF62BC1212331400FFC158 /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */; };
 		D6AF6316121300BB00FFC158 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF6315121300BB00FFC158 /* Controller.m */; };
 		D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
+		D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CB3B121380DD0009075B /* VertexDrawer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,8 @@
 		D6AF6315121300BB00FFC158 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		D6F0CAC0121372C20009075B /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
 		D6F0CAC1121372C20009075B /* ParticleEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleEmitter.m; sourceTree = "<group>"; };
+		D6F0CB3A121380DD0009075B /* VertexDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexDrawer.h; sourceTree = "<group>"; };
+		D6F0CB3B121380DD0009075B /* VertexDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertexDrawer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				D6AF6315121300BB00FFC158 /* Controller.m */,
 				D6F0CAC0121372C20009075B /* ParticleEmitter.h */,
 				D6F0CAC1121372C20009075B /* ParticleEmitter.m */,
+				D6F0CB3A121380DD0009075B /* VertexDrawer.h */,
+				D6F0CB3B121380DD0009075B /* VertexDrawer.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				D6AF628612122BA200FFC158 /* PositionColorController.m in Sources */,
 				D6AF6316121300BB00FFC158 /* Controller.m in Sources */,
 				D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */,
+				D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

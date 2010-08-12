@@ -12,15 +12,18 @@
 #import "PositionColorController.h"
 
 
-@interface ParticleEmitter : NSObject {
+@interface ParticleEmitter : NSObject 
 
-	
+{	
 	
 }
+
 
 Vertex3D* particles;
 Color3D* colors;
 NSMutableArray *controllers;
+
+-(void)draw;
 
 @end
 
