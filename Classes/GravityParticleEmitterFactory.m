@@ -8,7 +8,7 @@
 
 #import "GravityParticleEmitterFactory.h"
 #import "GravityPositionController.h"
-#import "PositionColorController.h"
+#import "ConstantColorController.h"
 #import "ParticleEmitter.h"
 
 
@@ -21,7 +21,7 @@
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 	
 	[controllers addObject: [[GravityPositionController alloc] initWithVertices:particles]];
-	[controllers addObject: [[PositionColorController alloc] init:particles withColors:colors]];
+	[controllers addObject: [[ConstantColorController alloc] initWithColors:colors withNumberOfColors:numberOfParticles]];
 		
 	return [[ParticleEmitter alloc] init: particles withColors:colors withControllers:controllers];
 }

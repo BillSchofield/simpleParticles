@@ -18,5 +18,4 @@
 }
 -(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate;
 -(void) update;
--(void) free;
 @end

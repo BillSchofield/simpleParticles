@@ -8,32 +8,13 @@
 
 #import "PositionColorController.h"
 
-
-@interface PositionColorController ()
-@property Vertex3D* particles;
-@property size_t numberOfParticles;
-@property Color3D* colors;
-@end
-
-
 @implementation PositionColorController
-@synthesize particles;
-@synthesize numberOfParticles;
-@synthesize colors;
 
--(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate;
+-(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate
 {
 	particles = [positions getVertices];
 	colors = colorsToUpdate;
-	numberOfParticles = [positions getNumberOfVertices];
-	for (int i=0; i<numberOfParticles; ++i) 
-	{		
-		colors[i].red = random()%1000/1000.0;
-		colors[i].green	= random()%1000/1000.0;
-		colors[i].blue = random()%1000/1000.0;
-		colors[i].alpha = 1.0;
-	}
-	
+	numberOfParticles = [positions getNumberOfVertices];	
 	return self;
 }
 
@@ -46,10 +27,6 @@
 		colors[i].blue = fabs(particles[i].z);
 		colors[i].alpha = 1.0;
 	}
-}
-
--(void) free
-{
 }
 @end
 
