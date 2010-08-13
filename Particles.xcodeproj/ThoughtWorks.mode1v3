@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D6F0CE6D121505680009075B</string>
+						<string>D6F0CEA3121592FE0009075B</string>
 						<key>history</key>
 						<array>
 							<string>D6F0CCC212145F890009075B</string>
@@ -313,7 +313,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>7</integer>
 									<integer>3</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -357,7 +357,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PositionColorController.m</string>
+								<string>ConstantColorController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -365,11 +365,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PositionColorController.m</string>
+										<string>ConstantColorController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D6F0CE6C121505680009075B</string>
+										<string>D6F0CEA2121592FE0009075B</string>
 										<key>history</key>
 										<array>
 											<string>D6AF63391213031400FFC158</string>
@@ -389,16 +389,16 @@
 											<string>D6F0CE171214FADE0009075B</string>
 											<string>D6F0CE181214FADE0009075B</string>
 											<string>D6F0CE191214FADE0009075B</string>
-											<string>D6F0CE4E121503E90009075B</string>
 											<string>D6F0CE4F121503E90009075B</string>
 											<string>D6F0CE51121503E90009075B</string>
 											<string>D6F0CE53121503E90009075B</string>
 											<string>D6F0CE54121503E90009075B</string>
-											<string>D6F0CE62121504C30009075B</string>
 											<string>D6F0CE63121504C30009075B</string>
 											<string>D6F0CE64121504C30009075B</string>
 											<string>D6F0CE6B121505680009075B</string>
-											<string>D6F0CE50121503E90009075B</string>
+											<string>D6F0CE74121506450009075B</string>
+											<string>D6F0CEA0121592FE0009075B</string>
+											<string>D6F0CEA1121592FE0009075B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

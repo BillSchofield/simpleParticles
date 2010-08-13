@@ -22,10 +22,10 @@
 {
 	for (int i=0; i<numberOfColors; ++i) 
 	{		
-		colors[i].red = random()%1000/1000.0;
-		colors[i].green	= random()%1000/1000.0;
-		colors[i].blue = random()%1000/1000.0;
-		colors[i].alpha = random()%400/1000.0 + 600;
+		colors[i].red = [self randomFrom:0.0 toMaximum:1.0];
+		colors[i].green	= [self randomFrom:0.0 toMaximum:1.0];
+		colors[i].blue = [self randomFrom:0.0 toMaximum:1.0];
+		colors[i].alpha = [self randomFrom:0.4 toMaximum:1.0];
 	}
 	
 	return self;
