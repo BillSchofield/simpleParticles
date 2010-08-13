@@ -8,7 +8,7 @@
 
 #import "OpenGLCommon.h"
 #import "Controller.h"
-
+#import "VertexArray.h"
 
 @interface GravityPositionController : Controller 
 {
@@ -17,7 +17,7 @@
 	size_t numberOfParticles;
 	Vertex3D* velocities;
 }
--(id) init: (Vertex3D*) theParticles: (size_t) theNumberOfParticles;
+-(id) initWithVertices: (VertexArray*) vertices;
 -(void) update;
 -(void) free;
 @end

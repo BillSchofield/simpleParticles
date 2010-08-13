@@ -23,15 +23,13 @@ static const GLfloat pi = 3.1415926;
 - (void) rotateAndScaleVertex: (GLfloat) radius theta: (GLfloat) theta vertex_p: (Vertex3D *) vertex_p  
 {
 	vertex_p->x = cos(theta) * radius;
-	vertex_p->y = sin(theta) * radius;
-	//vertex_p->z = -1.0;
-	
+	vertex_p->y = sin(theta) * radius;	
 }
 
--(id) init: (Vertex3D*) theParticles: (size_t) theNumberOfParticles
+-(id) initWithVertices: (VertexArray*) vertices;
 {
-	particles = theParticles;
-	numberOfParticles = theNumberOfParticles;
+	particles = [vertices getVertices];
+	numberOfParticles = [vertices getNumberOfVertices];
 	
 	radii = malloc(sizeof(float) * numberOfParticles);
 	deltaRadii = malloc(sizeof(float) * numberOfParticles);

@@ -21,11 +21,11 @@
 @synthesize numberOfParticles;
 @synthesize colors;
 
--(id) init: (Color3D*) theColors:(Vertex3D*) theParticles: (size_t) theNumberOfParticles
+-(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate;
 {
-	colors = theColors;
-	particles = theParticles;
-	numberOfParticles = theNumberOfParticles;
+	particles = [positions getVertices];
+	colors = colorsToUpdate;
+	numberOfParticles = [positions getNumberOfVertices];
 	for (int i=0; i<numberOfParticles; ++i) 
 	{		
 		colors[i].red = random()%1000/1000.0;

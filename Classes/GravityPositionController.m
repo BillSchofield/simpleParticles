@@ -40,10 +40,10 @@ static float angle = 0;
 	
 }
 
--(id) init: (Vertex3D*) theParticles: (size_t) theNumberOfParticles
+-(id) initWithVertices: (VertexArray*) vertices
 {
-	particles = theParticles;
-	numberOfParticles = theNumberOfParticles;
+	particles = [vertices getVertices];
+	numberOfParticles = [vertices getNumberOfVertices];
 	velocities = malloc(sizeof(Vertex3D) * numberOfParticles);
 	for (int i=0; i<numberOfParticles; ++i) 
 	{

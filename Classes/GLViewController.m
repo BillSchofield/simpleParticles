@@ -8,7 +8,8 @@
 
 #import "GLViewController.h"
 #import "ConstantsAndMacros.h"
-
+#import "GravityParticleEmitterFactory.h"
+#import "PolarCoordinateEmitterFactory.h"
 
 @implementation GLViewController
 
@@ -21,9 +22,16 @@
 			  0, 0, -1, /* look at the origin */
 			  0, 0, 1); /* positive Y up vector */
 	
-	VertexDrawer* vertexDrawer = [[VertexDrawer alloc] init];
+	glClearColor(0.7, 0.7, 0.7, 1.0);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	[particleEmitter draw: vertexDrawer ];
+	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
+	for (id particleEmitter in particleEmitters) 
+	{
+		[particleEmitter draw: vertexDrawer ];
+	}	
+	
+	free(vertexDrawer);
 	
 }
 
@@ -41,13 +49,18 @@
 	glMatrixMode(GL_MODELVIEW);
 	
 	glLoadIdentity(); 
-
-	particleEmitter = [[ParticleEmitter alloc] init];
+	
+	particleEmitters = [[NSMutableArray alloc] init];
+	[particleEmitters addObject: [[GravityParticleEmitterFactory alloc] create]];
+	[particleEmitters addObject: [[PolarCoordinateEmitterFactory alloc] create]];
 
 }
 - (void)dealloc 
 {
-	free(particleEmitter);
+	for (id particleEmitter in [particleEmitters reverseObjectEnumerator])
+	{
+		free(particleEmitter);
+	}
     [super dealloc];
 }
 @end

@@ -8,26 +8,20 @@
 
 #import "ParticleEmitter.h"
 
-const int numberOfParticles = 1024;
-
 @implementation ParticleEmitter
 
-- (id) init
+- (id) init: (VertexArray *) particlesIn withColors: (Color3D *) colorsIn withControllers: (NSMutableArray *) controllersIn  
 {
-	particles = malloc(sizeof(Vertex3D) * numberOfParticles);
-	colors = malloc(sizeof(Color3D) * numberOfParticles);
-	controllers = [[NSMutableArray alloc] init];
-	[controllers addObject: [[GravityPositionController alloc] init:particles :numberOfParticles]];
-	[controllers addObject: [[PolarCoordinatePositionController alloc] init:particles :numberOfParticles]];
-	[controllers addObject: [[PositionColorController alloc] init:colors :particles :numberOfParticles]];
+	particles = particlesIn;
+	colors = colorsIn;
+	controllers = controllersIn;
 	return self;
 }
-
 
 -(void)draw: (VertexDrawer*) vertexDrawer;
 {
 	[self update];
-	[vertexDrawer Draw: particles colorArray: colors numberOfVertices: numberOfParticles];
+	[vertexDrawer Draw: particles colorArray: colors];
 }
 
 - (void) update

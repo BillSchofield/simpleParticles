@@ -7,21 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PolarCoordinatePositionController.h"
-#import "GravityPositionController.h"
-#import "PositionColorController.h"
 #import "VertexDrawer.h"
-
+#import "Controller.h"
 
 @interface ParticleEmitter : NSObject 
 {	
 @private
-	Vertex3D* particles;
+	VertexArray* particles;
 	Color3D* colors;
 	NSMutableArray *controllers;	
 }
--(void)update;
--(void)draw: (VertexDrawer*) vertexDrawer;
+- (id) init: (VertexArray *) particlesIn withColors: (Color3D *) colorsIn withControllers: (NSMutableArray *) controllersIn;  
+- (void) update;
+- (void) draw: (VertexDrawer*) vertexDrawer;
 
 
 @end

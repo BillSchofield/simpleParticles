@@ -8,6 +8,7 @@
 
 #import "OpenGLCommon.h"
 #import "Controller.h"
+#import "VertexArray.h"
 
 @interface PolarCoordinatePositionController : Controller 
 {
@@ -17,7 +18,7 @@
 	Vertex3D* particles;
 	size_t numberOfParticles;
 }
--(id) init: (Vertex3D*) theParticles: (size_t) theNumberOfParticles;
+-(id) initWithVertices: (VertexArray*) vertices;
 -(void) update;
 -(void) free;
 @end

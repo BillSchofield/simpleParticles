@@ -7,6 +7,7 @@
 //
 #import "OpenGLCommon.h"
 #import "Controller.h"
+#import "VertexArray.h"
 
 @interface PositionColorController : Controller 
 {
@@ -15,7 +16,7 @@
 	size_t numberOfParticles;
 	Color3D* colors;
 }
--(id) init: (Color3D*) theColors:(Vertex3D*) theParticles: (size_t) theNumberOfParticles;
+-(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate;
 -(void) update;
 -(void) free;
 @end

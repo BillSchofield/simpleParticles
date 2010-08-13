@@ -31,6 +31,10 @@
 		D6AF6316121300BB00FFC158 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF6315121300BB00FFC158 /* Controller.m */; };
 		D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
 		D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CB3B121380DD0009075B /* VertexDrawer.m */; };
+		D6F0CC7D12144E8B0009075B /* GravityParticleEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */; };
+		D6F0CCC112145B3C0009075B /* VertexArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CCC012145B3C0009075B /* VertexArray.m */; };
+		D6F0CDCC1214F6D40009075B /* PolarCoordinateEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CDCB1214F6D40009075B /* PolarCoordinateEmitterFactory.m */; };
+		D6F0CDCF1214F7C40009075B /* GravityAndPolarEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +85,14 @@
 		D6F0CAC1121372C20009075B /* ParticleEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleEmitter.m; sourceTree = "<group>"; };
 		D6F0CB3A121380DD0009075B /* VertexDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexDrawer.h; sourceTree = "<group>"; };
 		D6F0CB3B121380DD0009075B /* VertexDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertexDrawer.m; sourceTree = "<group>"; };
+		D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityParticleEmitterFactory.h; sourceTree = "<group>"; };
+		D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityParticleEmitterFactory.m; sourceTree = "<group>"; };
+		D6F0CCBF12145B3C0009075B /* VertexArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexArray.h; sourceTree = "<group>"; };
+		D6F0CCC012145B3C0009075B /* VertexArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertexArray.m; sourceTree = "<group>"; };
+		D6F0CDCA1214F6D40009075B /* PolarCoordinateEmitterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolarCoordinateEmitterFactory.h; sourceTree = "<group>"; };
+		D6F0CDCB1214F6D40009075B /* PolarCoordinateEmitterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolarCoordinateEmitterFactory.m; sourceTree = "<group>"; };
+		D6F0CDCD1214F7C40009075B /* GravityAndPolarEmitterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityAndPolarEmitterFactory.h; sourceTree = "<group>"; };
+		D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityAndPolarEmitterFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,20 +123,19 @@
 			children = (
 				D6F0CC6E121447E50009075B /* Framework */,
 				D6AF628D12122E4E00FFC158 /* UnitTests */,
-				D6AF627E12122BA200FFC158 /* GravityPositionController.h */,
-				D6AF627F12122BA200FFC158 /* GravityPositionController.m */,
-				D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */,
-				D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */,
-				D6AF628212122BA200FFC158 /* PositionColorController.h */,
-				D6AF628312122BA200FFC158 /* PositionColorController.m */,
+				D6F0CDC91214F6580009075B /* PositionControllers */,
 				1F92F5E90FDFF83200548BE8 /* GLViewController.h */,
 				1F92F5EA0FDFF83200548BE8 /* GLViewController.m */,
 				D6AF6314121300BB00FFC158 /* Controller.h */,
 				D6AF6315121300BB00FFC158 /* Controller.m */,
 				D6F0CAC0121372C20009075B /* ParticleEmitter.h */,
 				D6F0CAC1121372C20009075B /* ParticleEmitter.m */,
+				D6AF628212122BA200FFC158 /* PositionColorController.h */,
+				D6AF628312122BA200FFC158 /* PositionColorController.m */,
 				D6F0CB3A121380DD0009075B /* VertexDrawer.h */,
 				D6F0CB3B121380DD0009075B /* VertexDrawer.m */,
+				D6F0CCBF12145B3C0009075B /* VertexArray.h */,
+				D6F0CCC012145B3C0009075B /* VertexArray.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -230,6 +241,23 @@
 				28FD14FD0DC6FC130079059D /* GLView.m */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		D6F0CDC91214F6580009075B /* PositionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6AF627E12122BA200FFC158 /* GravityPositionController.h */,
+				D6AF627F12122BA200FFC158 /* GravityPositionController.m */,
+				D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */,
+				D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */,
+				D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */,
+				D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */,
+				D6F0CDCA1214F6D40009075B /* PolarCoordinateEmitterFactory.h */,
+				D6F0CDCB1214F6D40009075B /* PolarCoordinateEmitterFactory.m */,
+				D6F0CDCD1214F7C40009075B /* GravityAndPolarEmitterFactory.h */,
+				D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */,
+			);
+			name = PositionControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +367,10 @@
 				D6AF6316121300BB00FFC158 /* Controller.m in Sources */,
 				D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */,
 				D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */,
+				D6F0CC7D12144E8B0009075B /* GravityParticleEmitterFactory.m in Sources */,
+				D6F0CCC112145B3C0009075B /* VertexArray.m in Sources */,
+				D6F0CDCC1214F6D40009075B /* PolarCoordinateEmitterFactory.m in Sources */,
+				D6F0CDCF1214F7C40009075B /* GravityAndPolarEmitterFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

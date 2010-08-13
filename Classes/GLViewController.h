@@ -14,7 +14,7 @@
 @interface GLViewController : UIViewController <GLViewDelegate>
 {
 	@private
-	ParticleEmitter* particleEmitter;
+	NSMutableArray *particleEmitters;	
 }
 
 @end

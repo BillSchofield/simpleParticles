@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "OpenGLCommon.h"
-
+#import "VertexArray.h"
 
 @interface VertexDrawer : NSObject {
 }
-- (void) Draw: (Vertex3D *) vertexArray colorArray: (Color3D *) colorArray numberOfVertices: (int) numberOfVertices;
+- (void) Draw: (VertexArray *) vertexArray colorArray: (Color3D *) colorArray;
 
 @end
