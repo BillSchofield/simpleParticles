@@ -19,7 +19,6 @@
 @synthesize numberOfParticles;
 
 static const float acceleration = -1;
-static float angle = 0;
 
 - (void) rotateAndScaleVertex: (GLfloat) radius theta: (GLfloat) theta vertex_p: (Vertex3D *) vertex_p  
 {
@@ -29,32 +28,20 @@ static float angle = 0;
 	
 }
 
-- (void) spawnParticle: (int) i  
-{
-	Vertex3D particleEmitterPosition = Vertex3DMake(0, 0, 0);
-	particles[i] = particleEmitterPosition;
-	velocities[i].x = cos(angle)/6;
-	velocities[i].y = sin(angle)/6;
-	velocities[i].z = (random()%1000)/1000.0;
-	angle = (random()%6283)/1000.0; // Random[0,Pi*2] Make a real random number generator
-	
-}
 
 -(id) initWithVertices: (VertexArray*) vertices
 {
 	particles = [vertices getVertices];
 	numberOfParticles = [vertices getNumberOfVertices];
 	velocities = malloc(sizeof(Vertex3D) * numberOfParticles);
-	for (int i=0; i<numberOfParticles; ++i) 
-	{
-		[self spawnParticle: i];
-	}
+	particleSpawner = [[Spawner alloc] initWithVertices:vertices withVelocities:velocities];
 	
 	return self;
 }
 
 -(void) update
 {
+	[particleSpawner spawn];
 	float timeScale = 0.01;
 	for (int i=0; i<numberOfParticles; ++i) 
 	{
@@ -68,7 +55,8 @@ static float angle = 0;
 			velocities[i].z *= -0.5;
 			if (fabs(velocities[i].z) < 0.05)
 			{
-				[self spawnParticle: i];
+				[particleSpawner despawn: i];
+				[particleSpawner spawn];
 			}
 		}
 	}

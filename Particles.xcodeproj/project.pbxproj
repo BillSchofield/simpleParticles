@@ -29,6 +29,7 @@
 		D6AF62BB1212331400FFC158 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B41212331400FFC158 /* GTMSenTestCase.m */; };
 		D6AF62BC1212331400FFC158 /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */; };
 		D6AF6316121300BB00FFC158 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF6315121300BB00FFC158 /* Controller.m */; };
+		D6B8F8321216227300E79E18 /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
 		D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
 		D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CB3B121380DD0009075B /* VertexDrawer.m */; };
 		D6F0CC7D12144E8B0009075B /* GravityParticleEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */; };
@@ -36,6 +37,7 @@
 		D6F0CDCC1214F6D40009075B /* PolarCoordinateEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CDCB1214F6D40009075B /* PolarCoordinateEmitterFactory.m */; };
 		D6F0CDCF1214F7C40009075B /* GravityAndPolarEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */; };
 		D6F0CE2E1214FCA60009075B /* ConstantColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CE2D1214FCA60009075B /* ConstantColorController.m */; };
+		D6F6ECA312174AA30008C46F /* Spawner.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6ECA212174AA30008C46F /* Spawner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMUnitTestDevLog.m; sourceTree = "<group>"; };
 		D6AF6314121300BB00FFC158 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		D6AF6315121300BB00FFC158 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		D6B8F8301216227300E79E18 /* SpawnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnController.h; sourceTree = "<group>"; };
+		D6B8F8311216227300E79E18 /* SpawnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnController.m; sourceTree = "<group>"; };
 		D6F0CAC0121372C20009075B /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
 		D6F0CAC1121372C20009075B /* ParticleEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleEmitter.m; sourceTree = "<group>"; };
 		D6F0CB3A121380DD0009075B /* VertexDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexDrawer.h; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 		D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityAndPolarEmitterFactory.m; sourceTree = "<group>"; };
 		D6F0CE2C1214FCA60009075B /* ConstantColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantColorController.h; sourceTree = "<group>"; };
 		D6F0CE2D1214FCA60009075B /* ConstantColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantColorController.m; sourceTree = "<group>"; };
+		D6F6ECA112174AA30008C46F /* Spawner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spawner.h; sourceTree = "<group>"; };
+		D6F6ECA212174AA30008C46F /* Spawner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spawner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,10 @@
 				D6F0CB3B121380DD0009075B /* VertexDrawer.m */,
 				D6F0CCBF12145B3C0009075B /* VertexArray.h */,
 				D6F0CCC012145B3C0009075B /* VertexArray.m */,
+				D6B8F8301216227300E79E18 /* SpawnController.h */,
+				D6B8F8311216227300E79E18 /* SpawnController.m */,
+				D6F6ECA112174AA30008C46F /* Spawner.h */,
+				D6F6ECA212174AA30008C46F /* Spawner.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -393,6 +403,8 @@
 				D6F0CDCC1214F6D40009075B /* PolarCoordinateEmitterFactory.m in Sources */,
 				D6F0CDCF1214F7C40009075B /* GravityAndPolarEmitterFactory.m in Sources */,
 				D6F0CE2E1214FCA60009075B /* ConstantColorController.m in Sources */,
+				D6B8F8321216227300E79E18 /* SpawnController.m in Sources */,
+				D6F6ECA312174AA30008C46F /* Spawner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
