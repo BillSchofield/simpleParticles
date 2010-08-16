@@ -266,21 +266,19 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>D6F0CDC91214F6580009075B</string>
-								<string>D6F0CE5B1215041E0009075B</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
-									<integer>2</integer>
+									<integer>20</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {290, 662}}</string>
+							<string>{{0, 1}, {290, 662}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -317,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GravityPositionController.m</string>
+								<string>SpawnController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,21 +323,19 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GravityPositionController.m</string>
+										<string>SpawnController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D653EDED1219F37200096B44</string>
+										<string>D653EE351219FA0B00096B44</string>
 										<key>history</key>
 										<array>
 											<string>D6AF63391213031400FFC158</string>
 											<string>D6F0CCC8121479D70009075B</string>
 											<string>D6F0CD251214CD750009075B</string>
 											<string>D6F0CD671214EDB30009075B</string>
-											<string>D6F0CDAB1214F5210009075B</string>
 											<string>D6F0CDD51214F8470009075B</string>
 											<string>D6F0CDD61214F8470009075B</string>
-											<string>D6F0CDD91214F8470009075B</string>
 											<string>D6F0CDE51214F9510009075B</string>
 											<string>D6F0CDE81214F9510009075B</string>
 											<string>D6F0CE171214FADE0009075B</string>
@@ -356,13 +352,16 @@
 											<string>D6B8F84A12173AB300E79E18</string>
 											<string>D6B8F84B12173AB300E79E18</string>
 											<string>D6B8F84C12173AB300E79E18</string>
-											<string>D6B8F84D12173AB300E79E18</string>
-											<string>D653EDDB1219C9D000096B44</string>
-											<string>D653EDDC1219C9D000096B44</string>
-											<string>D653EDDD1219C9D000096B44</string>
-											<string>D653EDDE1219C9D000096B44</string>
-											<string>D653EDEB1219F37200096B44</string>
-											<string>D653EDEC1219F37200096B44</string>
+											<string>D653EE161219F80900096B44</string>
+											<string>D653EE171219F80900096B44</string>
+											<string>D653EE281219F98000096B44</string>
+											<string>D653EE291219F98000096B44</string>
+											<string>D653EE2A1219F98000096B44</string>
+											<string>D653EE2C1219F98000096B44</string>
+											<string>D653EE2D1219F98000096B44</string>
+											<string>D653EE331219FA0B00096B44</string>
+											<string>D653EE341219FA0B00096B44</string>
+											<string>D653EE2B1219F98000096B44</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -587,7 +586,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GravityPositionController.h</string>
+								<string>SpawnController.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -658,7 +657,7 @@
 			<key>WindowToolGUID</key>
 			<string>D6FD185D120C85C80092AB0C</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

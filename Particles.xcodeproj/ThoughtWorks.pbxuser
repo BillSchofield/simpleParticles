@@ -138,6 +138,34 @@
 			D653EDEB1219F37200096B44 /* PBXTextBookmark */ = D653EDEB1219F37200096B44 /* PBXTextBookmark */;
 			D653EDEC1219F37200096B44 /* PBXTextBookmark */ = D653EDEC1219F37200096B44 /* PBXTextBookmark */;
 			D653EDED1219F37200096B44 /* PBXTextBookmark */ = D653EDED1219F37200096B44 /* PBXTextBookmark */;
+			D653EE021219F6B200096B44 /* PBXTextBookmark */ = D653EE021219F6B200096B44 /* PBXTextBookmark */;
+			D653EE031219F6B200096B44 /* PBXTextBookmark */ = D653EE031219F6B200096B44 /* PBXTextBookmark */;
+			D653EE041219F6B200096B44 /* PBXTextBookmark */ = D653EE041219F6B200096B44 /* PBXTextBookmark */;
+			D653EE051219F6B200096B44 /* PBXTextBookmark */ = D653EE051219F6B200096B44 /* PBXTextBookmark */;
+			D653EE081219F6B600096B44 /* PBXTextBookmark */ = D653EE081219F6B600096B44 /* PBXTextBookmark */;
+			D653EE091219F6B600096B44 /* PBXTextBookmark */ = D653EE091219F6B600096B44 /* PBXTextBookmark */;
+			D653EE0A1219F6B600096B44 /* PBXTextBookmark */ = D653EE0A1219F6B600096B44 /* PBXTextBookmark */;
+			D653EE0B1219F6B600096B44 /* PBXTextBookmark */ = D653EE0B1219F6B600096B44 /* PBXTextBookmark */;
+			D653EE0C1219F6B600096B44 /* XCBuildMessageTextBookmark */ = D653EE0C1219F6B600096B44 /* XCBuildMessageTextBookmark */;
+			D653EE0D1219F6B600096B44 /* PBXTextBookmark */ = D653EE0D1219F6B600096B44 /* PBXTextBookmark */;
+			D653EE161219F80900096B44 /* PBXTextBookmark */ = D653EE161219F80900096B44 /* PBXTextBookmark */;
+			D653EE171219F80900096B44 /* PBXTextBookmark */ = D653EE171219F80900096B44 /* PBXTextBookmark */;
+			D653EE181219F80900096B44 /* PBXTextBookmark */ = D653EE181219F80900096B44 /* PBXTextBookmark */;
+			D653EE191219F80900096B44 /* PBXTextBookmark */ = D653EE191219F80900096B44 /* PBXTextBookmark */;
+			D653EE1A1219F80900096B44 /* PBXTextBookmark */ = D653EE1A1219F80900096B44 /* PBXTextBookmark */;
+			D653EE1B1219F80900096B44 /* PBXTextBookmark */ = D653EE1B1219F80900096B44 /* PBXTextBookmark */;
+			D653EE1C1219F80900096B44 /* PBXTextBookmark */ = D653EE1C1219F80900096B44 /* PBXTextBookmark */;
+			D653EE281219F98000096B44 /* PBXTextBookmark */ = D653EE281219F98000096B44 /* PBXTextBookmark */;
+			D653EE291219F98000096B44 /* PBXTextBookmark */ = D653EE291219F98000096B44 /* PBXTextBookmark */;
+			D653EE2A1219F98000096B44 /* PBXTextBookmark */ = D653EE2A1219F98000096B44 /* PBXTextBookmark */;
+			D653EE2B1219F98000096B44 /* PBXTextBookmark */ = D653EE2B1219F98000096B44 /* PBXTextBookmark */;
+			D653EE2C1219F98000096B44 /* PBXTextBookmark */ = D653EE2C1219F98000096B44 /* PBXTextBookmark */;
+			D653EE2D1219F98000096B44 /* PBXTextBookmark */ = D653EE2D1219F98000096B44 /* PBXTextBookmark */;
+			D653EE2E1219F98000096B44 /* PBXTextBookmark */ = D653EE2E1219F98000096B44 /* PBXTextBookmark */;
+			D653EE2F1219F98000096B44 /* PBXTextBookmark */ = D653EE2F1219F98000096B44 /* PBXTextBookmark */;
+			D653EE331219FA0B00096B44 /* PBXTextBookmark */ = D653EE331219FA0B00096B44 /* PBXTextBookmark */;
+			D653EE341219FA0B00096B44 /* PBXTextBookmark */ = D653EE341219FA0B00096B44 /* PBXTextBookmark */;
+			D653EE351219FA0B00096B44 /* PBXTextBookmark */ = D653EE351219FA0B00096B44 /* PBXTextBookmark */;
 			D6AF63391213031400FFC158 = D6AF63391213031400FFC158 /* PBXTextBookmark */;
 			D6B8F84912173AB300E79E18 = D6B8F84912173AB300E79E18 /* PBXTextBookmark */;
 			D6B8F84A12173AB300E79E18 = D6B8F84A12173AB300E79E18 /* PBXTextBookmark */;
@@ -180,7 +208,7 @@
 		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
 		name = "SpawnController.m: 27";
 		rLen = 0;
-		rLoc = 473;
+		rLoc = 546;
 		rType = 0;
 		vrLen = 544;
 		vrLoc = 0;
@@ -191,7 +219,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 12;
+		rLoc = 13;
 		rType = 1;
 	};
 	D653EDC91219C98C00096B44 /* PBXTextBookmark */ = {
@@ -199,7 +227,7 @@
 		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
 		name = "SpawnController.m: 28";
 		rLen = 0;
-		rLoc = 476;
+		rLoc = 547;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 0;
@@ -210,7 +238,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 12;
+		rLoc = 13;
 		rType = 1;
 	};
 	D653EDCB1219C98C00096B44 /* PBXTextBookmark */ = {
@@ -218,7 +246,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
 		name = "GravityPositionController.h: 13";
 		rLen = 0;
-		rLoc = 237;
+		rLoc = 265;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 0;
@@ -228,7 +256,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
 		name = "GravityPositionController.h: 13";
 		rLen = 0;
-		rLoc = 237;
+		rLoc = 265;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 0;
@@ -239,7 +267,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 12;
+		rLoc = 13;
 		rType = 1;
 	};
 	D653EDDA1219C9CF00096B44 /* PBXTextBookmark */ = {
@@ -247,7 +275,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
 		name = "GravityPositionController.h: 13";
 		rLen = 0;
-		rLoc = 237;
+		rLoc = 265;
 		rType = 0;
 		vrLen = 480;
 		vrLoc = 0;
@@ -257,7 +285,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
 		name = "GravityPositionController.h: 13";
 		rLen = 0;
-		rLoc = 237;
+		rLoc = 265;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 0;
@@ -267,7 +295,7 @@
 		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
 		name = "SpawnController.m: 27";
 		rLen = 0;
-		rLoc = 449;
+		rLoc = 528;
 		rType = 0;
 		vrLen = 548;
 		vrLoc = 0;
@@ -297,7 +325,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
 		name = "GravityPositionController.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 945;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 434;
@@ -307,7 +335,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
 		name = "GravityPositionController.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 945;
 		rType = 0;
 		vrLen = 1015;
 		vrLoc = 145;
@@ -327,7 +355,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
 		name = "GravityPositionController.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 945;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 183;
@@ -337,30 +365,306 @@
 		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
 		name = "GravityPositionController.m: 45";
 		rLen = 0;
-		rLoc = 992;
+		rLoc = 871;
 		rType = 0;
 		vrLen = 933;
 		vrLoc = 539;
 	};
+	D653EE021219F6B200096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
+		name = "GravityPositionController.h: 13";
+		rLen = 0;
+		rLoc = 265;
+		rType = 0;
+		vrLen = 484;
+		vrLoc = 0;
+	};
+	D653EE031219F6B200096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8301216227300E79E18 /* SpawnController.h */;
+		name = "SpawnController.h: 19";
+		rLen = 0;
+		rLoc = 440;
+		rType = 0;
+		vrLen = 497;
+		vrLoc = 0;
+	};
+	D653EE041219F6B200096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
+		rLen = 0;
+		rLoc = 9223372036854775730;
+		rType = 0;
+	};
+	D653EE051219F6B200096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
+		name = "SpawnController.m: 35";
+		rLen = 0;
+		rLoc = 629;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 166;
+	};
+	D653EE081219F6B600096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
+		name = "GravityPositionController.m: 45";
+		rLen = 0;
+		rLoc = 871;
+		rType = 0;
+		vrLen = 935;
+		vrLoc = 539;
+	};
+	D653EE091219F6B600096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F6ECA212174AA30008C46F /* Spawner.m */;
+		name = "Spawner.m: 72";
+		rLen = 0;
+		rLoc = 1823;
+		rType = 0;
+		vrLen = 1018;
+		vrLoc = 576;
+	};
+	D653EE0A1219F6B600096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F6ECA112174AA30008C46F /* Spawner.h */;
+		name = "Spawner.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 472;
+		vrLoc = 0;
+	};
+	D653EE0B1219F6B600096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
+		name = "SpawnController.m: 35";
+		rLen = 0;
+		rLoc = 629;
+		rType = 0;
+		vrLen = 714;
+		vrLoc = 0;
+	};
+	D653EE0C1219F6B600096B44 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ';' before '-' token";
+		fRef = D6B8F8301216227300E79E18 /* SpawnController.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 19;
+		rType = 1;
+	};
+	D653EE0D1219F6B600096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8301216227300E79E18 /* SpawnController.h */;
+		name = "SpawnController.h: 20";
+		rLen = 0;
+		rLoc = 441;
+		rType = 0;
+		vrLen = 497;
+		vrLoc = 0;
+	};
+	D653EE161219F80900096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
+		name = "GravityParticleEmitterFactory.m: 24";
+		rLen = 0;
+		rLoc = 681;
+		rType = 0;
+		vrLen = 909;
+		vrLoc = 0;
+	};
+	D653EE171219F80900096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */;
+		name = "GravityAndPolarEmitterFactory.m: 23";
+		rLen = 62;
+		rLoc = 579;
+		rType = 0;
+		vrLen = 1032;
+		vrLoc = 0;
+	};
+	D653EE181219F80900096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
+		name = "GravityPositionController.h: 12";
+		rLen = 0;
+		rLoc = 233;
+		rType = 0;
+		vrLen = 500;
+		vrLoc = 0;
+	};
+	D653EE191219F80900096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
+		name = "SpawnController.m: 14";
+		rLen = 13;
+		rLoc = 205;
+		rType = 0;
+		vrLen = 714;
+		vrLoc = 0;
+	};
+	D653EE1A1219F80900096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8301216227300E79E18 /* SpawnController.h */;
+		name = "SpawnController.h: 20";
+		rLen = 0;
+		rLoc = 441;
+		rType = 0;
+		vrLen = 497;
+		vrLoc = 0;
+	};
+	D653EE1B1219F80900096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
+		name = "GravityPositionController.m: 29";
+		rLen = 0;
+		rLoc = 800;
+		rType = 0;
+		vrLen = 958;
+		vrLoc = 340;
+	};
+	D653EE1C1219F80900096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
+		name = "GravityPositionController.m: 29";
+		rLen = 0;
+		rLoc = 805;
+		rType = 0;
+		vrLen = 999;
+		vrLoc = 298;
+	};
+	D653EE281219F98000096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */;
+		name = "PolarCoordinatePositionController.m: 26";
+		rLen = 0;
+		rLoc = 643;
+		rType = 0;
+		vrLen = 1248;
+		vrLoc = 322;
+	};
+	D653EE291219F98000096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */;
+		name = "PolarCoordinatePositionController.h: 21";
+		rLen = 49;
+		rLoc = 382;
+		rType = 0;
+		vrLen = 466;
+		vrLoc = 0;
+	};
+	D653EE2A1219F98000096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
+		name = "GravityPositionController.h: 12";
+		rLen = 0;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 539;
+		vrLoc = 0;
+	};
+	D653EE2B1219F98000096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
+		name = "SpawnController.m: 14";
+		rLen = 0;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 627;
+		vrLoc = 0;
+	};
+	D653EE2C1219F98000096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F6ECA112174AA30008C46F /* Spawner.h */;
+		name = "Spawner.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 472;
+		vrLoc = 0;
+	};
+	D653EE2D1219F98000096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8301216227300E79E18 /* SpawnController.h */;
+		name = "SpawnController.h: 19";
+		rLen = 0;
+		rLoc = 440;
+		rType = 0;
+		vrLen = 461;
+		vrLoc = 0;
+	};
+	D653EE2E1219F98000096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
+		name = "GravityPositionController.m: 30";
+		rLen = 0;
+		rLoc = 787;
+		rType = 0;
+		vrLen = 1087;
+		vrLoc = 298;
+	};
+	D653EE2F1219F98000096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
+		name = "GravityPositionController.m: 30";
+		rLen = 0;
+		rLoc = 805;
+		rType = 0;
+		vrLen = 1018;
+		vrLoc = 298;
+	};
+	D653EE331219FA0B00096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
+		name = "GravityPositionController.m: 30";
+		rLen = 0;
+		rLoc = 805;
+		rType = 0;
+		vrLen = 1018;
+		vrLoc = 298;
+	};
+	D653EE341219FA0B00096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F6ECA212174AA30008C46F /* Spawner.m */;
+		name = "Spawner.m: 72";
+		rLen = 0;
+		rLoc = 1823;
+		rType = 0;
+		vrLen = 995;
+		vrLoc = 599;
+	};
+	D653EE351219FA0B00096B44 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
+		name = "SpawnController.m: 29";
+		rLen = 0;
+		rLoc = 582;
+		rType = 0;
+		vrLen = 637;
+		vrLoc = 0;
+	};
 	D6AF627E12122BA200FFC158 /* GravityPositionController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {810, 325}}";
-			sepNavSelRange = "{237, 0}";
-			sepNavVisRange = "{0, 480}";
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 581}}";
+			sepNavSelRange = "{231, 0}";
+			sepNavVisRange = "{0, 539}";
 			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
 	};
 	D6AF627F12122BA200FFC158 /* GravityPositionController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1028, 897}}";
-			sepNavSelRange = "{992, 0}";
-			sepNavVisRange = "{539, 933}";
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 806}}";
+			sepNavSelRange = "{805, 0}";
+			sepNavVisRange = "{298, 1018}";
 			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
 	};
 	D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1028, 562}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 581}}";
 			sepNavSelRange = "{382, 49}";
 			sepNavVisRange = "{0, 466}";
 			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
@@ -368,9 +672,9 @@
 	};
 	D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1028, 871}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 884}}";
 			sepNavSelRange = "{643, 0}";
-			sepNavVisRange = "{372, 1099}";
+			sepNavVisRange = "{322, 1248}";
 			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
 	};
@@ -451,16 +755,17 @@
 	};
 	D6B8F8301216227300E79E18 /* SpawnController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1028, 583}}";
-			sepNavSelRange = "{261, 18}";
-			sepNavVisRange = "{0, 357}";
+			sepNavIntBoundsRect = "{{0, 0}, {982, 651}}";
+			sepNavSelRange = "{440, 0}";
+			sepNavVisRange = "{0, 462}";
+			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
 	};
 	D6B8F8311216227300E79E18 /* SpawnController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1028, 558}}";
-			sepNavSelRange = "{449, 0}";
-			sepNavVisRange = "{0, 548}";
+			sepNavSelRange = "{582, 0}";
+			sepNavVisRange = "{0, 637}";
 		};
 	};
 	D6B8F84912173AB300E79E18 /* PBXTextBookmark */ = {
@@ -508,7 +813,7 @@
 		fRef = D6B8F8301216227300E79E18 /* SpawnController.h */;
 		name = "SpawnController.h: 14";
 		rLen = 18;
-		rLoc = 261;
+		rLoc = 305;
 		rType = 0;
 		vrLen = 357;
 		vrLoc = 0;
@@ -518,7 +823,7 @@
 		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
 		name = "SpawnController.m: 17";
 		rLen = 18;
-		rLoc = 287;
+		rLoc = 359;
 		rType = 0;
 		vrLen = 499;
 		vrLoc = 0;
@@ -528,7 +833,7 @@
 		fRef = D6B8F8311216227300E79E18 /* SpawnController.m */;
 		name = "SpawnController.m: 27";
 		rLen = 0;
-		rLoc = 473;
+		rLoc = 546;
 		rType = 0;
 		vrLen = 517;
 		vrLoc = 0;
@@ -575,7 +880,7 @@
 	D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1028, 558}}";
-			sepNavSelRange = "{257, 0}";
+			sepNavSelRange = "{681, 0}";
 			sepNavVisRange = "{0, 909}";
 			sepNavWindowFrame = "{{399, 86}, {1041, 779}}";
 		};
@@ -637,7 +942,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* GravityPositionController.m */;
 		name = "GravityPositionController.m: 46";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 945;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 457;
@@ -685,7 +990,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* GravityPositionController.h */;
 		name = "GravityPositionController.h: 20";
 		rLen = 16;
-		rLoc = 359;
+		rLoc = 387;
 		rType = 0;
 		vrLen = 437;
 		vrLoc = 0;
@@ -900,11 +1205,18 @@
 		vrLen = 662;
 		vrLoc = 0;
 	};
+	D6F6ECA112174AA30008C46F /* Spawner.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 581}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 472}";
+		};
+	};
 	D6F6ECA212174AA30008C46F /* Spawner.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1028, 1014}}";
 			sepNavSelRange = "{1823, 0}";
-			sepNavVisRange = "{362, 1204}";
+			sepNavVisRange = "{599, 995}";
 		};
 	};
 	D6FD1852120C85BA0092AB0C /* Particles */ = {

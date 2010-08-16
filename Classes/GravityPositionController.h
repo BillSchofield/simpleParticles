@@ -10,6 +10,7 @@
 #import "Controller.h"
 #import "VertexArray.h"
 #import "Spawner.h"
+#import "SpawnController.h"
 
 @interface GravityPositionController : Controller 
 {
@@ -17,7 +18,8 @@
 	Vertex3D* particles;
 	size_t numberOfParticles;
 	Vertex3D* velocities;
-	Spawner* particleSpawner;
+	Spawner* spawner;
+	SpawnController* particleSpawner;
 }
 -(id) initWithVertices: (VertexArray*) vertices;
 -(void) update;

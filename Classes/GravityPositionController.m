@@ -20,28 +20,21 @@
 
 static const float acceleration = -1;
 
-- (void) rotateAndScaleVertex: (GLfloat) radius theta: (GLfloat) theta vertex_p: (Vertex3D *) vertex_p  
-{
-	vertex_p->x = cos(theta) * radius;
-	vertex_p->y = sin(theta) * radius;
-	vertex_p->z = -3.0;
-	
-}
-
 
 -(id) initWithVertices: (VertexArray*) vertices
 {
 	particles = [vertices getVertices];
 	numberOfParticles = [vertices getNumberOfVertices];
 	velocities = malloc(sizeof(Vertex3D) * numberOfParticles);
-	particleSpawner = [[Spawner alloc] initWithVertices:vertices withVelocities:velocities];
+	spawner = [[Spawner alloc] initWithVertices:vertices withVelocities:velocities];
+	particleSpawner = [[SpawnController alloc] initWithSpawner: spawner withSpawnRate: 10.0];
 	
 	return self;
 }
 
 -(void) update
 {
-	[particleSpawner spawn];
+	[particleSpawner update];
 	float timeScale = 0.01;
 	for (int i=0; i<numberOfParticles; ++i) 
 	{
@@ -55,8 +48,8 @@ static const float acceleration = -1;
 			velocities[i].z *= -0.5;
 			if (fabs(velocities[i].z) < 0.05)
 			{
-				[particleSpawner despawn: i];
-				[particleSpawner spawn];
+				[spawner despawn: i];
+				[spawner spawn];
 			}
 		}
 	}
