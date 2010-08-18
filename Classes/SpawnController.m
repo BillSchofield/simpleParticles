@@ -14,6 +14,7 @@
 -(id) initWithSpawner: (Spawner*) controlledSpawner withSpawnRate: (float) particlesPerSecond
 {
 	spawner = controlledSpawner;
+	[spawner retain];
 	spawnRate = particlesPerSecond;
 	timeUntilNextSpawn = 1/spawnRate;
 	return self;
@@ -30,8 +31,9 @@
 	}
 }
 
--(void) spawnParticle
+-(void) dealloc
 {
-	free(spawner);
+	[spawner release];
+	[super dealloc];
 }
 @end

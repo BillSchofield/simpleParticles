@@ -28,4 +28,10 @@
 	return numberOfVertices;
 }
 
+-(void) dealloc
+{
+	free(vertices);
+	[super dealloc];
+
+}
 @end

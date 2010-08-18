@@ -135,6 +135,13 @@ static inline Vector3D Vector3DMakeWithStartAndEndPoints(Vertex3D start, Vertex3
 	Vector3DNormalize(&ret);
 	return ret;
 }
+static inline void Vector3DScaleAndAccumulate(Vector3D* accumulator, float scale, Vector3D* vectorToScale)
+{
+	accumulator->x += vectorToScale->x * scale;
+	accumulator->y += vectorToScale->y * scale;
+	accumulator->z += vectorToScale->z * scale;		
+	
+}
 static inline Vector3D Vector3DAdd(Vector3D vector1, Vector3D vector2)
 {
 	Vector3D ret;

@@ -10,6 +10,7 @@
 #import "ConstantsAndMacros.h"
 #import "GravityParticleEmitterFactory.h"
 #import "PolarCoordinateEmitterFactory.h"
+#import "GravityAndPolarEmitterFactory.h"
 
 @implementation GLViewController
 
@@ -53,6 +54,7 @@
 	particleEmitters = [[NSMutableArray alloc] init];
 	[particleEmitters addObject: [[GravityParticleEmitterFactory alloc] create]];
 	[particleEmitters addObject: [[PolarCoordinateEmitterFactory alloc] create]];
+//	[particleEmitters addObject: [[GravityAndPolarEmitterFactory alloc] create]];
 
 }
 - (void)dealloc 

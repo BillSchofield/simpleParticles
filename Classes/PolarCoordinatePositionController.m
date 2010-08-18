@@ -63,9 +63,10 @@ static const GLfloat pi = 3.1415926;
 	}
 }
 
--(void) free
+-(void) dealloc
 {
 	free(deltaRadii);
 	free(radii);
+	[super dealloc];
 }
 @end

@@ -10,5 +10,7 @@
 
 
 @implementation Controller
-
+-(void) update
+{
+}
 @end

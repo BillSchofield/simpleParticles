@@ -1,5 +1,5 @@
 //
-//  GravityPositionController.h
+//  AccelerationController.h
 //  Particles
 //
 //  Created by bschofil on 8/8/10.
@@ -9,19 +9,15 @@
 #import "OpenGLCommon.h"
 #import "Controller.h"
 #import "VertexArray.h"
-#import "Spawner.h"
-#import "SpawnController.h"
 
-@interface GravityPositionController : Controller 
+@interface AccelerationController : Controller 
 {
 @private
 	Vertex3D* particles;
 	size_t numberOfParticles;
+	Vertex3D acceleration;
 	Vertex3D* velocities;
-	Spawner* spawner;
-	SpawnController* particleSpawner;
 }
--(id) initWithVertices: (VertexArray*) vertices;
+-(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vertex3D*) sourceVelocities withAcceleration: (Vertex3D) sourceAcceleration;
 -(void) update;
--(void) free;
 @end

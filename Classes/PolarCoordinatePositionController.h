@@ -20,5 +20,4 @@
 }
 -(id) initWithVertices: (VertexArray*) vertices;
 -(void) update;
--(void) free;
 @end
