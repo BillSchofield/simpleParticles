@@ -14,6 +14,8 @@
 
 @implementation GLViewController
 
+@synthesize accelerometer;
+
 - (void)drawView:(UIView *)theView
 {
 	glLoadIdentity();
@@ -23,7 +25,7 @@
 			  0, 0, -1, /* look at the origin */
 			  0, 0, 1); /* positive Y up vector */
 	
-	glClearColor(0.7, 0.7, 0.7, 1.0);
+	glClearColor(0.3, 0.3, 0.3, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
@@ -38,6 +40,10 @@
 
 -(void)setupView:(GLView*)view
 {
+	self.accelerometer = [UIAccelerometer sharedAccelerometer];
+	self.accelerometer.updateInterval = .1;
+	self.accelerometer.delegate = self;
+	
 	const GLfloat zNear = 0.01, zFar = 1000.0, fieldOfView = 45.0; 
 	GLfloat size; 
 	glEnable(GL_DEPTH_TEST);
@@ -65,4 +71,12 @@
 	}
     [super dealloc];
 }
+
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
+{
+    // values for the accelerometer are in
+    // accelerometer.x, accelerometer.y, and accelerometer.z
+    // where 1.0 is 1G of acceleration
+}
+
 @end
