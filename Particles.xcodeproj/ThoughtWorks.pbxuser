@@ -39,9 +39,9 @@
 	};
 	1F92F5EB0FDFF83200548BE8 /* OpenGLCommon.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {887, 13832}}";
-			sepNavSelRange = "{2186, 60}";
-			sepNavVisRange = "{1722, 1245}";
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 13897}}";
+			sepNavSelRange = "{2729, 77}";
+			sepNavVisRange = "{1650, 807}";
 			sepNavWindowFrame = "{{290, 91}, {946, 784}}";
 		};
 	};
@@ -243,6 +243,11 @@
 			D6B7D271121C58920029B9CF /* PBXTextBookmark */ = D6B7D271121C58920029B9CF /* PBXTextBookmark */;
 			D6B7D272121C58920029B9CF /* PBXTextBookmark */ = D6B7D272121C58920029B9CF /* PBXTextBookmark */;
 			D6B7D273121C58920029B9CF /* PBXTextBookmark */ = D6B7D273121C58920029B9CF /* PBXTextBookmark */;
+			D6B7D288121C6D1F0029B9CF /* PBXTextBookmark */ = D6B7D288121C6D1F0029B9CF /* PBXTextBookmark */;
+			D6B7D289121C6D1F0029B9CF /* PBXTextBookmark */ = D6B7D289121C6D1F0029B9CF /* PBXTextBookmark */;
+			D6B7D28A121C6D1F0029B9CF /* PBXTextBookmark */ = D6B7D28A121C6D1F0029B9CF /* PBXTextBookmark */;
+			D6B7D28B121C6D1F0029B9CF /* PBXTextBookmark */ = D6B7D28B121C6D1F0029B9CF /* PBXTextBookmark */;
+			D6B7D28C121C6D1F0029B9CF /* PBXTextBookmark */ = D6B7D28C121C6D1F0029B9CF /* PBXTextBookmark */;
 			D6B8F84912173AB300E79E18 = D6B8F84912173AB300E79E18 /* PBXTextBookmark */;
 			D6B8F84A12173AB300E79E18 = D6B8F84A12173AB300E79E18 /* PBXTextBookmark */;
 			D6B8F84B12173AB300E79E18 = D6B8F84B12173AB300E79E18 /* PBXTextBookmark */;
@@ -298,8 +303,8 @@
 	D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1028, 624}}";
-			sepNavSelRange = "{943, 0}";
-			sepNavVisRange = "{278, 673}";
+			sepNavSelRange = "{870, 0}";
+			sepNavVisRange = "{152, 885}";
 			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
 	};
@@ -889,7 +894,7 @@
 		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
 		name = "BounceWithPlaneAndDespawnController.m: 41";
 		rLen = 0;
-		rLoc = 945;
+		rLoc = 1104;
 		rType = 0;
 		vrLen = 737;
 		vrLoc = 156;
@@ -899,7 +904,7 @@
 		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
 		name = "BounceWithPlaneAndDespawnController.m: 45";
 		rLen = 0;
-		rLoc = 945;
+		rLoc = 1104;
 		rType = 0;
 		vrLen = 727;
 		vrLoc = 206;
@@ -938,7 +943,7 @@
 		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
 		name = "BounceWithPlaneAndDespawnController.m: 42";
 		rLen = 7;
-		rLoc = 896;
+		rLoc = 1055;
 		rType = 0;
 		vrLen = 727;
 		vrLoc = 206;
@@ -1117,7 +1122,7 @@
 		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
 		name = "BounceWithPlaneAndDespawnController.m: 45";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 1102;
 		rType = 0;
 		vrLen = 693;
 		vrLoc = 258;
@@ -1127,7 +1132,7 @@
 		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
 		name = "BounceWithPlaneAndDespawnController.m: 45";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 1102;
 		rType = 0;
 		vrLen = 693;
 		vrLoc = 258;
@@ -1439,7 +1444,7 @@
 		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
 		name = "BounceWithPlaneAndDespawnController.m: 45";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 1102;
 		rType = 0;
 		vrLen = 673;
 		vrLoc = 278;
@@ -1624,6 +1629,56 @@
 		vrLen = 980;
 		vrLoc = 800;
 	};
+	D6B7D288121C6D1F0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
+		name = "GLViewController.m: 57";
+		rLen = 0;
+		rLoc = 1548;
+		rType = 0;
+		vrLen = 980;
+		vrLoc = 800;
+	};
+	D6B7D289121C6D1F0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
+		name = "GravityParticleEmitterFactory.m: 19";
+		rLen = 1058;
+		rLoc = 430;
+		rType = 0;
+		vrLen = 1460;
+		vrLoc = 34;
+	};
+	D6B7D28A121C6D1F0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EB0FDFF83200548BE8 /* OpenGLCommon.h */;
+		name = "OpenGLCommon.h: 116";
+		rLen = 77;
+		rLoc = 2729;
+		rType = 0;
+		vrLen = 807;
+		vrLoc = 1650;
+	};
+	D6B7D28B121C6D1F0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
+		name = "BounceWithPlaneAndDespawnController.m: 33";
+		rLen = 18;
+		rLoc = 850;
+		rType = 0;
+		vrLen = 891;
+		vrLoc = 152;
+	};
+	D6B7D28C121C6D1F0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
+		name = "BounceWithPlaneAndDespawnController.m: 33";
+		rLen = 0;
+		rLoc = 870;
+		rType = 0;
+		vrLen = 885;
+		vrLoc = 152;
+	};
 	D6B8F8301216227300E79E18 /* SpawnController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1028, 439}}";
@@ -1723,7 +1778,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1111, 507}}";
 			sepNavSelRange = "{430, 1058}";
-			sepNavVisRange = "{48, 1446}";
+			sepNavVisRange = "{34, 1460}";
 			sepNavWindowFrame = "{{399, 91}, {1041, 779}}";
 		};
 	};
