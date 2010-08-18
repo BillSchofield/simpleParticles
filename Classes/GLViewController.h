@@ -17,6 +17,7 @@
 	NSMutableArray *particleEmitters;
 	
 	UIAccelerometer *accelerometer;
+	Vector3D currentAcceleration;
 }
 
 @property (nonatomic, retain) UIAccelerometer *accelerometer;

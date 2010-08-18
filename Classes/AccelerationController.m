@@ -10,7 +10,7 @@
 
 @implementation AccelerationController
 
--(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vertex3D*) sourceVelocities withAcceleration: (Vertex3D) sourceAcceleration
+-(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vertex3D*) sourceVelocities withAcceleration: (Vertex3D*) sourceAcceleration
 {
 	particles = [vertices getVertices];
 	numberOfParticles = [vertices getNumberOfVertices];
@@ -25,7 +25,7 @@
 	float timeScale = 0.01;
 	for (int i=0; i<numberOfParticles; ++i) 
 	{
-		Vector3DScaleAndAccumulate(&velocities[i], timeScale, &acceleration);
+		Vector3DScaleAndAccumulate(&velocities[i], timeScale, acceleration);
 		Vector3DScaleAndAccumulate(&particles[i], timeScale, &velocities[i]);
 	}
 }

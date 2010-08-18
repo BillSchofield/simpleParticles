@@ -1,5 +1,6 @@
+#import "OpenGLCommon.h"
 
 @interface GravityParticleEmitterFactory : NSObject {
 }
-- (id) create;
+- (id) createWithGravity: (Vector3D*) acceleration;
 @end

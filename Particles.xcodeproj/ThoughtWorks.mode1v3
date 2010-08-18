@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D6B7D2BE121C9FF30029B9CF</string>
+						<string>D6B7D2F7121CA4860029B9CF</string>
 						<key>history</key>
 						<array>
 							<string>D6B7D2A6121C9F710029B9CF</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D6B7D2BF121C9FF30029B9CF</string>
+						<string>D6B7D2F8121CA4860029B9CF</string>
 						<key>history</key>
 						<array>
 							<string>D6B7D28F121C9C8D0029B9CF</string>
@@ -355,13 +355,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>26</integer>
+									<integer>25</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {344, 646}}</string>
+							<string>{{0, 4}, {344, 646}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -398,7 +398,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GLViewController.m</string>
+								<string>GravityParticleEmitterFactory.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -406,11 +406,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GLViewController.m</string>
+										<string>GravityParticleEmitterFactory.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D6B7D2BD121C9FF30029B9CF</string>
+										<string>D6B7D2F6121CA4860029B9CF</string>
 										<key>history</key>
 										<array>
 											<string>D6F0CD251214CD750009075B</string>
@@ -432,10 +432,7 @@
 											<string>D6B7D1DC121C52FE0029B9CF</string>
 											<string>D6B7D1E3121C52FE0029B9CF</string>
 											<string>D6B7D1E9121C53310029B9CF</string>
-											<string>D6B7D24F121C567B0029B9CF</string>
-											<string>D6B7D250121C567B0029B9CF</string>
 											<string>D6B7D260121C57A80029B9CF</string>
-											<string>D6B7D261121C57A80029B9CF</string>
 											<string>D6B7D262121C57A80029B9CF</string>
 											<string>D6B7D263121C57A80029B9CF</string>
 											<string>D6B7D26B121C58920029B9CF</string>
@@ -445,14 +442,18 @@
 											<string>D6B7D270121C58920029B9CF</string>
 											<string>D6B7D271121C58920029B9CF</string>
 											<string>D6B7D272121C58920029B9CF</string>
-											<string>D6B7D28A121C6D1F0029B9CF</string>
 											<string>D6B7D293121C9EDD0029B9CF</string>
 											<string>D6B7D294121C9EDD0029B9CF</string>
 											<string>D6B7D295121C9EDD0029B9CF</string>
 											<string>D6B7D296121C9EDD0029B9CF</string>
-											<string>D6B7D297121C9EDD0029B9CF</string>
-											<string>D6B7D2BB121C9FF30029B9CF</string>
-											<string>D6B7D2BC121C9FF30029B9CF</string>
+											<string>D6B7D2D1121CA1FC0029B9CF</string>
+											<string>D6B7D2D2121CA1FC0029B9CF</string>
+											<string>D6B7D2F0121CA4860029B9CF</string>
+											<string>D6B7D2F1121CA4860029B9CF</string>
+											<string>D6B7D2F2121CA4860029B9CF</string>
+											<string>D6B7D2F3121CA4860029B9CF</string>
+											<string>D6B7D2F4121CA4860029B9CF</string>
+											<string>D6B7D2F5121CA4860029B9CF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -650,6 +651,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>D6B7D2F9121CA4860029B9CF</string>
 		<string>D6BF16E2120CF8EE00BBD5C2</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -680,7 +682,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GLViewController.m</string>
+								<string>GravityParticleEmitterFactory.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -689,7 +691,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {871, 326}}</string>
 								<key>RubberWindowFrame</key>
-								<string>347 157 871 641 0 0 1440 878 </string>
+								<string>346 157 871 641 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -715,7 +717,7 @@
 								<key>Frame</key>
 								<string>{{0, 331}, {871, 269}}</string>
 								<key>RubberWindowFrame</key>
-								<string>347 157 871 641 0 0 1440 878 </string>
+								<string>346 157 871 641 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -747,7 +749,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>347 157 871 641 0 0 1440 878 </string>
+			<string>346 157 871 641 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>D6FD185D120C85C80092AB0C</string>
 			<key>WindowToolIsVisible</key>

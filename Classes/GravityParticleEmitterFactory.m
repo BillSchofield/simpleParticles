@@ -16,7 +16,7 @@
 
 
 @implementation GravityParticleEmitterFactory
-- (id) create
+- (id) createWithGravity: (Vector3D*) acceleration
 {
 	const int numberOfParticles = 1024;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
@@ -28,7 +28,7 @@
 	[controllers addObject: [[SpawnController alloc] initWithSpawner: spawner withSpawnRate: 10.0]];
 	[controllers addObject: [[BounceWithPlaneAndDespawnController alloc] initWithVertices: particles withVelocities:velocities withSpawner:spawner]];
 	
-	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: Vector3DMake(0, 0, -1)]];
+	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: acceleration]];
 	[controllers addObject: [[ConstantColorController alloc] initWithColors:colors withNumberOfColors:numberOfParticles]];
 	
 	[spawner release];

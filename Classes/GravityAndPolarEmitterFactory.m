@@ -34,7 +34,7 @@
 	[controllers addObject: [[SpawnController alloc] initWithSpawner: spawner withSpawnRate: 10.0]];
 	[controllers addObject: [[BounceWithPlaneAndDespawnController alloc] initWithVertices: particles withVelocities:velocities withSpawner:spawner]];
 	
-	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: Vector3DMake(0, 0, -1)]];
+//	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: Vector3DMake(0, 0, -1)]];
 	[controllers addObject: [[ConstantColorController alloc] initWithColors:colors withNumberOfColors:numberOfParticles]];
 //	[controllers addObject: [[PositionColorController alloc] init:particles withColors:colors]];
 	

@@ -15,9 +15,9 @@
 @private
 	Vertex3D* particles;
 	size_t numberOfParticles;
-	Vertex3D acceleration;
+	Vertex3D* acceleration;
 	Vertex3D* velocities;
 }
--(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vertex3D*) sourceVelocities withAcceleration: (Vertex3D) sourceAcceleration;
+-(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vertex3D*) sourceVelocities withAcceleration: (Vertex3D*) sourceAcceleration;
 -(void) update;
 @end

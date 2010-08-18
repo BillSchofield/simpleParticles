@@ -24,24 +24,24 @@
 	1F92F5E90FDFF83200548BE8 /* GLViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {982, 628}}";
-			sepNavSelRange = "{470, 0}";
-			sepNavVisRange = "{0, 475}";
+			sepNavSelRange = "{501, 0}";
+			sepNavVisRange = "{0, 506}";
 			sepNavWindowFrame = "{{126, 92}, {946, 784}}";
 		};
 	};
 	1F92F5EA0FDFF83200548BE8 /* GLViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {975, 1079}}";
-			sepNavSelRange = "{889, 0}";
-			sepNavVisRange = "{853, 1337}";
+			sepNavIntBoundsRect = "{{0, 0}, {810, 1079}}";
+			sepNavSelRange = "{1646, 22}";
+			sepNavVisRange = "{1111, 843}";
 			sepNavWindowFrame = "{{126, 92}, {946, 784}}";
 		};
 	};
 	1F92F5EB0FDFF83200548BE8 /* OpenGLCommon.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1028, 13897}}";
-			sepNavSelRange = "{2729, 77}";
-			sepNavVisRange = "{1650, 807}";
+			sepNavIntBoundsRect = "{{0, 0}, {975, 13845}}";
+			sepNavSelRange = "{2246, 63}";
+			sepNavVisRange = "{1588, 972}";
 			sepNavWindowFrame = "{{290, 91}, {946, 784}}";
 		};
 	};
@@ -274,6 +274,30 @@
 			D6B7D2BD121C9FF30029B9CF /* PBXTextBookmark */ = D6B7D2BD121C9FF30029B9CF /* PBXTextBookmark */;
 			D6B7D2BE121C9FF30029B9CF /* PBXTextBookmark */ = D6B7D2BE121C9FF30029B9CF /* PBXTextBookmark */;
 			D6B7D2BF121C9FF30029B9CF /* PBXTextBookmark */ = D6B7D2BF121C9FF30029B9CF /* PBXTextBookmark */;
+			D6B7D2D0121CA1FC0029B9CF /* PBXTextBookmark */ = D6B7D2D0121CA1FC0029B9CF /* PBXTextBookmark */;
+			D6B7D2D1121CA1FC0029B9CF /* PBXTextBookmark */ = D6B7D2D1121CA1FC0029B9CF /* PBXTextBookmark */;
+			D6B7D2D2121CA1FC0029B9CF /* PBXTextBookmark */ = D6B7D2D2121CA1FC0029B9CF /* PBXTextBookmark */;
+			D6B7D2D3121CA1FC0029B9CF /* PBXTextBookmark */ = D6B7D2D3121CA1FC0029B9CF /* PBXTextBookmark */;
+			D6B7D2D4121CA1FC0029B9CF /* PBXTextBookmark */ = D6B7D2D4121CA1FC0029B9CF /* PBXTextBookmark */;
+			D6B7D2D5121CA1FC0029B9CF /* PBXTextBookmark */ = D6B7D2D5121CA1FC0029B9CF /* PBXTextBookmark */;
+			D6B7D2D6121CA1FC0029B9CF /* PBXTextBookmark */ = D6B7D2D6121CA1FC0029B9CF /* PBXTextBookmark */;
+			D6B7D2DD121CA40D0029B9CF /* PBXTextBookmark */ = D6B7D2DD121CA40D0029B9CF /* PBXTextBookmark */;
+			D6B7D2DE121CA40D0029B9CF /* XCBuildMessageTextBookmark */ = D6B7D2DE121CA40D0029B9CF /* XCBuildMessageTextBookmark */;
+			D6B7D2DF121CA40D0029B9CF /* PBXTextBookmark */ = D6B7D2DF121CA40D0029B9CF /* PBXTextBookmark */;
+			D6B7D2E3121CA4380029B9CF /* PBXTextBookmark */ = D6B7D2E3121CA4380029B9CF /* PBXTextBookmark */;
+			D6B7D2E4121CA4380029B9CF /* XCBuildMessageTextBookmark */ = D6B7D2E4121CA4380029B9CF /* XCBuildMessageTextBookmark */;
+			D6B7D2E5121CA4380029B9CF /* PBXTextBookmark */ = D6B7D2E5121CA4380029B9CF /* PBXTextBookmark */;
+			D6B7D2EC121CA4850029B9CF /* XCBuildMessageTextBookmark */ = D6B7D2EC121CA4850029B9CF /* XCBuildMessageTextBookmark */;
+			D6B7D2ED121CA4850029B9CF /* PBXTextBookmark */ = D6B7D2ED121CA4850029B9CF /* PBXTextBookmark */;
+			D6B7D2F0121CA4860029B9CF /* PBXTextBookmark */ = D6B7D2F0121CA4860029B9CF /* PBXTextBookmark */;
+			D6B7D2F1121CA4860029B9CF /* PBXTextBookmark */ = D6B7D2F1121CA4860029B9CF /* PBXTextBookmark */;
+			D6B7D2F2121CA4860029B9CF /* PBXTextBookmark */ = D6B7D2F2121CA4860029B9CF /* PBXTextBookmark */;
+			D6B7D2F3121CA4860029B9CF /* PBXTextBookmark */ = D6B7D2F3121CA4860029B9CF /* PBXTextBookmark */;
+			D6B7D2F4121CA4860029B9CF /* PBXTextBookmark */ = D6B7D2F4121CA4860029B9CF /* PBXTextBookmark */;
+			D6B7D2F5121CA4860029B9CF /* XCBuildMessageTextBookmark */ = D6B7D2F5121CA4860029B9CF /* XCBuildMessageTextBookmark */;
+			D6B7D2F6121CA4860029B9CF /* PBXTextBookmark */ = D6B7D2F6121CA4860029B9CF /* PBXTextBookmark */;
+			D6B7D2F7121CA4860029B9CF /* PBXTextBookmark */ = D6B7D2F7121CA4860029B9CF /* PBXTextBookmark */;
+			D6B7D2F8121CA4860029B9CF /* PBXTextBookmark */ = D6B7D2F8121CA4860029B9CF /* PBXTextBookmark */;
 			D6B8F84912173AB300E79E18 = D6B8F84912173AB300E79E18 /* PBXTextBookmark */;
 			D6B8F84A12173AB300E79E18 = D6B8F84A12173AB300E79E18 /* PBXTextBookmark */;
 			D6B8F84B12173AB300E79E18 = D6B8F84B12173AB300E79E18 /* PBXTextBookmark */;
@@ -419,7 +443,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* AccelerationController.h */;
 		name = "AccelerationController.h: 27";
 		rLen = 0;
-		rLoc = 513;
+		rLoc = 515;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 0;
@@ -429,7 +453,7 @@
 		fRef = D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */;
 		name = "GravityAndPolarEmitterFactory.m: 26";
 		rLen = 0;
-		rLoc = 1898;
+		rLoc = 1900;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 0;
@@ -439,7 +463,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 24";
 		rLen = 0;
-		rLoc = 1203;
+		rLoc = 1240;
 		rType = 0;
 		vrLen = 1041;
 		vrLoc = 0;
@@ -449,7 +473,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */;
 		name = "AccelerationController.m: 18";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 520;
 		rType = 0;
 		vrLen = 1190;
 		vrLoc = 0;
@@ -516,16 +540,16 @@
 	};
 	D6AF627E12122BA200FFC158 /* AccelerationController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1028, 462}}";
-			sepNavSelRange = "{214, 0}";
-			sepNavVisRange = "{0, 534}";
+			sepNavIntBoundsRect = "{{0, 0}, {1006, 522}}";
+			sepNavSelRange = "{494, 0}";
+			sepNavVisRange = "{0, 536}";
 			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
 	};
 	D6AF627F12122BA200FFC158 /* AccelerationController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1028, 439}}";
-			sepNavSelRange = "{773, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {999, 545}}";
+			sepNavSelRange = "{682, 0}";
 			sepNavVisRange = "{0, 778}";
 			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
@@ -730,7 +754,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */;
 		name = "AccelerationController.m: 29";
 		rLen = 0;
-		rLoc = 555;
+		rLoc = 556;
 		rType = 0;
 		vrLen = 794;
 		vrLoc = 364;
@@ -750,7 +774,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */;
 		name = "AccelerationController.m: 19";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 520;
 		rType = 0;
 		vrLen = 1122;
 		vrLoc = 0;
@@ -760,7 +784,7 @@
 		fRef = D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */;
 		name = "GravityAndPolarEmitterFactory.m: 26";
 		rLen = 0;
-		rLoc = 1898;
+		rLoc = 1900;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 0;
@@ -770,7 +794,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* AccelerationController.h */;
 		name = "AccelerationController.h: 23";
 		rLen = 0;
-		rLoc = 370;
+		rLoc = 371;
 		rType = 0;
 		vrLen = 764;
 		vrLoc = 0;
@@ -780,7 +804,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 24";
 		rLen = 0;
-		rLoc = 763;
+		rLoc = 800;
 		rType = 0;
 		vrLen = 1356;
 		vrLoc = 0;
@@ -790,7 +814,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 27";
 		rLen = 0;
-		rLoc = 1040;
+		rLoc = 1077;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 0;
@@ -800,7 +824,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */;
 		name = "AccelerationController.m: 29";
 		rLen = 0;
-		rLoc = 555;
+		rLoc = 556;
 		rType = 0;
 		vrLen = 794;
 		vrLoc = 364;
@@ -810,7 +834,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */;
 		name = "AccelerationController.m: 29";
 		rLen = 0;
-		rLoc = 555;
+		rLoc = 556;
 		rType = 0;
 		vrLen = 794;
 		vrLoc = 364;
@@ -820,7 +844,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 27";
 		rLen = 0;
-		rLoc = 1040;
+		rLoc = 1077;
 		rType = 0;
 		vrLen = 1414;
 		vrLoc = 0;
@@ -830,7 +854,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 25";
 		rLen = 0;
-		rLoc = 845;
+		rLoc = 882;
 		rType = 0;
 		vrLen = 1411;
 		vrLoc = 0;
@@ -840,7 +864,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 24";
 		rLen = 0;
-		rLoc = 753;
+		rLoc = 790;
 		rType = 0;
 		vrLen = 1398;
 		vrLoc = 0;
@@ -850,7 +874,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 31";
 		rLen = 0;
-		rLoc = 1388;
+		rLoc = 1415;
 		rType = 0;
 		vrLen = 1393;
 		vrLoc = 0;
@@ -880,7 +904,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */;
 		name = "AccelerationController.m: 19";
 		rLen = 0;
-		rLoc = 519;
+		rLoc = 520;
 		rType = 0;
 		vrLen = 1020;
 		vrLoc = 180;
@@ -940,7 +964,7 @@
 		fRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */;
 		name = "AccelerationController.m: 29";
 		rLen = 0;
-		rLoc = 555;
+		rLoc = 556;
 		rType = 0;
 		vrLen = 793;
 		vrLoc = 364;
@@ -1029,7 +1053,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 31";
 		rLen = 0;
-		rLoc = 1388;
+		rLoc = 1415;
 		rType = 0;
 		vrLen = 1364;
 		vrLoc = 34;
@@ -1049,7 +1073,7 @@
 		fRef = D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */;
 		name = "GravityAndPolarEmitterFactory.m: 26";
 		rLen = 0;
-		rLoc = 1898;
+		rLoc = 1900;
 		rType = 0;
 		vrLen = 1027;
 		vrLoc = 0;
@@ -1059,7 +1083,7 @@
 		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
 		name = "GLViewController.m: 67";
 		rLen = 0;
-		rLoc = 2198;
+		rLoc = 2315;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 760;
@@ -1168,7 +1192,7 @@
 		fRef = D6AF627E12122BA200FFC158 /* AccelerationController.h */;
 		name = "AccelerationController.h: 29";
 		rLen = 0;
-		rLoc = 530;
+		rLoc = 532;
 		rType = 0;
 		vrLen = 750;
 		vrLoc = 0;
@@ -1332,7 +1356,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 24";
 		rLen = 0;
-		rLoc = 753;
+		rLoc = 790;
 		rType = 0;
 		vrLen = 1112;
 		vrLoc = 286;
@@ -1342,7 +1366,7 @@
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 27";
 		rLen = 0;
-		rLoc = 753;
+		rLoc = 790;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 286;
@@ -1391,7 +1415,7 @@
 		fRef = D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */;
 		name = "GravityParticleEmitterFactory.h: 2";
 		rLen = 0;
-		rLoc = 54;
+		rLoc = 79;
 		rType = 0;
 		vrLen = 77;
 		vrLoc = 0;
@@ -1410,7 +1434,7 @@
 		isa = PBXTextBookmark;
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 19";
-		rLen = 1058;
+		rLen = 1085;
 		rLoc = 430;
 		rType = 0;
 		vrLen = 1460;
@@ -1450,7 +1474,7 @@
 		fRef = D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */;
 		name = "GravityAndPolarEmitterFactory.m: 34";
 		rLen = 0;
-		rLoc = 1405;
+		rLoc = 1407;
 		rType = 0;
 		vrLen = 1622;
 		vrLoc = 149;
@@ -1529,7 +1553,7 @@
 		isa = PBXTextBookmark;
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 19";
-		rLen = 1058;
+		rLen = 1085;
 		rLoc = 430;
 		rType = 0;
 		vrLen = 1446;
@@ -1650,7 +1674,7 @@
 		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
 		name = "GLViewController.m: 57";
 		rLen = 0;
-		rLoc = 1717;
+		rLoc = 1750;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 800;
@@ -1660,7 +1684,7 @@
 		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
 		name = "GLViewController.m: 57";
 		rLen = 0;
-		rLoc = 1717;
+		rLoc = 1750;
 		rType = 0;
 		vrLen = 980;
 		vrLoc = 800;
@@ -1669,7 +1693,7 @@
 		isa = PBXTextBookmark;
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 19";
-		rLen = 1058;
+		rLen = 1085;
 		rLoc = 430;
 		rType = 0;
 		vrLen = 1460;
@@ -1757,7 +1781,7 @@
 		isa = PBXTextBookmark;
 		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
 		name = "GravityParticleEmitterFactory.m: 19";
-		rLen = 1058;
+		rLen = 1085;
 		rLoc = 430;
 		rType = 0;
 		vrLen = 1494;
@@ -1798,7 +1822,7 @@
 		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
 		name = "GLViewController.m: 79";
 		rLen = 0;
-		rLoc = 2192;
+		rLoc = 2309;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 752;
@@ -1808,7 +1832,7 @@
 		fRef = 1F92F5E90FDFF83200548BE8 /* GLViewController.h */;
 		name = "GLViewController.h: 22";
 		rLen = 0;
-		rLoc = 470;
+		rLoc = 501;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 0;
@@ -1818,7 +1842,7 @@
 		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
 		name = "GLViewController.m: 74";
 		rLen = 0;
-		rLoc = 2045;
+		rLoc = 2078;
 		rType = 0;
 		vrLen = 1311;
 		vrLoc = 859;
@@ -1849,6 +1873,7 @@
 	};
 	D6B7D2A9121C9F710029B9CF /* UIAccelerometer.h */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
 		name = UIAccelerometer.h;
 		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccelerometer.h;
 		sourceTree = "<absolute>";
@@ -1863,7 +1888,7 @@
 		fRef = 1F92F5E90FDFF83200548BE8 /* GLViewController.h */;
 		name = "GLViewController.h: 22";
 		rLen = 0;
-		rLoc = 470;
+		rLoc = 501;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 0;
@@ -1884,7 +1909,7 @@
 		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 81;
+		rLoc = 82;
 		rType = 1;
 	};
 	D6B7D2AD121C9F8C0029B9CF /* PBXTextBookmark */ = {
@@ -1892,7 +1917,7 @@
 		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
 		name = "GLViewController.m: 80";
 		rLen = 0;
-		rLoc = 2193;
+		rLoc = 2310;
 		rType = 0;
 		vrLen = 692;
 		vrLoc = 1478;
@@ -1921,7 +1946,7 @@
 		fRef = 1F92F5E90FDFF83200548BE8 /* GLViewController.h */;
 		name = "GLViewController.h: 22";
 		rLen = 0;
-		rLoc = 470;
+		rLoc = 501;
 		rType = 0;
 		vrLen = 412;
 		vrLoc = 0;
@@ -1960,9 +1985,245 @@
 		fRef = 1F92F5E90FDFF83200548BE8 /* GLViewController.h */;
 		name = "GLViewController.h: 24";
 		rLen = 0;
-		rLoc = 470;
+		rLoc = 501;
 		rType = 0;
 		vrLen = 475;
+		vrLoc = 0;
+	};
+	D6B7D2D0121CA1FC0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5E90FDFF83200548BE8 /* GLViewController.h */;
+		name = "GLViewController.h: 20";
+		rLen = 0;
+		rLoc = 427;
+		rType = 0;
+		vrLen = 506;
+		vrLoc = 0;
+	};
+	D6B7D2D1121CA1FC0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EB0FDFF83200548BE8 /* OpenGLCommon.h */;
+		name = "OpenGLCommon.h: 97";
+		rLen = 63;
+		rLoc = 2246;
+		rType = 0;
+		vrLen = 972;
+		vrLoc = 1588;
+	};
+	D6B7D2D2121CA1FC0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B7D2A9121C9F710029B9CF /* UIAccelerometer.h */;
+		name = "UIAccelerometer.h: 11";
+		rLen = 36;
+		rLoc = 164;
+		rType = 0;
+		vrLen = 1112;
+		vrLoc = 132;
+	};
+	D6B7D2D3121CA1FC0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
+		name = "GLViewController.m: 75";
+		rLen = 14;
+		rLoc = 2048;
+		rType = 0;
+		vrLen = 1396;
+		vrLoc = 889;
+	};
+	D6B7D2D4121CA1FC0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
+		name = "GLViewController.m: 77";
+		rLen = 0;
+		rLoc = 2160;
+		rType = 0;
+		vrLen = 1393;
+		vrLoc = 889;
+	};
+	D6B7D2D5121CA1FC0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B7D2A9121C9F710029B9CF /* UIAccelerometer.h */;
+		name = "UIAccelerometer.h: 48";
+		rLen = 100;
+		rLoc = 1142;
+		rType = 0;
+		vrLen = 1249;
+		vrLoc = 0;
+	};
+	D6B7D2D6121CA1FC0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5E90FDFF83200548BE8 /* GLViewController.h */;
+		name = "GLViewController.h: 25";
+		rLen = 0;
+		rLoc = 501;
+		rType = 0;
+		vrLen = 506;
+		vrLoc = 0;
+	};
+	D6B7D2DD121CA40D0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
+		name = "GravityParticleEmitterFactory.m: 20";
+		rLen = 0;
+		rLoc = 481;
+		rType = 0;
+		vrLen = 657;
+		vrLoc = 0;
+	};
+	D6B7D2DE121CA40D0029B9CF /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incompatible type for argument 1 of 'createWithGravity:'";
+		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 60;
+		rType = 1;
+	};
+	D6B7D2DF121CA40D0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
+		name = "GLViewController.m: 61";
+		rLen = 22;
+		rLoc = 1646;
+		rType = 0;
+		vrLen = 843;
+		vrLoc = 1111;
+	};
+	D6B7D2E3121CA4380029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
+		name = "GLViewController.m: 61";
+		rLen = 22;
+		rLoc = 1646;
+		rType = 0;
+		vrLen = 843;
+		vrLoc = 1111;
+	};
+	D6B7D2E4121CA4380029B9CF /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ')' before 'Vector3D'";
+		fRef = D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 4;
+		rType = 1;
+	};
+	D6B7D2E5121CA4380029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */;
+		name = "GravityParticleEmitterFactory.h: 5";
+		rLen = 0;
+		rLoc = 82;
+		rType = 0;
+		vrLen = 124;
+		vrLoc = 0;
+	};
+	D6B7D2EC121CA4850029B9CF /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ')' before 'Vector3D'";
+		fRef = D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 4;
+		rType = 1;
+	};
+	D6B7D2ED121CA4850029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */;
+		name = "GravityParticleEmitterFactory.h: 5";
+		rLen = 0;
+		rLoc = 82;
+		rType = 0;
+		vrLen = 139;
+		vrLoc = 0;
+	};
+	D6B7D2F0121CA4860029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
+		name = "GLViewController.m: 61";
+		rLen = 17;
+		rLoc = 1626;
+		rType = 0;
+		vrLen = 1425;
+		vrLoc = 889;
+	};
+	D6B7D2F1121CA4860029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627E12122BA200FFC158 /* AccelerationController.h */;
+		name = "AccelerationController.h: 21";
+		rLen = 0;
+		rLoc = 494;
+		rType = 0;
+		vrLen = 536;
+		vrLoc = 0;
+	};
+	D6B7D2F2121CA4860029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */;
+		name = "AccelerationController.m: 28";
+		rLen = 0;
+		rLoc = 682;
+		rType = 0;
+		vrLen = 778;
+		vrLoc = 0;
+	};
+	D6B7D2F3121CA4860029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */;
+		name = "GravityParticleEmitterFactory.m: 20";
+		rLen = 0;
+		rLoc = 481;
+		rType = 0;
+		vrLen = 1521;
+		vrLoc = 0;
+	};
+	D6B7D2F4121CA4860029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5E90FDFF83200548BE8 /* GLViewController.h */;
+		name = "GLViewController.h: 11";
+		rLen = 25;
+		rLoc = 179;
+		rType = 0;
+		vrLen = 506;
+		vrLoc = 0;
+	};
+	D6B7D2F5121CA4860029B9CF /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ')' before 'Vector3D'";
+		fRef = D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 4;
+		rType = 1;
+	};
+	D6B7D2F6121CA4860029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */;
+		name = "GravityParticleEmitterFactory.h: 5";
+		rLen = 0;
+		rLoc = 82;
+		rType = 0;
+		vrLen = 139;
+		vrLoc = 0;
+	};
+	D6B7D2F7121CA4860029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B7D2A9121C9F710029B9CF /* UIAccelerometer.h */;
+		name = "UIAccelerometer.h: 48";
+		rLen = 100;
+		rLoc = 1142;
+		rType = 0;
+		vrLen = 1249;
+		vrLoc = 0;
+	};
+	D6B7D2F8121CA4860029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5E90FDFF83200548BE8 /* GLViewController.h */;
+		name = "GLViewController.h: 25";
+		rLen = 0;
+		rLoc = 501;
+		rType = 0;
+		vrLen = 506;
 		vrLoc = 0;
 	};
 	D6B8F8301216227300E79E18 /* SpawnController.h */ = {
@@ -1996,7 +2257,7 @@
 		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
 		name = "GLViewController.m: 67";
 		rLen = 0;
-		rLoc = 2198;
+		rLoc = 2315;
 		rType = 0;
 		vrLen = 1228;
 		vrLoc = 43;
@@ -2054,17 +2315,17 @@
 	};
 	D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1028, 462}}";
-			sepNavSelRange = "{54, 0}";
-			sepNavVisRange = "{0, 77}";
-			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
+			sepNavIntBoundsRect = "{{0, 0}, {975, 522}}";
+			sepNavSelRange = "{82, 0}";
+			sepNavVisRange = "{0, 139}";
+			sepNavWindowFrame = "{{563, -96}, {1041, 779}}";
 		};
 	};
 	D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1111, 522}}";
-			sepNavSelRange = "{430, 1058}";
-			sepNavVisRange = "{0, 1494}";
+			sepNavIntBoundsRect = "{{0, 0}, {1055, 545}}";
+			sepNavSelRange = "{481, 0}";
+			sepNavVisRange = "{0, 1521}";
 			sepNavWindowFrame = "{{399, 91}, {1041, 779}}";
 		};
 	};
@@ -2135,17 +2396,18 @@
 	};
 	D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {880, 702}}";
-			sepNavSelRange = "{468, 0}";
-			sepNavVisRange = "{53, 717}";
+			sepNavIntBoundsRect = "{{0, 0}, {1111, 651}}";
+			sepNavSelRange = "{1407, 0}";
+			sepNavVisRange = "{0, 1905}";
+			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
 	};
 	D6F0CDD51214F8470009075B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = D6F0CC7B12144E8B0009075B /* GravityParticleEmitterFactory.h */;
 		name = "GravityParticleEmitterFactory.h: 15";
-		rLen = 15;
-		rLoc = 57;
+		rLen = 52;
+		rLoc = 82;
 		rType = 0;
 		vrLen = 258;
 		vrLoc = 0;
