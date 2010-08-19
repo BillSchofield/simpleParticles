@@ -32,6 +32,9 @@
 		D6AF62BC1212331400FFC158 /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */; };
 		D6AF6316121300BB00FFC158 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF6315121300BB00FFC158 /* Controller.m */; };
 		D6B7D332121CB2F70029B9CF /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D331121CB2F70029B9CF /* Plane.m */; };
+		D6B7D426121D7A0C0029B9CF /* CollideWithBoxAndStopController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndStopController.m */; };
+		D6B7D465121D89E30029B9CF /* RandomFrictionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D464121D89E30029B9CF /* RandomFrictionController.m */; };
+		D6B7D4AB121DA01D0029B9CF /* RandomVelocityJitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D4AA121DA01D0029B9CF /* RandomVelocityJitterController.m */; };
 		D6B8F8321216227300E79E18 /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
 		D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
 		D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CB3B121380DD0009075B /* VertexDrawer.m */; };
@@ -91,6 +94,12 @@
 		D6AF6315121300BB00FFC158 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		D6B7D330121CB2F70029B9CF /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
 		D6B7D331121CB2F70029B9CF /* Plane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
+		D6B7D424121D7A0C0029B9CF /* CollideWithBoxAndStopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollideWithBoxAndStopController.h; sourceTree = "<group>"; };
+		D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndStopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollideWithBoxAndStopController.m; sourceTree = "<group>"; };
+		D6B7D463121D89E30029B9CF /* RandomFrictionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomFrictionController.h; sourceTree = "<group>"; };
+		D6B7D464121D89E30029B9CF /* RandomFrictionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomFrictionController.m; sourceTree = "<group>"; };
+		D6B7D4A9121DA01D0029B9CF /* RandomVelocityJitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomVelocityJitterController.h; sourceTree = "<group>"; };
+		D6B7D4AA121DA01D0029B9CF /* RandomVelocityJitterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomVelocityJitterController.m; sourceTree = "<group>"; };
 		D6B8F8301216227300E79E18 /* SpawnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnController.h; sourceTree = "<group>"; };
 		D6B8F8311216227300E79E18 /* SpawnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnController.m; sourceTree = "<group>"; };
 		D6F0CAC0121372C20009075B /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
@@ -272,6 +281,12 @@
 				D6AF627F12122BA200FFC158 /* AccelerationController.m */,
 				D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */,
 				D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */,
+				D6B7D424121D7A0C0029B9CF /* CollideWithBoxAndStopController.h */,
+				D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndStopController.m */,
+				D6B7D4A9121DA01D0029B9CF /* RandomVelocityJitterController.h */,
+				D6B7D4AA121DA01D0029B9CF /* RandomVelocityJitterController.m */,
+				D6B7D463121D89E30029B9CF /* RandomFrictionController.h */,
+				D6B7D464121D89E30029B9CF /* RandomFrictionController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -419,6 +434,9 @@
 				D6F6ECA312174AA30008C46F /* Spawner.m in Sources */,
 				D653EE391219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m in Sources */,
 				D6B7D332121CB2F70029B9CF /* Plane.m in Sources */,
+				D6B7D426121D7A0C0029B9CF /* CollideWithBoxAndStopController.m in Sources */,
+				D6B7D465121D89E30029B9CF /* RandomFrictionController.m in Sources */,
+				D6B7D4AB121DA01D0029B9CF /* RandomVelocityJitterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

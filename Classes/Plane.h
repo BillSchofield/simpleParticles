@@ -13,6 +13,8 @@
 	float offset;
 }
 -(id) initWithNormalVector: (Vector3D) planeNormalVector andOffset: (float)planeOffset;
--(bool) isBelow: (Vertex3D*) vertex;
+-(bool) isBelowPlane: (Vertex3D*) point;
+-(void) movePointToPlane: (Vertex3D*) point;
+
 
 @end

@@ -21,8 +21,8 @@
 	glLoadIdentity();
 	
 	// set up camera
-	gluLookAt(0, 3, 0, /* look from camera XYZ */
-			  0, 0, -1, /* look at the origin */
+	gluLookAt(0, 2, 0, /* look from camera XYZ */
+			  0, 0, 0, /* look at the origin */
 			  0, 0, 1); /* positive Y up vector */
 	
 	glClearColor(0.3, 0.3, 0.3, 1.0);
@@ -32,6 +32,16 @@
 //	theta += 0.001;
 //	Vector3DSet(&currentAcceleration, cos(theta), sin(theta), 0);
 
+	
+	static float time = 0;
+	time += 1.0/100;
+	if (time > 6)
+	{
+		time = 0;
+		Vector3DFlip(&currentAcceleration);
+		
+	}
+		
 	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
 	for (id particleEmitter in particleEmitters) 
 	{
@@ -63,8 +73,15 @@
 	glLoadIdentity(); 
 	
 	particleEmitters = [[NSMutableArray alloc] init];
-	[particleEmitters addObject: [[GravityParticleEmitterFactory alloc] createWithGravity: &currentAcceleration]];
-	[particleEmitters addObject: [[PolarCoordinateEmitterFactory alloc] create]];
+	
+	GravityParticleEmitterFactory* gravityEmitterFactory = [GravityParticleEmitterFactory alloc];
+	[particleEmitters addObject: [ gravityEmitterFactory createWithGravity: &currentAcceleration]];
+	[gravityEmitterFactory release];
+	
+	PolarCoordinateEmitterFactory* polarEmitterFactory = [PolarCoordinateEmitterFactory alloc];
+	[particleEmitters addObject: [polarEmitterFactory create]];
+	[polarEmitterFactory release];
+	
 //	[particleEmitters addObject: [[GravityAndPolarEmitterFactory alloc] create]];
 
 }
@@ -74,12 +91,16 @@
 	{
 		free(particleEmitter);
 	}
+	
+	self.accelerometer.updateInterval = 0;
+	self.accelerometer.delegate = nil;
+	
     [super dealloc];
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
 {
-	Vector3DSet(&currentAcceleration, acceleration.x, acceleration.z, acceleration.y);
+	Vector3DSet(&currentAcceleration, -acceleration.x, acceleration.z, acceleration.y);
     // values for the accelerometer are in
     // accelerometer.x, accelerometer.y, and accelerometer.z
     // where 1.0 is 1G of acceleration

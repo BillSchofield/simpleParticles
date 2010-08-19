@@ -20,10 +20,16 @@
 
 }
 
--(bool) isBelow: (Vertex3D*) vertex
+-(bool) isBelowPlane: (Vertex3D*) point
 {
-	float dotProduct = Vector3DDotProduct(*vertex, normalVector);
+	float dotProduct = Vector3DDotProduct(*point, normalVector);
 	return dotProduct < offset;
 }
 
+-(void) movePointToPlane: (Vertex3D*) point
+{
+	float amountPastPlane = Vector3DDotProduct(*point, normalVector);
+	amountPastPlane -= offset;
+	Vector3DScaleAndAccumulate(point, -amountPastPlane, &normalVector);
+}
 @end

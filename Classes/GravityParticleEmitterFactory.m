@@ -10,28 +10,25 @@
 #import "AccelerationController.h"
 #import "ConstantColorController.h"
 #import "ParticleEmitter.h"
-#import "Spawner.h"
-#import "SpawnController.h"
-#import "BounceWithPlaneAndDespawnController.h"
-
+#import "CollideWithBoxAndStopController.h"
+#import "RandomFrictionController.h"
+#import "RandomVelocityJitterController.h"
 
 @implementation GravityParticleEmitterFactory
 - (id) createWithGravity: (Vector3D*) acceleration
 {
-	const int numberOfParticles = 1024;
+	const int numberOfParticles = 8192;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
 	Color3D* colors = malloc(sizeof(Color3D) * numberOfParticles);
 	Vertex3D* velocities = malloc(sizeof(Vertex3D) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 
-	Spawner* spawner = [[Spawner alloc] initWithVertices:particles withVelocities:velocities];
-	[controllers addObject: [[SpawnController alloc] initWithSpawner: spawner withSpawnRate: 10.0]];
-	[controllers addObject: [[BounceWithPlaneAndDespawnController alloc] initWithVertices: particles withVelocities:velocities withSpawner:spawner]];
-	
+	[controllers addObject: [[CollideWithBoxAndStopController alloc] initWithVertices: particles withVelocities:velocities]];
+	[controllers addObject: [[RandomVelocityJitterController alloc] initWithVelocities:velocities andNumberOfVelocities:numberOfParticles]];	
 	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: acceleration]];
+	[controllers addObject: [[RandomFrictionController alloc] initWithVelocities:velocities andNumberOfVelocities:numberOfParticles]];	
 	[controllers addObject: [[ConstantColorController alloc] initWithColors:colors withNumberOfColors:numberOfParticles]];
 	
-	[spawner release];
 	return [[ParticleEmitter alloc] init: particles withColors:colors withControllers:controllers];
 }
 
