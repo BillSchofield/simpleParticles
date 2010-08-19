@@ -31,6 +31,7 @@
 		D6AF62BB1212331400FFC158 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B41212331400FFC158 /* GTMSenTestCase.m */; };
 		D6AF62BC1212331400FFC158 /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */; };
 		D6AF6316121300BB00FFC158 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF6315121300BB00FFC158 /* Controller.m */; };
+		D6B7D332121CB2F70029B9CF /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D331121CB2F70029B9CF /* Plane.m */; };
 		D6B8F8321216227300E79E18 /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
 		D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
 		D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CB3B121380DD0009075B /* VertexDrawer.m */; };
@@ -88,6 +89,8 @@
 		D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMUnitTestDevLog.m; sourceTree = "<group>"; };
 		D6AF6314121300BB00FFC158 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		D6AF6315121300BB00FFC158 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		D6B7D330121CB2F70029B9CF /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
+		D6B7D331121CB2F70029B9CF /* Plane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
 		D6B8F8301216227300E79E18 /* SpawnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnController.h; sourceTree = "<group>"; };
 		D6B8F8311216227300E79E18 /* SpawnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnController.m; sourceTree = "<group>"; };
 		D6F0CAC0121372C20009075B /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				D6F0CCC012145B3C0009075B /* VertexArray.m */,
 				D6F6ECA112174AA30008C46F /* Spawner.h */,
 				D6F6ECA212174AA30008C46F /* Spawner.m */,
+				D6B7D330121CB2F70029B9CF /* Plane.h */,
+				D6B7D331121CB2F70029B9CF /* Plane.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 				D6B8F8321216227300E79E18 /* SpawnController.m in Sources */,
 				D6F6ECA312174AA30008C46F /* Spawner.m in Sources */,
 				D653EE391219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m in Sources */,
+				D6B7D332121CB2F70029B9CF /* Plane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

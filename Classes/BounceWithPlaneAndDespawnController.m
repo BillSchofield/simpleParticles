@@ -19,19 +19,18 @@ Spawner* spawner;
 	velocities = sourceVelocities;
 	spawner = sourceSpawner;
 	[spawner retain];
+	
+	collisionPlane = [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,1) andOffset: -2];
 	return self;
 }
 
 -(void) update
 {
-	Vertex3D perpendicularVector = Vertex3DMake(0,0,1);
-	float planeOffset = -2;
 	const int numberOfVertices = [vertices getNumberOfVertices];
 	for (int i=0; i<numberOfVertices; ++i) 
 	{
 		Vertex3D* vertex = &([vertices getVertices][i]);
-		float dotProduct = Vector3DDotProduct(*vertex, perpendicularVector);
-		if (dotProduct < planeOffset)
+		if ( [collisionPlane isBelow: vertex] )
 		{
 			velocities[i].z *= -0.5;
 			if (fabs(velocities[i].z) < 0.05)
