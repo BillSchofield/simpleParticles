@@ -31,9 +31,9 @@
 	};
 	1F92F5EA0FDFF83200548BE8 /* GLViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {975, 1248}}";
-			sepNavSelRange = "{681, 109}";
-			sepNavVisRange = "{322, 971}";
+			sepNavIntBoundsRect = "{{0, 0}, {975, 1157}}";
+			sepNavSelRange = "{2317, 0}";
+			sepNavVisRange = "{1101, 1370}";
 			sepNavWindowFrame = "{{126, 92}, {946, 784}}";
 		};
 	};
@@ -384,6 +384,9 @@
 			D6B7D3C7121CC6180029B9CF /* PBXTextBookmark */ = D6B7D3C7121CC6180029B9CF /* PBXTextBookmark */;
 			D6B7D3C8121CC6180029B9CF /* PBXTextBookmark */ = D6B7D3C8121CC6180029B9CF /* PBXTextBookmark */;
 			D6B7D3C9121CC6180029B9CF /* PBXTextBookmark */ = D6B7D3C9121CC6180029B9CF /* PBXTextBookmark */;
+			D6B7D3CA121CC74B0029B9CF /* PBXTextBookmark */ = D6B7D3CA121CC74B0029B9CF /* PBXTextBookmark */;
+			D6B7D3CB121CC74B0029B9CF /* PBXTextBookmark */ = D6B7D3CB121CC74B0029B9CF /* PBXTextBookmark */;
+			D6B7D3CC121CC74B0029B9CF /* PBXTextBookmark */ = D6B7D3CC121CC74B0029B9CF /* PBXTextBookmark */;
 			D6B8F84912173AB300E79E18 = D6B8F84912173AB300E79E18 /* PBXTextBookmark */;
 			D6B8F84A12173AB300E79E18 = D6B8F84A12173AB300E79E18 /* PBXTextBookmark */;
 			D6B8F84B12173AB300E79E18 = D6B8F84B12173AB300E79E18 /* PBXTextBookmark */;
@@ -3185,6 +3188,36 @@
 		vrLoc = 703;
 	};
 	D6B7D3C9121CC6180029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B7D2A9121C9F710029B9CF /* UIAccelerometer.h */;
+		name = "UIAccelerometer.h: 48";
+		rLen = 100;
+		rLoc = 1142;
+		rType = 0;
+		vrLen = 1249;
+		vrLoc = 0;
+	};
+	D6B7D3CA121CC74B0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */;
+		name = "BounceWithPlaneAndDespawnController.m: 46";
+		rLen = 0;
+		rLoc = 1614;
+		rType = 0;
+		vrLen = 1181;
+		vrLoc = 703;
+	};
+	D6B7D3CB121CC74B0029B9CF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1F92F5EA0FDFF83200548BE8 /* GLViewController.m */;
+		name = "GLViewController.m: 82";
+		rLen = 0;
+		rLoc = 2317;
+		rType = 0;
+		vrLen = 1370;
+		vrLoc = 1101;
+	};
+	D6B7D3CC121CC74B0029B9CF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = D6B7D2A9121C9F710029B9CF /* UIAccelerometer.h */;
 		name = "UIAccelerometer.h: 48";

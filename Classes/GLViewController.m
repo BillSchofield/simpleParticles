@@ -79,7 +79,7 @@
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
 {
-	Vector3DSet(&currentAcceleration, acceleration.x, acceleration.y, acceleration.z);
+	Vector3DSet(&currentAcceleration, acceleration.x, acceleration.z, acceleration.y);
     // values for the accelerometer are in
     // accelerometer.x, accelerometer.y, and accelerometer.z
     // where 1.0 is 1G of acceleration

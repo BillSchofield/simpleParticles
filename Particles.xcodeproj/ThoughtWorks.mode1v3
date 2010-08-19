@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>D6B7D3C9121CC6180029B9CF</string>
+						<string>D6B7D3CC121CC74B0029B9CF</string>
 						<key>history</key>
 						<array>
 							<string>D6B7D2A6121C9F710029B9CF</string>
@@ -270,8 +270,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -317,8 +315,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
-									<integer>2</integer>
+									<integer>26</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -354,12 +351,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>BounceWithPlaneAndDespawnController.m</string>
+								<string>GLViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -367,11 +366,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>BounceWithPlaneAndDespawnController.m</string>
+										<string>GLViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D6B7D3C8121CC6180029B9CF</string>
+										<string>D6B7D3CB121CC74B0029B9CF</string>
 										<key>history</key>
 										<array>
 											<string>D6F0CD671214EDB30009075B</string>
@@ -415,8 +414,8 @@
 											<string>D6B7D3A4121CC1120029B9CF</string>
 											<string>D6B7D3C0121CC4AF0029B9CF</string>
 											<string>D6B7D3C5121CC6180029B9CF</string>
+											<string>D6B7D3CA121CC74B0029B9CF</string>
 											<string>D6B7D3C6121CC6180029B9CF</string>
-											<string>D6B7D3C7121CC6180029B9CF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
