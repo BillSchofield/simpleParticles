@@ -11,7 +11,7 @@
 #import "OpenGLCommon.h"
 #import "ParticleEmitter.h"
 
-@interface GLViewController : UIViewController <GLViewDelegate, UIAccelerometerDelegate>
+@interface GLViewController : UIViewController < UIAccelerometerDelegate, GLViewDelegate >
 {
 	@private
 	NSMutableArray *particleEmitters;

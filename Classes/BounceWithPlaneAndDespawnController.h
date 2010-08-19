@@ -16,10 +16,10 @@
 	VertexArray* vertices;
 	Vertex3D* velocities;
 	Spawner* spawner;
+	NSMutableArray* collisionPlanes;
 	Plane* collisionPlane;
 }
 -(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vertex3D*) sourceVelocities withSpawner:(Spawner*) sourceSpawner;
 -(void) update;
--(bool) isBelowPlane: (Vertex3D*) vertex;
 
 @end

@@ -28,6 +28,10 @@
 	glClearColor(0.3, 0.3, 0.3, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+//	static float theta=0;
+//	theta += 0.001;
+//	Vector3DSet(&currentAcceleration, cos(theta), sin(theta), 0);
+
 	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
 	for (id particleEmitter in particleEmitters) 
 	{

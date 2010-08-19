@@ -21,6 +21,15 @@ Spawner* spawner;
 	[spawner retain];
 	
 	collisionPlane = [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,1) andOffset: -2];
+	collisionPlanes = [[NSMutableArray alloc] init];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(1,0,0) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(-1,0,0) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,1,0) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,-1,0) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,1) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,-1) andOffset: -2]];
+	
+
 	return self;
 }
 
@@ -30,12 +39,15 @@ Spawner* spawner;
 	for (int i=0; i<numberOfVertices; ++i) 
 	{
 		Vertex3D* vertex = &([vertices getVertices][i]);
-		if ( [collisionPlane isBelow: vertex] )
+		for (id plane in collisionPlanes)
 		{
-			velocities[i].z *= -0.5;
-			if (fabs(velocities[i].z) < 0.05)
+			if ( [plane isBelow: vertex] )
 			{
-				[spawner despawn: i];
+				Vertex3DSet(&velocities[i], 0, 0, 0);
+//				if (fabs(velocities[i].z) < 0.05)
+//				{
+//					[spawner despawn: i];
+//				}
 			}
 		}
 	}
@@ -43,6 +55,10 @@ Spawner* spawner;
 
 -(void) dealloc
 {
+	for (id plane in [collisionPlanes reverseObjectEnumerator])
+	{
+		free(plane);
+	}
 	[spawner release];
 	[super dealloc];
 }

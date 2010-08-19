@@ -42,7 +42,7 @@
 	int i = [self claimUnusedVertex];
 	if (i >= 0)
 	{
-		Vertex3D particleEmitterPosition = Vertex3DMake(0, 0, 0);
+		Vertex3D particleEmitterPosition = Vertex3DMake(0, 0, -1);
 		[verticies getVertices][i] = particleEmitterPosition;
 		float angle = (random()%6283)/1000.0;
 		velocities[i].x = cos(angle)/6;
