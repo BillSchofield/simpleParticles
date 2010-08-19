@@ -43,6 +43,7 @@
 	self.accelerometer = [UIAccelerometer sharedAccelerometer];
 	self.accelerometer.updateInterval = .1;
 	self.accelerometer.delegate = self;
+	Vector3DSet(&currentAcceleration, 0, 0, -1);
 	
 	const GLfloat zNear = 0.01, zFar = 1000.0, fieldOfView = 45.0; 
 	GLfloat size; 
