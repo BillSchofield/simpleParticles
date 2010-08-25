@@ -9,14 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "GLView.h"
 #import "OpenGLCommon.h"
-#import "ParticleEmitter.h"
+#import "Application.h"
+
 
 @interface GLViewController : UIViewController < GLViewDelegate >
 {
-	ParticleEmitter* particleEmitter;
-	NSMutableArray* emitterFactories;
-	int currentEmitterFactoryIndex;
-	Vector3D currentAcceleration;
+	Application* application;
 }
 
 @end

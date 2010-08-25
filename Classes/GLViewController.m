@@ -8,33 +8,15 @@
 
 #import "GLViewController.h"
 #import "ConstantsAndMacros.h"
-#import "GravityParticleEmitterFactory.h"
-#import "PolarCoordinateEmitterFactory.h"
-#import "VectorFieldEmitterFactory.h"
+
 
 @implementation GLViewController
 
 - (void)drawView:(UIView *)theView
 {	
 	glClearColor(0.3, 0.3, 0.3, 1.0);
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	
-	static float timeUntilNextEmitter = -1;	
-	timeUntilNextEmitter -= 1.0/50;
-	if (timeUntilNextEmitter < 0){
-		timeUntilNextEmitter = 15;
-		[particleEmitter release];
-		particleEmitter = [[emitterFactories objectAtIndex:currentEmitterFactoryIndex] create];
-		currentEmitterFactoryIndex++;
-		if (currentEmitterFactoryIndex >= [emitterFactories count]){
-			currentEmitterFactoryIndex = 0;
-		}
-	}
-	
-	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
-	[particleEmitter draw: vertexDrawer ];
-	free(vertexDrawer);
-	
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	
+	[application update];	
 }
 
 -(void)setupView:(GLView*)view
@@ -50,20 +32,13 @@
 	glMatrixMode(GL_MODELVIEW);
 	
 	glLoadIdentity(); 
-	
-	emitterFactories = [[NSMutableArray alloc] init];
-	[emitterFactories addObject: [[GravityParticleEmitterFactory alloc] initWithGravity: &currentAcceleration]];
-	[emitterFactories addObject: [VectorFieldEmitterFactory alloc]];
-	[emitterFactories addObject: [PolarCoordinateEmitterFactory alloc]];
+
+	application = [[Application alloc] init];
 }
+
 - (void)dealloc 
 {
-	free(particleEmitter);
-	
-	for (id emitterFactory in [emitterFactories reverseObjectEnumerator])
-	{
-		free(emitterFactory);
-	}
+	[application release];
 	[super dealloc];
 }
 

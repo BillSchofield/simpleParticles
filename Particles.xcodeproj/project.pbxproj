@@ -19,6 +19,7 @@
 		28FD14FE0DC6FC130079059D /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* GLView.m */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		D602A3B11225D696006F87FC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A3B01225D696006F87FC /* Application.m */; };
 		D653EE391219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */; };
 		D653F065121C3EE000096B44 /* Particles.app in Resources */ = {isa = PBXBuildFile; fileRef = 1D6058910D05DD3D006BFB54 /* Particles.app */; };
 		D6AF628412122BA200FFC158 /* AccelerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */; };
@@ -72,6 +73,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Particles_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particles_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Particles-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Particles-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D602A3AF1225D696006F87FC /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		D602A3B01225D696006F87FC /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
 		D653EE371219FE5D00096B44 /* BounceWithPlaneAndDespawnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceWithPlaneAndDespawnController.h; sourceTree = "<group>"; };
 		D653EE381219FE5D00096B44 /* BounceWithPlaneAndDespawnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceWithPlaneAndDespawnController.m; sourceTree = "<group>"; };
 		D6AF627E12122BA200FFC158 /* AccelerationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerationController.h; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				D6F6ECA212174AA30008C46F /* Spawner.m */,
 				D6B7D330121CB2F70029B9CF /* Plane.h */,
 				D6B7D331121CB2F70029B9CF /* Plane.m */,
+				D602A3AF1225D696006F87FC /* Application.h */,
+				D602A3B01225D696006F87FC /* Application.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -461,6 +466,7 @@
 				D6B7D510121E19550029B9CF /* VectorFieldEmitterFactory.m in Sources */,
 				D6B7D68812232B9A0029B9CF /* AccelerationFromAccelerometerController.m in Sources */,
 				D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */,
+				D602A3B11225D696006F87FC /* Application.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
