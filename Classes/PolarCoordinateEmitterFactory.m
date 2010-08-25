@@ -16,13 +16,17 @@
 
 - (id) create
 {
+	glLoadIdentity(); 
+	gluLookAt(0, 2, 2, /* look from camera XYZ */
+			  0, 0, 0, /* look at the origin */
+			  0, 0, 1); /* positive Y up vector */
 	const int numberOfParticles = 1024;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
 	Color3D* colors = malloc(sizeof(Color3D) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 	
 	[controllers addObject: [[PolarCoordinatePositionController alloc] initWithVertices:particles]];
-	[controllers addObject: [[PositionColorController alloc] init:particles withColors:colors]];
+	[controllers addObject: [[PositionColorController alloc] init:particles withColors:colors andScale: 1.0]];
 	
 	return [[ParticleEmitter alloc] init: particles withColors:colors withControllers:controllers];
 }

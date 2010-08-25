@@ -11,15 +11,12 @@
 #import "OpenGLCommon.h"
 #import "ParticleEmitter.h"
 
-@interface GLViewController : UIViewController < UIAccelerometerDelegate, GLViewDelegate >
+@interface GLViewController : UIViewController < GLViewDelegate >
 {
-	@private
-	NSMutableArray *particleEmitters;
-	
-	UIAccelerometer *accelerometer;
+	ParticleEmitter* particleEmitter;
+	NSMutableArray* emitterFactories;
+	int currentEmitterFactoryIndex;
 	Vector3D currentAcceleration;
 }
-
-@property (nonatomic, retain) UIAccelerometer *accelerometer;
 
 @end

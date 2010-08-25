@@ -1,15 +1,15 @@
 //
-//  RadiusParticleColorController.m
+//  SinPositionColorController.m
 //  Particles
 //
-//  Created by bschofil on 8/8/10.
+//  Created by bschofil on 8/23/10.
 //  Copyright 2010 ThoughtWorks. All rights reserved.
 //
 
-#import "PositionColorController.h"
+#import "SinPositionColorController.h"
 
-@implementation PositionColorController
 
+@implementation SinPositionColorController
 -(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate andScale: (float) sourceScale
 {
 	particles = [positions getVertices];
@@ -24,11 +24,11 @@
 	float inverseScale = 1.0/scale;
 	for (int i=0; i<numberOfParticles; ++i) 
 	{		
-		colors[i].red = fabs(particles[i].x * inverseScale);
-		colors[i].green = fabs(particles[i].y * inverseScale);
-		colors[i].blue = fabs(particles[i].z * inverseScale);
+		colors[i].red = fastSinf(particles[i].x * inverseScale);
+		colors[i].green = fastSinf(particles[i].y * inverseScale);
+		colors[i].blue = fastSinf(particles[i].z * inverseScale);
 		colors[i].alpha = 1.0;
 	}
 }
-@end
 
+@end

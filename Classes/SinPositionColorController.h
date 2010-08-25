@@ -1,15 +1,16 @@
 //
-//  RadiusParticleColorController.h
+//  SinPositionColorController.h
 //  Particles
 //
-//  Created by bschofil on 8/8/10.
+//  Created by bschofil on 8/23/10.
 //  Copyright 2010 ThoughtWorks. All rights reserved.
 //
+
 #import "OpenGLCommon.h"
 #import "Controller.h"
 #import "VertexArray.h"
 
-@interface PositionColorController : Controller 
+@interface SinPositionColorController : Controller 
 {
 @private	
 	Vertex3D* particles;
@@ -19,4 +20,5 @@
 }
 -(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate andScale: (float) sourceScale;
 -(void) update;
+
 @end

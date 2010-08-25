@@ -48,8 +48,10 @@
 		{
 			if ( [plane isBelowPlane: vertex] )
 			{
-				Vertex3DSet(&velocities[i], 0, 0, 0);
-				[plane movePointToPlane: vertex];
+//				Vertex3DSet(&velocities[i], 0, 0, 0);
+//				[plane movePointToPlane: vertex];
+				[plane reflectVector:&velocities[i]];
+
 			}
 		}
 	}

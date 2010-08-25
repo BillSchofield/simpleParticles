@@ -35,6 +35,10 @@
 		D6B7D426121D7A0C0029B9CF /* CollideWithBoxAndStopController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndStopController.m */; };
 		D6B7D465121D89E30029B9CF /* RandomFrictionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D464121D89E30029B9CF /* RandomFrictionController.m */; };
 		D6B7D4AB121DA01D0029B9CF /* RandomVelocityJitterController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D4AA121DA01D0029B9CF /* RandomVelocityJitterController.m */; };
+		D6B7D50D121E159B0029B9CF /* VectorFieldPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D50C121E159B0029B9CF /* VectorFieldPositionController.m */; };
+		D6B7D510121E19550029B9CF /* VectorFieldEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D50F121E19550029B9CF /* VectorFieldEmitterFactory.m */; };
+		D6B7D68812232B9A0029B9CF /* AccelerationFromAccelerometerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */; };
+		D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D72812233A590029B9CF /* SinPositionColorController.m */; };
 		D6B8F8321216227300E79E18 /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
 		D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
 		D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CB3B121380DD0009075B /* VertexDrawer.m */; };
@@ -100,6 +104,14 @@
 		D6B7D464121D89E30029B9CF /* RandomFrictionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomFrictionController.m; sourceTree = "<group>"; };
 		D6B7D4A9121DA01D0029B9CF /* RandomVelocityJitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomVelocityJitterController.h; sourceTree = "<group>"; };
 		D6B7D4AA121DA01D0029B9CF /* RandomVelocityJitterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomVelocityJitterController.m; sourceTree = "<group>"; };
+		D6B7D50B121E159B0029B9CF /* VectorFieldPositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorFieldPositionController.h; sourceTree = "<group>"; };
+		D6B7D50C121E159B0029B9CF /* VectorFieldPositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VectorFieldPositionController.m; sourceTree = "<group>"; };
+		D6B7D50E121E19550029B9CF /* VectorFieldEmitterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorFieldEmitterFactory.h; sourceTree = "<group>"; };
+		D6B7D50F121E19550029B9CF /* VectorFieldEmitterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VectorFieldEmitterFactory.m; sourceTree = "<group>"; };
+		D6B7D68612232B9A0029B9CF /* AccelerationFromAccelerometerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerationFromAccelerometerController.h; sourceTree = "<group>"; };
+		D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerationFromAccelerometerController.m; sourceTree = "<group>"; };
+		D6B7D72712233A590029B9CF /* SinPositionColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinPositionColorController.h; sourceTree = "<group>"; };
+		D6B7D72812233A590029B9CF /* SinPositionColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinPositionColorController.m; sourceTree = "<group>"; };
 		D6B8F8301216227300E79E18 /* SpawnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnController.h; sourceTree = "<group>"; };
 		D6B8F8311216227300E79E18 /* SpawnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnController.m; sourceTree = "<group>"; };
 		D6F0CAC0121372C20009075B /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
@@ -287,6 +299,10 @@
 				D6B7D4AA121DA01D0029B9CF /* RandomVelocityJitterController.m */,
 				D6B7D463121D89E30029B9CF /* RandomFrictionController.h */,
 				D6B7D464121D89E30029B9CF /* RandomFrictionController.m */,
+				D6B7D68612232B9A0029B9CF /* AccelerationFromAccelerometerController.h */,
+				D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */,
+				D6B7D50B121E159B0029B9CF /* VectorFieldPositionController.h */,
+				D6B7D50C121E159B0029B9CF /* VectorFieldPositionController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -298,6 +314,8 @@
 				D6AF628312122BA200FFC158 /* PositionColorController.m */,
 				D6F0CE2C1214FCA60009075B /* ConstantColorController.h */,
 				D6F0CE2D1214FCA60009075B /* ConstantColorController.m */,
+				D6B7D72712233A590029B9CF /* SinPositionColorController.h */,
+				D6B7D72812233A590029B9CF /* SinPositionColorController.m */,
 			);
 			name = ColorControllers;
 			sourceTree = "<group>";
@@ -313,6 +331,8 @@
 				D6F0CDCB1214F6D40009075B /* PolarCoordinateEmitterFactory.m */,
 				D6F0CDCD1214F7C40009075B /* GravityAndPolarEmitterFactory.h */,
 				D6F0CDCE1214F7C40009075B /* GravityAndPolarEmitterFactory.m */,
+				D6B7D50E121E19550029B9CF /* VectorFieldEmitterFactory.h */,
+				D6B7D50F121E19550029B9CF /* VectorFieldEmitterFactory.m */,
 			);
 			name = Emitters;
 			sourceTree = "<group>";
@@ -437,6 +457,10 @@
 				D6B7D426121D7A0C0029B9CF /* CollideWithBoxAndStopController.m in Sources */,
 				D6B7D465121D89E30029B9CF /* RandomFrictionController.m in Sources */,
 				D6B7D4AB121DA01D0029B9CF /* RandomVelocityJitterController.m in Sources */,
+				D6B7D50D121E159B0029B9CF /* VectorFieldPositionController.m in Sources */,
+				D6B7D510121E19550029B9CF /* VectorFieldEmitterFactory.m in Sources */,
+				D6B7D68812232B9A0029B9CF /* AccelerationFromAccelerometerController.m in Sources */,
+				D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

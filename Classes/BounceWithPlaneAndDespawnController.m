@@ -41,7 +41,7 @@ Spawner* spawner;
 		Vertex3D* vertex = &([vertices getVertices][i]);
 		for (id plane in collisionPlanes)
 		{
-			if ( [plane isBelowPlane: vertex] )
+			if ( [plane isBelow: vertex] )
 			{
 				Vertex3DSet(&velocities[i], 0, 0, 0);
 				[plane movePointToPlane: vertex];

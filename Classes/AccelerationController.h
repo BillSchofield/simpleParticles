@@ -12,7 +12,6 @@
 
 @interface AccelerationController : Controller 
 {
-@private
 	Vertex3D* particles;
 	size_t numberOfParticles;
 	Vertex3D* acceleration;

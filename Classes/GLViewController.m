@@ -10,60 +10,39 @@
 #import "ConstantsAndMacros.h"
 #import "GravityParticleEmitterFactory.h"
 #import "PolarCoordinateEmitterFactory.h"
-#import "GravityAndPolarEmitterFactory.h"
+#import "VectorFieldEmitterFactory.h"
 
 @implementation GLViewController
 
-@synthesize accelerometer;
-
 - (void)drawView:(UIView *)theView
-{
-	glLoadIdentity();
-	
-	// set up camera
-	gluLookAt(0, 2, 0, /* look from camera XYZ */
-			  0, 0, 0, /* look at the origin */
-			  0, 0, 1); /* positive Y up vector */
-	
+{	
 	glClearColor(0.3, 0.3, 0.3, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-//	static float theta=0;
-//	theta += 0.001;
-//	Vector3DSet(&currentAcceleration, cos(theta), sin(theta), 0);
-
 	
-	static float time = 0;
-	time += 1.0/100;
-	if (time > 6)
-	{
-		time = 0;
-		Vector3DFlip(&currentAcceleration);
-		
+	static float timeUntilNextEmitter = -1;	
+	timeUntilNextEmitter -= 1.0/50;
+	if (timeUntilNextEmitter < 0){
+		timeUntilNextEmitter = 15;
+		[particleEmitter release];
+		particleEmitter = [[emitterFactories objectAtIndex:currentEmitterFactoryIndex] create];
+		currentEmitterFactoryIndex++;
+		if (currentEmitterFactoryIndex >= [emitterFactories count]){
+			currentEmitterFactoryIndex = 0;
+		}
 	}
-		
-	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
-	for (id particleEmitter in particleEmitters) 
-	{
-		[particleEmitter draw: vertexDrawer ];
-	}	
 	
+	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
+	[particleEmitter draw: vertexDrawer ];
 	free(vertexDrawer);
 	
 }
 
 -(void)setupView:(GLView*)view
-{
-	self.accelerometer = [UIAccelerometer sharedAccelerometer];
-	self.accelerometer.updateInterval = .1;
-	self.accelerometer.delegate = self;
-	Vector3DSet(&currentAcceleration, 0, 0, -1);
-	
+{	
 	const GLfloat zNear = 0.01, zFar = 1000.0, fieldOfView = 45.0; 
-	GLfloat size; 
 	glEnable(GL_DEPTH_TEST);
 	glMatrixMode(GL_PROJECTION); 
-	size = zNear * tanf(DEGREES_TO_RADIANS(fieldOfView) / 2.0); 
+	GLfloat size = zNear * tanf(DEGREES_TO_RADIANS(fieldOfView) / 2.0); 
 	CGRect rect = view.bounds; 
 	glFrustumf(-size, size, -size / (rect.size.width / rect.size.height), size / 
 			   (rect.size.width / rect.size.height), zNear, zFar); 
@@ -72,38 +51,20 @@
 	
 	glLoadIdentity(); 
 	
-	particleEmitters = [[NSMutableArray alloc] init];
-	
-	GravityParticleEmitterFactory* gravityEmitterFactory = [GravityParticleEmitterFactory alloc];
-	[particleEmitters addObject: [ gravityEmitterFactory createWithGravity: &currentAcceleration]];
-	[gravityEmitterFactory release];
-	
-	PolarCoordinateEmitterFactory* polarEmitterFactory = [PolarCoordinateEmitterFactory alloc];
-	[particleEmitters addObject: [polarEmitterFactory create]];
-	[polarEmitterFactory release];
-	
-//	[particleEmitters addObject: [[GravityAndPolarEmitterFactory alloc] create]];
-
+	emitterFactories = [[NSMutableArray alloc] init];
+	[emitterFactories addObject: [[GravityParticleEmitterFactory alloc] initWithGravity: &currentAcceleration]];
+	[emitterFactories addObject: [VectorFieldEmitterFactory alloc]];
+	[emitterFactories addObject: [PolarCoordinateEmitterFactory alloc]];
 }
 - (void)dealloc 
 {
-	for (id particleEmitter in [particleEmitters reverseObjectEnumerator])
+	free(particleEmitter);
+	
+	for (id emitterFactory in [emitterFactories reverseObjectEnumerator])
 	{
-		free(particleEmitter);
+		free(emitterFactory);
 	}
-	
-	self.accelerometer.updateInterval = 0;
-	self.accelerometer.delegate = nil;
-	
-    [super dealloc];
-}
-
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
-{
-	Vector3DSet(&currentAcceleration, -acceleration.x, acceleration.z, acceleration.y);
-    // values for the accelerometer are in
-    // accelerometer.x, accelerometer.y, and accelerometer.z
-    // where 1.0 is 1G of acceleration
+	[super dealloc];
 }
 
 @end

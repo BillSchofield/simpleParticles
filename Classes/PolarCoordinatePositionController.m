@@ -37,7 +37,7 @@ static const GLfloat pi = 3.1415926;
 	{
 		radii[i] = cos(2 * 6 * pi * (i%numberOfParticles)/(numberOfParticles));
 		deltaRadii[i] = -0.01;
-		particles[i].z = -1.0;
+		particles[i].z = 0.0;
 
 	}
 	return self;
