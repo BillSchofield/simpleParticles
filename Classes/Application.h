@@ -20,4 +20,6 @@
 }
 - (id) init;
 - (void) update;
+- (void) next;
+
 @end

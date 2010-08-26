@@ -18,26 +18,25 @@
 	[emitterFactories addObject: [VectorFieldEmitterFactory alloc]];
 	[emitterFactories addObject: [PolarCoordinateEmitterFactory alloc]];
 	timeUntilNextEmitter = -1;
+	[self next];
 	return self;
 }
 
 -(void) update{
-	timeUntilNextEmitter -= 1.0/50;
-	if (timeUntilNextEmitter < 0){
-		timeUntilNextEmitter = 15;
-		[particleEmitter release];
-		particleEmitter = [[emitterFactories objectAtIndex:currentEmitterFactoryIndex] create];
-		currentEmitterFactoryIndex++;
-		if (currentEmitterFactoryIndex >= [emitterFactories count]){
-			currentEmitterFactoryIndex = 0;
-		}
-	}
-	
 	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
 	[particleEmitter draw: vertexDrawer ];
 	free(vertexDrawer);
 }
 
+-(void) next {
+	[particleEmitter release];
+	particleEmitter = [[emitterFactories objectAtIndex:currentEmitterFactoryIndex] create];
+	currentEmitterFactoryIndex++;
+	if (currentEmitterFactoryIndex >= [emitterFactories count]){
+		currentEmitterFactoryIndex = 0;
+	}
+}
+	
 - (void)dealloc {
 	free(particleEmitter);
 	
@@ -47,5 +46,6 @@
 	}
 	[super dealloc];
 }
+
 
 @end

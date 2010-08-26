@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>D602A3F41225DDAC006F87FC</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>Application.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>D602A3F51225DDAC006F87FC</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>Application.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>D602A3F61225DDAC006F87FC</string>
-						<key>history</key>
-						<array>
-							<string>D602A3E31225DD9B006F87FC</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1041, 682}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>38 129 1041 723 0 0 1440 878 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -270,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -341,7 +298,7 @@
 							<real>344</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>10 79 1287 790 0 0 1440 878 </string>
+						<string>-6 83 1287 790 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -352,6 +309,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -369,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D602A3F11225DDAC006F87FC</string>
+										<string>D602A40F1225E636006F87FC</string>
 										<key>history</key>
 										<array>
 											<string>D6F0CD671214EDB30009075B</string>
@@ -429,10 +388,11 @@
 											<string>D602A3EA1225DDAC006F87FC</string>
 											<string>D602A3EB1225DDAC006F87FC</string>
 											<string>D602A3EC1225DDAC006F87FC</string>
-											<string>D602A3ED1225DDAC006F87FC</string>
-											<string>D602A3EE1225DDAC006F87FC</string>
-											<string>D602A3EF1225DDAC006F87FC</string>
-											<string>D602A3F01225DDAC006F87FC</string>
+											<string>D602A3FF1225E5CB006F87FC</string>
+											<string>D602A4001225E5CB006F87FC</string>
+											<string>D602A4031225E5CB006F87FC</string>
+											<string>D602A40D1225E636006F87FC</string>
+											<string>D602A40E1225E636006F87FC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -446,7 +406,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {921, 658}}</string>
 								<key>RubberWindowFrame</key>
-								<string>10 79 1287 790 0 0 1440 878 </string>
+								<string>-6 83 1287 790 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -466,7 +426,7 @@
 								<key>Frame</key>
 								<string>{{0, 663}, {921, 86}}</string>
 								<key>RubberWindowFrame</key>
-								<string>10 79 1287 790 0 0 1440 878 </string>
+								<string>-6 83 1287 790 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -634,10 +594,9 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>D6FD185D120C85C80092AB0C</string>
 		<string>/Users/ThoughtWorks/projects/Particles/Particles.xcodeproj</string>
-		<string>D602A3F41225DDAC006F87FC</string>
 	</array>
 	<key>WindowString</key>
-	<string>10 79 1287 790 0 0 1440 878 </string>
+	<string>-6 83 1287 790 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

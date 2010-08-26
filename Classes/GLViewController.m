@@ -36,6 +36,10 @@
 	application = [[Application alloc] init];
 }
 
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+	[application next];
+}
+
 - (void)dealloc 
 {
 	[application release];
