@@ -22,16 +22,9 @@
 		D602A3B11225D696006F87FC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A3B01225D696006F87FC /* Application.m */; };
 		D602A4161225ECA2006F87FC /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A4151225ECA2006F87FC /* Timer.m */; };
 		D653EE391219FE5D00096B44 /* BounceInsideBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653EE381219FE5D00096B44 /* BounceInsideBoxController.m */; };
-		D653F065121C3EE000096B44 /* Particles.app in Resources */ = {isa = PBXBuildFile; fileRef = 1D6058910D05DD3D006BFB54 /* Particles.app */; };
 		D6AF628412122BA200FFC158 /* AccelerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */; };
 		D6AF628512122BA200FFC158 /* PolarCoordinatePositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */; };
 		D6AF628612122BA200FFC158 /* PositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628312122BA200FFC158 /* PositionColorController.m */; };
-		D6AF62B71212331400FFC158 /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62AD1212331400FFC158 /* GTMIPhoneUnitTestDelegate.m */; };
-		D6AF62B81212331400FFC158 /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62AE1212331400FFC158 /* GTMIPhoneUnitTestMain.m */; };
-		D6AF62B91212331400FFC158 /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B01212331400FFC158 /* GTMObjC2Runtime.m */; };
-		D6AF62BA1212331400FFC158 /* GTMRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B21212331400FFC158 /* GTMRegex.m */; };
-		D6AF62BB1212331400FFC158 /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B41212331400FFC158 /* GTMSenTestCase.m */; };
-		D6AF62BC1212331400FFC158 /* GTMUnitTestDevLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */; };
 		D6AF6316121300BB00FFC158 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF6315121300BB00FFC158 /* Controller.m */; };
 		D6B7D332121CB2F70029B9CF /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D331121CB2F70029B9CF /* Plane.m */; };
 		D6B7D426121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m */; };
@@ -85,20 +78,6 @@
 		D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolarCoordinatePositionController.m; sourceTree = "<group>"; };
 		D6AF628212122BA200FFC158 /* PositionColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionColorController.h; sourceTree = "<group>"; };
 		D6AF628312122BA200FFC158 /* PositionColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionColorController.m; sourceTree = "<group>"; };
-		D6AF62A5121232C400FFC158 /* Unit Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6AF62A7121232C500FFC158 /* Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
-		D6AF62AB1212331400FFC158 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		D6AF62AC1212331400FFC158 /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
-		D6AF62AD1212331400FFC158 /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
-		D6AF62AE1212331400FFC158 /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
-		D6AF62AF1212331400FFC158 /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMObjC2Runtime.h; sourceTree = "<group>"; };
-		D6AF62B01212331400FFC158 /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMObjC2Runtime.m; sourceTree = "<group>"; };
-		D6AF62B11212331400FFC158 /* GTMRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMRegex.h; sourceTree = "<group>"; };
-		D6AF62B21212331400FFC158 /* GTMRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMRegex.m; sourceTree = "<group>"; };
-		D6AF62B31212331400FFC158 /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
-		D6AF62B41212331400FFC158 /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
-		D6AF62B51212331400FFC158 /* GTMUnitTestDevLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMUnitTestDevLog.h; sourceTree = "<group>"; };
-		D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMUnitTestDevLog.m; sourceTree = "<group>"; };
 		D6AF6314121300BB00FFC158 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		D6AF6315121300BB00FFC158 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		D6B7D330121CB2F70029B9CF /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
@@ -148,13 +127,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6AF62A3121232C400FFC158 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -187,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Particles.app */,
-				D6AF62A5121232C400FFC158 /* Unit Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,7 +180,6 @@
 				1F99BC3D116CBBE700AD7B28 /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				D6AF62A7121232C500FFC158 /* Unit Tests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -247,28 +217,8 @@
 		D6AF628D12122E4E00FFC158 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				D6AF628E12122E6500FFC158 /* GoogleUnitTesting */,
 			);
 			name = UnitTests;
-			sourceTree = "<group>";
-		};
-		D6AF628E12122E6500FFC158 /* GoogleUnitTesting */ = {
-			isa = PBXGroup;
-			children = (
-				D6AF62AB1212331400FFC158 /* GTMDefines.h */,
-				D6AF62AC1212331400FFC158 /* GTMIPhoneUnitTestDelegate.h */,
-				D6AF62AD1212331400FFC158 /* GTMIPhoneUnitTestDelegate.m */,
-				D6AF62AE1212331400FFC158 /* GTMIPhoneUnitTestMain.m */,
-				D6AF62AF1212331400FFC158 /* GTMObjC2Runtime.h */,
-				D6AF62B01212331400FFC158 /* GTMObjC2Runtime.m */,
-				D6AF62B11212331400FFC158 /* GTMRegex.h */,
-				D6AF62B21212331400FFC158 /* GTMRegex.m */,
-				D6AF62B31212331400FFC158 /* GTMSenTestCase.h */,
-				D6AF62B41212331400FFC158 /* GTMSenTestCase.m */,
-				D6AF62B51212331400FFC158 /* GTMUnitTestDevLog.h */,
-				D6AF62B61212331400FFC158 /* GTMUnitTestDevLog.m */,
-			);
-			name = GoogleUnitTesting;
 			sourceTree = "<group>";
 		};
 		D6F0CC6E121447E50009075B /* Framework */ = {
@@ -362,24 +312,6 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* Particles.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D6AF62A4121232C400FFC158 /* Unit Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D6AF62AA121232C500FFC158 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
-			buildPhases = (
-				D6AF62A1121232C400FFC158 /* Resources */,
-				D6AF62A2121232C400FFC158 /* Sources */,
-				D6AF62A3121232C400FFC158 /* Frameworks */,
-				D6AF62BE1212332D00FFC158 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Unit Tests";
-			productName = "Unit Tests";
-			productReference = D6AF62A5121232C400FFC158 /* Unit Tests.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -393,7 +325,6 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Particles */,
-				D6AF62A4121232C400FFC158 /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -408,31 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6AF62A1121232C400FFC158 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D653F065121C3EE000096B44 /* Particles.app in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D6AF62BE1212332D00FFC158 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"./Scripts/RunIPhoneUnitTest.sh\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -467,19 +374,6 @@
 				D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */,
 				D602A3B11225D696006F87FC /* Application.m in Sources */,
 				D602A4161225ECA2006F87FC /* Timer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D6AF62A2121232C400FFC158 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D6AF62B71212331400FFC158 /* GTMIPhoneUnitTestDelegate.m in Sources */,
-				D6AF62B81212331400FFC158 /* GTMIPhoneUnitTestMain.m in Sources */,
-				D6AF62B91212331400FFC158 /* GTMObjC2Runtime.m in Sources */,
-				D6AF62BA1212331400FFC158 /* GTMRegex.m in Sources */,
-				D6AF62BB1212331400FFC158 /* GTMSenTestCase.m in Sources */,
-				D6AF62BC1212331400FFC158 /* GTMUnitTestDevLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,55 +442,6 @@
 			};
 			name = Release;
 		};
-		D6AF62A8121232C500FFC158 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = "Unit Tests-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = "Unit Tests";
-				SDKROOT = iphoneos4.0;
-			};
-			name = Debug;
-		};
-		D6AF62A9121232C500FFC158 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = "Unit Tests-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = "Unit Tests";
-				SDKROOT = iphoneos4.0;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -614,15 +459,6 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D6AF62AA121232C500FFC158 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D6AF62A8121232C500FFC158 /* Debug */,
-				D6AF62A9121232C500FFC158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
