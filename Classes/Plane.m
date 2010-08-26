@@ -32,6 +32,9 @@
 	amountPastPlane -= offset;
 	Vector3DScaleAndAccumulate(point, -amountPastPlane, &normalVector);
 }
+-(void) scaleNormalComponentOfVector: (Vertex3D*) vector withScale: (float)scale {
+	Vector3DScaleAndAccumulate(vector, -scale * Vector3DDotProduct(*vector, normalVector), &normalVector);
+}
 
 -(void) reflectVector: (Vertex3D*) vector {
 	float amountPastPlane = Vector3DDotProduct(*vector, normalVector);

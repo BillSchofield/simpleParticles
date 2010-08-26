@@ -10,7 +10,7 @@
 #import "AccelerationController.h"
 #import "ConstantColorController.h"
 #import "ParticleEmitter.h"
-#import "CollideWithBoxAndStopController.h"
+#import "CollideWithBoxAndBounceController.h"
 #import "RandomFrictionController.h"
 #import "RandomVelocityJitterController.h"
 #import "AccelerationFromAccelerometerController.h"
@@ -18,13 +18,15 @@
 @implementation GravityParticleEmitterFactory
 
 
-- (id) initWithGravity: (Vector3D*) sourceAcceleration{
+- (id) initWithGravity: (Vector3D*) sourceAcceleration andWithTimer: (Timer*) sourceTimer {
 	acceleration = sourceAcceleration;
+	timer = sourceTimer;
+	
 	return self;
 }
 - (id) create{
 	glLoadIdentity(); 
-	gluLookAt(0, 2, 0, /* look from camera XYZ */
+	gluLookAt(0, 4, 0, /* look from camera XYZ */
 			  0, 0, 0, /* look at the origin */
 			  0, 0, 1); /* positive Y up vector */
 	
@@ -34,14 +36,19 @@
 	Vertex3D* velocities = malloc(sizeof(Vertex3D) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 
-	[controllers addObject: [[CollideWithBoxAndStopController alloc] initWithVertices: particles withVelocities:velocities]];
-	[controllers addObject: [[RandomVelocityJitterController alloc] initWithVelocities:velocities andNumberOfVelocities:numberOfParticles]];	
-	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: acceleration]];
-	[controllers addObject: [[RandomFrictionController alloc] initWithVelocities:velocities andNumberOfVelocities:numberOfParticles]];	
+	[controllers addObject: [[CollideWithBoxAndBounceController alloc] initWithVertices: particles withVelocities:velocities]];
+	[controllers addObject: [[RandomVelocityJitterController alloc] initWithVelocities:velocities andNumberOfVelocities:numberOfParticles andWithTimer: timer]];	
+	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: acceleration andWithTimer: timer]];
+	[controllers addObject: [[RandomFrictionController alloc] initWithVelocities:velocities andNumberOfVelocities:numberOfParticles andWithTimer: timer]];	
 	[controllers addObject: [[ConstantColorController alloc] initWithColors:colors withNumberOfColors:numberOfParticles]];
 	[controllers addObject: [[AccelerationFromAccelerometerController alloc] initWithAcceleration:acceleration]];
 	
 	return [[ParticleEmitter alloc] init: particles withColors:colors withControllers:controllers];
+}
+
+-(void) dealloc {
+	[timer release];
+	[super dealloc];
 }
 
 @end

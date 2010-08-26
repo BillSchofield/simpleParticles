@@ -10,13 +10,14 @@
 #import "GLView.h"
 #import "OpenGLCommon.h"
 #import "ParticleEmitter.h"
+#import "Timer.h"
 
 @interface Application : NSObject {
 	ParticleEmitter* particleEmitter;
 	NSMutableArray* emitterFactories;
-	float timeUntilNextEmitter;	
 	int currentEmitterFactoryIndex;
-	Vector3D currentAcceleration;	
+	Vector3D currentAcceleration;
+	Timer* updateTimer;
 }
 - (id) init;
 - (void) update;

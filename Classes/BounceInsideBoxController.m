@@ -6,10 +6,10 @@
 //  Copyright 2010 ThoughtWorks. All rights reserved.
 //
 
-#import "BounceWithPlaneAndDespawnController.h"
+#import "BounceInsideBoxController.h"
 
 
-@implementation BounceWithPlaneAndDespawnController
+@implementation BounceInsideBoxController
 Vertex3D* vertices;
 Vertex3D* velocities;
 Spawner* spawner;

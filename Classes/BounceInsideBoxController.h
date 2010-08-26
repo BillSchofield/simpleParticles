@@ -12,7 +12,7 @@
 #import "Spawner.h"
 #import "Plane.h"
 
-@interface BounceWithPlaneAndDespawnController : Controller {
+@interface BounceInsideBoxController : Controller {
 	VertexArray* vertices;
 	Vertex3D* velocities;
 	Spawner* spawner;

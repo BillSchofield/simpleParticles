@@ -17,14 +17,15 @@
 	return (random()%largeNumber)*difference/largeNumber + lowerBound;
 }
 
--(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities
+-(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer: (Timer*) sourceTimer
 {
 	velocities = sourceVelocities;
 	numberOfVelocities = sourceNumberOfVelocities;
+	timer = sourceTimer;
 	frictionCoefficients = malloc(sizeof(float) * numberOfVelocities);
 	for (int i=0; i<numberOfVelocities; ++i) 
 	{
-		frictionCoefficients[i] = [self randomFrom: 0.985 toMaximum: 0.99];
+		frictionCoefficients[i] = [self randomFrom: 0.5 toMaximum: 0.7];
 	}
 	
 	return self;
@@ -34,11 +35,8 @@
 {
 	for (int i=0; i<numberOfVelocities; ++i) 
 	{
-		velocities[i] = Vector3DMake(
-									 velocities[i].x,// * frictionCoefficients[i],
-									 velocities[i].y,// * frictionCoefficients[i],
-									 velocities[i].z * frictionCoefficients[i]
-									 );
+		float dragCoefficient = 1 - ((1 - frictionCoefficients[i]) * [timer timeSinceLastUpdateInSeconds]);
+		Vector3DScale(&velocities[i], dragCoefficient);
 	}
 }
 

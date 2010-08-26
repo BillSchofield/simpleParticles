@@ -13,16 +13,17 @@
 
 @implementation Application
 -(id) init{
+	updateTimer = [[Timer alloc] init];
 	emitterFactories = [[NSMutableArray alloc] init];
-	[emitterFactories addObject: [[GravityParticleEmitterFactory alloc] initWithGravity: &currentAcceleration]];
+	[emitterFactories addObject: [[GravityParticleEmitterFactory alloc] initWithGravity: &currentAcceleration andWithTimer: updateTimer]];
 	[emitterFactories addObject: [VectorFieldEmitterFactory alloc]];
 	[emitterFactories addObject: [PolarCoordinateEmitterFactory alloc]];
-	timeUntilNextEmitter = -1;
 	[self next];
 	return self;
 }
 
 -(void) update{
+	[updateTimer update];
 	VertexDrawer* vertexDrawer = [VertexDrawer alloc];
 	[particleEmitter draw: vertexDrawer ];
 	free(vertexDrawer);
@@ -38,12 +39,14 @@
 }
 	
 - (void)dealloc {
+	
 	free(particleEmitter);
 	
 	for (id emitterFactory in [emitterFactories reverseObjectEnumerator])
 	{
 		free(emitterFactory);
 	}
+	[updateTimer release];
 	[super dealloc];
 }
 

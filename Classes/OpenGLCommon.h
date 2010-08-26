@@ -135,11 +135,11 @@ static inline Vector3D Vector3DMakeWithStartAndEndPoints(Vertex3D start, Vertex3
 	Vector3DNormalize(&ret);
 	return ret;
 }
-static inline void Vector3DAccumulate(Vector3D* accumulator, Vector3D* vectorToScale)
+static inline void Vector3DAccumulate(Vector3D* accumulator, Vector3D* vectorToAdd)
 {
-	accumulator->x += vectorToScale->x;
-	accumulator->y += vectorToScale->y;
-	accumulator->z += vectorToScale->z;		
+	accumulator->x += vectorToAdd->x;
+	accumulator->y += vectorToAdd->y;
+	accumulator->z += vectorToAdd->z;		
 	
 }
 static inline void Vector3DScaleAndAccumulate(Vector3D* accumulator, float scale, Vector3D* vectorToScale)
@@ -147,7 +147,12 @@ static inline void Vector3DScaleAndAccumulate(Vector3D* accumulator, float scale
 	accumulator->x += vectorToScale->x * scale;
 	accumulator->y += vectorToScale->y * scale;
 	accumulator->z += vectorToScale->z * scale;		
-	
+}
+static inline void Vector3DScale(Vector3D* vectorToScale, float scale)
+{
+	vectorToScale->x *= scale;
+	vectorToScale->y *= scale;
+	vectorToScale->z *= scale;			
 }
 static inline Vector3D Vector3DAdd(Vector3D vector1, Vector3D vector2)
 {
@@ -165,9 +170,9 @@ static inline void Vector3DFlip (Vector3D *vector)
 }
 static inline void Vector3DRotateToDirection (GLfloat pitch, GLfloat azimuth, Vector3D *vector)
 {
-	vector->x = -sin(DEGREES_TO_RADIANS(azimuth)) * cos(DEGREES_TO_RADIANS(pitch));
-	vector->y = sin(DEGREES_TO_RADIANS(pitch));
-	vector->z = cos(DEGREES_TO_RADIANS(pitch)) * cos(DEGREES_TO_RADIANS(azimuth));	
+	vector->x = -sin(azimuth) * cos(pitch);
+	vector->y = sin(pitch);
+	vector->z = cos(pitch) * cos(azimuth);	
 }
 #pragma mark -
 #pragma mark Rotation3D

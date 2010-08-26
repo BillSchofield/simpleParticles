@@ -11,6 +11,12 @@
 
 @implementation AccelerationFromAccelerometerController
 @synthesize accelerometer;
+-(float) randomFrom: (float) lowerBound toMaximum: (float) upperBound
+{
+	int largeNumber = 65536;
+	float difference = upperBound - lowerBound;
+	return (random()%largeNumber)*difference/largeNumber + lowerBound;
+}
 
 -(id)initWithAcceleration: (Vector3D*)accelerationToControl{
 	acceleration = accelerationToControl;
@@ -19,18 +25,18 @@
 	self.accelerometer.updateInterval = .1;
 	self.accelerometer.delegate = self;
 	
-	Vector3DSet(acceleration, 0, 0, -1);
+	Vector3DSet(acceleration, 0, 0, -2);
 	return self;
 }
 
 -(void) update{
 	static float time = 0;
 	time += 1.0/100;
-	if (time > 6)
-	{
+	if (time > 5) {
 		time = 0;
-		Vector3DFlip(acceleration);
-		
+		float pitch = [self randomFrom: 0.0 toMaximum: 2*3.14159];
+		float yaw = [self randomFrom: 0.0 toMaximum: 2*3.14159];
+		Vector3DRotateToDirection(pitch, yaw, acceleration);	
 	}
 }
 

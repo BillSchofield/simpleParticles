@@ -6,10 +6,10 @@
 //  Copyright 2010 ThoughtWorks. All rights reserved.
 //
 
-#import "CollideWithBoxAndStopController.h"
+#import "CollideWithBoxAndBounceController.h"
 
 
-@implementation CollideWithBoxAndStopController
+@implementation CollideWithBoxAndBounceController
 
 -(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vertex3D*) sourceVelocities
 {
@@ -30,10 +30,10 @@
 	collisionPlanes = [[NSMutableArray alloc] init];
 	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(1,0,0) andOffset: -1]];
 	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(-1,0,0) andOffset: -1]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,1,0) andOffset: -2]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,-1,0) andOffset: -2]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,1) andOffset: -1]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,-1) andOffset: -1]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,1,0) andOffset: -1]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,-1,0) andOffset: -1]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,1) andOffset: -1.5]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,-1) andOffset: -1.5]];
 		
 	return self;
 }
@@ -48,9 +48,10 @@
 		{
 			if ( [plane isBelowPlane: vertex] )
 			{
-//				Vertex3DSet(&velocities[i], 0, 0, 0);
-//				[plane movePointToPlane: vertex];
 				[plane reflectVector:&velocities[i]];
+				[plane scaleNormalComponentOfVector: &velocities[i] withScale: 0.5];
+				[plane movePointToPlane: vertex];
+
 
 			}
 		}

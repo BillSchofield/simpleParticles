@@ -12,7 +12,7 @@
 #import "Plane.h"
 
 
-@interface CollideWithBoxAndStopController : Controller {
+@interface CollideWithBoxAndBounceController : Controller {
 	VertexArray* vertices;
 	Vertex3D* velocities;
 	NSMutableArray* collisionPlanes;

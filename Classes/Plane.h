@@ -15,6 +15,7 @@
 -(id) initWithNormalVector: (Vector3D) planeNormalVector andOffset: (float)planeOffset;
 -(bool) isBelowPlane: (Vertex3D*) point;
 -(void) movePointToPlane: (Vertex3D*) point;
+-(void) scaleNormalComponentOfVector: (Vertex3D*) vector withScale: (float)scale;
 -(void) reflectVector: (Vertex3D*) vector;
 
 

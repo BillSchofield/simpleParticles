@@ -7,13 +7,15 @@
 //
 
 #import "OpenGLCommon.h"
+#import "Timer.h"
 
 @interface RandomFrictionController : NSObject {
 	Vertex3D* velocities;
 	float* frictionCoefficients;
 	int numberOfVelocities;
+	Timer* timer;
 }
--(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities;
+-(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer: (Timer*) sourceTimer;
 -(void) update;
 -(float) randomFrom: (float) lowerBound toMaximum: (float) upperBound;
 
