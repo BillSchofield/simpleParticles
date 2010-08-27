@@ -7,7 +7,7 @@
 //
 
 @interface Timer : NSObject {
-	NSDate* timeOfLastUpdate;
+	double timeOfLastUpdate;
 	double timeUpdateInterval;
 }
 -(id) init;

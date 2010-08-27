@@ -11,24 +11,21 @@
 
 @implementation Timer
 -(id)init {
-	timeOfLastUpdate = [[NSDate alloc] init];
+	NSDate* currentTime = [[NSDate alloc] init];
+	timeOfLastUpdate = [currentTime timeIntervalSince1970];
+	[currentTime release];
 	return self;
 }
 
 -(void) update{
 	NSDate* currentTime = [[NSDate alloc] init];
-	timeUpdateInterval = [ currentTime timeIntervalSinceDate: timeOfLastUpdate];
-	timeUpdateInterval /= 1000;
-	[timeOfLastUpdate init];
-	[ currentTime release ];
+	double now = [currentTime timeIntervalSince1970];
+	timeUpdateInterval = now - timeOfLastUpdate;
+	timeOfLastUpdate = now;
+	[currentTime release];
 }
 
 -(double) timeSinceLastUpdateInSeconds{
 	return timeUpdateInterval;
-}
-
--(void) dealloc {
-	[timeOfLastUpdate release];
-	[super dealloc];
 }
 @end

@@ -155,6 +155,10 @@
 			D63ABBE51226D99C00900745 = D63ABBE51226D99C00900745 /* PBXTextBookmark */;
 			D63ABBEA1226D9CD00900745 = D63ABBEA1226D9CD00900745 /* PBXTextBookmark */;
 			D63ABBEC1226DC6700900745 = D63ABBEC1226DC6700900745 /* PBXTextBookmark */;
+			D63ABC1A1228319D00900745 /* PBXTextBookmark */ = D63ABC1A1228319D00900745 /* PBXTextBookmark */;
+			D63ABC1B1228319D00900745 /* PBXTextBookmark */ = D63ABC1B1228319D00900745 /* PBXTextBookmark */;
+			D63ABC1C1228319D00900745 /* PBXTextBookmark */ = D63ABC1C1228319D00900745 /* PBXTextBookmark */;
+			D63ABC1D1228319D00900745 /* PBXTextBookmark */ = D63ABC1D1228319D00900745 /* PBXTextBookmark */;
 			D653EE291219F98000096B44 = D653EE291219F98000096B44 /* PBXTextBookmark */;
 			D653EEB7121AEC2600096B44 = D653EEB7121AEC2600096B44 /* PBXTextBookmark */;
 			D653EEDF121C324800096B44 = D653EEDF121C324800096B44 /* PBXTextBookmark */;
@@ -211,7 +215,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {978, 715}}";
 			sepNavSelRange = "{749, 0}";
-			sepNavVisRange = "{0, 1275}";
+			sepNavVisRange = "{0, 1251}";
 			sepNavWindowFrame = "{{38, 73}, {1041, 779}}";
 		};
 	};
@@ -294,16 +298,16 @@
 	};
 	D602A4141225ECA2006F87FC /* Timer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {860, 626}}";
-			sepNavSelRange = "{191, 18}";
-			sepNavVisRange = "{0, 287}";
+			sepNavIntBoundsRect = "{{0, 0}, {860, 596}}";
+			sepNavSelRange = "{163, 0}";
+			sepNavVisRange = "{0, 286}";
 		};
 	};
 	D602A4151225ECA2006F87FC /* Timer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {860, 599}}";
-			sepNavSelRange = "{505, 0}";
-			sepNavVisRange = "{0, 607}";
+			sepNavIntBoundsRect = "{{0, 0}, {860, 596}}";
+			sepNavSelRange = "{181, 0}";
+			sepNavVisRange = "{0, 655}";
 		};
 	};
 	D602A43D1225F5FE006F87FC /* PBXTextBookmark */ = {
@@ -329,6 +333,11 @@
 		name = NSDate.h;
 		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDate.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 728}}";
+			sepNavSelRange = "{469, 21}";
+			sepNavVisRange = "{70, 1036}";
+		};
 	};
 	D602A4431225F5FE006F87FC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -405,7 +414,7 @@
 		fRef = D602A4141225ECA2006F87FC /* Timer.h */;
 		name = "Timer.h: 11";
 		rLen = 18;
-		rLoc = 191;
+		rLoc = 190;
 		rType = 0;
 		vrLen = 287;
 		vrLoc = 0;
@@ -575,7 +584,7 @@
 		fRef = D602A4151225ECA2006F87FC /* Timer.m */;
 		name = "Timer.m: 27";
 		rLen = 0;
-		rLoc = 505;
+		rLoc = 576;
 		rType = 0;
 		vrLen = 607;
 		vrLoc = 0;
@@ -589,6 +598,46 @@
 		rType = 0;
 		vrLen = 1349;
 		vrLoc = 49;
+	};
+	D63ABC1A1228319D00900745 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */;
+		name = "AccelerationFromAccelerometerController.m: 28";
+		rLen = 0;
+		rLoc = 788;
+		rType = 0;
+		vrLen = 1349;
+		vrLoc = 49;
+	};
+	D63ABC1B1228319D00900745 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m */;
+		name = "CollideWithBoxAndBounceController.m: 25";
+		rLen = 0;
+		rLoc = 705;
+		rType = 0;
+		vrLen = 1698;
+		vrLoc = 41;
+	};
+	D63ABC1C1228319D00900745 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D602A4151225ECA2006F87FC /* Timer.m */;
+		name = "Timer.m: 19";
+		rLen = 0;
+		rLoc = 340;
+		rType = 0;
+		vrLen = 604;
+		vrLoc = 0;
+	};
+	D63ABC1D1228319D00900745 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D602A4151225ECA2006F87FC /* Timer.m */;
+		name = "Timer.m: 19";
+		rLen = 0;
+		rLoc = 340;
+		rType = 0;
+		vrLen = 604;
+		vrLoc = 0;
 	};
 	D653EE291219F98000096B44 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -871,7 +920,7 @@
 		ignoreCount = 0;
 		lineNumber = 48;
 		location = Particles;
-		modificationTime = 304535595.8615431;
+		modificationTime = 304624493.266524;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -889,7 +938,7 @@
 		ignoreCount = 0;
 		lineNumber = 48;
 		location = Particles;
-		modificationTime = 304535466.165855;
+		modificationTime = 304623772.497155;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -903,8 +952,8 @@
 	D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {860, 910}}";
-			sepNavSelRange = "{1462, 0}";
-			sepNavVisRange = "{515, 1519}";
+			sepNavSelRange = "{705, 0}";
+			sepNavVisRange = "{41, 1698}";
 			sepNavWindowFrame = "{{15, 94}, {1041, 779}}";
 		};
 	};
