@@ -10,9 +10,6 @@
 
 
 @implementation BounceInsideBoxController
-Vertex3D* vertices;
-Vertex3D* velocities;
-Spawner* spawner;
 -(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vertex3D*) sourceVelocities withSpawner:(Spawner*) sourceSpawner
 {
 	vertices = sourceVertices;

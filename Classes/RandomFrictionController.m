@@ -7,15 +7,9 @@
 //
 
 #import "RandomFrictionController.h"
-
+#import "RandomFloat.h"
 
 @implementation RandomFrictionController
--(float) randomFrom: (float) lowerBound toMaximum: (float) upperBound
-{
-	int largeNumber = 65536;
-	float difference = upperBound - lowerBound;
-	return (random()%largeNumber)*difference/largeNumber + lowerBound;
-}
 
 -(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer: (Timer*) sourceTimer
 {
@@ -25,7 +19,7 @@
 	frictionCoefficients = malloc(sizeof(float) * numberOfVelocities);
 	for (int i=0; i<numberOfVelocities; ++i) 
 	{
-		frictionCoefficients[i] = [self randomFrom: 0.5 toMaximum: 0.7];
+		frictionCoefficients[i] = [RandomFloat randomFrom: 0.5 to: 0.7];
 	}
 	
 	return self;

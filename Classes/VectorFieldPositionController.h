@@ -14,7 +14,6 @@
 {
 	VertexArray* vertices;
 }
--(float) randomFrom: (float) lowerBound toMaximum: (float) upperBound;
 -(id) initWithVertices: (VertexArray*) sourceVertices;
 -(void) update;
 

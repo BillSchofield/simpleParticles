@@ -8,21 +8,16 @@
 
 #import "VectorFieldPositionController.h"
 #import "VertexArray.h"
+#import "RandomFloat.h"
 
 @implementation VectorFieldPositionController
--(float) randomFrom: (float) lowerBound toMaximum: (float) upperBound
-{
-	int largeNumber = 65536;
-	float difference = upperBound - lowerBound;
-	return (random()%largeNumber)*difference/largeNumber + lowerBound;
-}
 
 - (void) spawnParticle: (int) i positions: (Vector3D *) positions  {
   Vector3DSet(
 					&positions[i], 
-					[self randomFrom: -.1 toMaximum: .1],
-					[self randomFrom: -.1 toMaximum: .1],
-					[self randomFrom: -.1 toMaximum: .1]
+					[RandomFloat randomFrom: -.1 to: .1],
+					[RandomFloat randomFrom: -.1 to: .1],
+					[RandomFloat randomFrom: -.1 to: .1]
 					);
 
 }

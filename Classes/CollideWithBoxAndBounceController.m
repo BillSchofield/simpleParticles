@@ -7,7 +7,7 @@
 //
 
 #import "CollideWithBoxAndBounceController.h"
-
+#import "RandomFloat.h"
 
 @implementation CollideWithBoxAndBounceController
 
@@ -21,10 +21,11 @@
 	{
 		Vertex3D particleEmitterPosition = Vertex3DMake(0, 0, 1);
 		[vertices getVertices][i] = particleEmitterPosition;
-		float angle = (random()%6283)/1000.0;
+		
+		float angle = [RandomFloat randomFrom:0 to:2 * 3.145926];
 		velocities[i].x = cos(angle)/6;
 		velocities[i].y = sin(angle)/6;
-		velocities[i].z = (random()%1000)/1000.0;
+		velocities[i].z = [RandomFloat randomFrom: 0.0 to: 1.0];
 	}	
 	
 	collisionPlanes = [[NSMutableArray alloc] init];
@@ -46,7 +47,7 @@
 		Vertex3D* vertex = &([vertices getVertices][i]);
 		for (id plane in collisionPlanes)
 		{
-			if ( [plane isBelowPlane: vertex] )
+			if ( [plane isBelow: vertex] )
 			{
 				[plane reflectVector:&velocities[i]];
 				[plane scaleNormalComponentOfVector: &velocities[i] withScale: 0.5];

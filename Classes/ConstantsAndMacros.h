@@ -15,6 +15,9 @@
 #define kZNear                          0.01
 #define kZFar                           1000.0
 #define kFieldOfView                    45.0
+#define PI								3.14159265358979
+#define PI2								6.28318530717958
+
 // Defines whether to setup and use a depth buffer
 #define USE_DEPTH_BUFFER                1
 // Set to 1 if you want it to attempt to create a 2.0 context

@@ -11,8 +11,7 @@
 #import "VertexArray.h"
 #import "Timer.h"
 
-@interface AccelerationController : Controller 
-{
+@interface AccelerationController : Controller {
 	Vertex3D* particles;
 	size_t numberOfParticles;
 	Vertex3D* velocities;

@@ -7,18 +7,12 @@
 //
 
 #import "AccelerationFromAccelerometerController.h"
-
+#import "RandomFloat.h"
 
 @implementation AccelerationFromAccelerometerController
 @synthesize accelerometer;
--(float) randomFrom: (float) lowerBound toMaximum: (float) upperBound
-{
-	int largeNumber = 65536;
-	float difference = upperBound - lowerBound;
-	return (random()%largeNumber)*difference/largeNumber + lowerBound;
-}
 
--(id)initWithAcceleration: (Vector3D*)accelerationToControl{
+-(id)initWithAcceleration: (Vector3D*)accelerationToControl {
 	acceleration = accelerationToControl;
 
 	self.accelerometer = [UIAccelerometer sharedAccelerometer];
@@ -29,18 +23,18 @@
 	return self;
 }
 
--(void) update{
+-(void) update {
 	static float time = 0;
 	time += 1.0/100;
 	if (time > 5) {
 		time = 0;
-		float pitch = [self randomFrom: 0.0 toMaximum: 2*3.14159];
-		float yaw = [self randomFrom: 0.0 toMaximum: 2*3.14159];
+		float pitch = [RandomFloat randomFrom: 0.0 to: PI2];
+		float yaw = [RandomFloat randomFrom: 0.0 to: PI2];
 		Vector3DRotateToDirection(pitch, yaw, acceleration);	
 	}
 }
 
-- (void)dealloc{
+- (void)dealloc {
 	self.accelerometer.updateInterval = 0;
 	self.accelerometer.delegate = nil;	
     [super dealloc];

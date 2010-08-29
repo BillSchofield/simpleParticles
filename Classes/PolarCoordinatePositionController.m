@@ -18,8 +18,6 @@
 @synthesize particles;
 @synthesize numberOfParticles;
 
-static const GLfloat pi = 3.1415926;
-
 - (void) rotateAndScaleVertex: (GLfloat) radius theta: (GLfloat) theta vertex_p: (Vertex3D *) vertex_p  
 {
 	vertex_p->x = cos(theta) * radius;
@@ -35,7 +33,7 @@ static const GLfloat pi = 3.1415926;
 	deltaRadii = malloc(sizeof(float) * numberOfParticles);
 	for (int i=0; i<numberOfParticles; ++i) 
 	{
-		radii[i] = cos(2 * 6 * pi * (i%numberOfParticles)/(numberOfParticles));
+		radii[i] = cos(6 * PI2 * (i%numberOfParticles)/(numberOfParticles));
 		deltaRadii[i] = -0.01;
 		particles[i].z = 0.0;
 
@@ -46,8 +44,8 @@ static const GLfloat pi = 3.1415926;
 -(void) update
 {
 	static GLfloat theta = 0;
-	GLfloat deltaTheta = pi/128;
-	GLfloat thetaIncrement = 2 * pi / numberOfParticles;
+	GLfloat deltaTheta = PI/128;
+	GLfloat thetaIncrement = PI2 / numberOfParticles;
 	theta += deltaTheta;
 	for (int i=0; i<numberOfParticles; ++i) 
 	{

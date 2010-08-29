@@ -16,7 +16,6 @@
 	Timer* timer;
 }
 -(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer:(Timer*) sourceTimer;
-	-(void) update;
-	-(float) randomFrom: (float) lowerBound toMaximum: (float) upperBound;
+-(void) update;
 
 @end

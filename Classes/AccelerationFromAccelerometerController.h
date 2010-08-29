@@ -9,7 +9,7 @@
 #import "Controller.h"
 #import "OpenGLCommon.h"
 
-@interface AccelerationFromAccelerometerController : Controller< UIAccelerometerDelegate >{
+@interface AccelerationFromAccelerometerController : Controller< UIAccelerometerDelegate > {
 	Vector3D* acceleration;
 	UIAccelerometer *accelerometer;
 }

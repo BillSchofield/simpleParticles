@@ -20,7 +20,7 @@
 
 }
 
--(bool) isBelowPlane: (Vertex3D*) point
+-(bool) isBelow: (Vertex3D*) point
 {
 	float dotProduct = Vector3DDotProduct(*point, normalVector);
 	return dotProduct < offset;

@@ -35,6 +35,7 @@
 		D6B7D68812232B9A0029B9CF /* AccelerationFromAccelerometerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */; };
 		D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D72812233A590029B9CF /* SinPositionColorController.m */; };
 		D6B8F8321216227300E79E18 /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
+		D6E0A8B81229F56800D83B2E /* RandomFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E0A8B71229F56800D83B2E /* RandomFloat.m */; };
 		D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
 		D6F0CB3C121380DD0009075B /* VertexDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CB3B121380DD0009075B /* VertexDrawer.m */; };
 		D6F0CC7D12144E8B0009075B /* GravityParticleEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CC7C12144E8B0009075B /* GravityParticleEmitterFactory.m */; };
@@ -98,6 +99,8 @@
 		D6B7D72812233A590029B9CF /* SinPositionColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinPositionColorController.m; sourceTree = "<group>"; };
 		D6B8F8301216227300E79E18 /* SpawnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnController.h; sourceTree = "<group>"; };
 		D6B8F8311216227300E79E18 /* SpawnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnController.m; sourceTree = "<group>"; };
+		D6E0A8B61229F56800D83B2E /* RandomFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomFloat.h; sourceTree = "<group>"; };
+		D6E0A8B71229F56800D83B2E /* RandomFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomFloat.m; sourceTree = "<group>"; };
 		D6F0CAC0121372C20009075B /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
 		D6F0CAC1121372C20009075B /* ParticleEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleEmitter.m; sourceTree = "<group>"; };
 		D6F0CB3A121380DD0009075B /* VertexDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexDrawer.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				D602A3B01225D696006F87FC /* Application.m */,
 				D602A4141225ECA2006F87FC /* Timer.h */,
 				D602A4151225ECA2006F87FC /* Timer.m */,
+				D6E0A8B61229F56800D83B2E /* RandomFloat.h */,
+				D6E0A8B71229F56800D83B2E /* RandomFloat.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 				D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */,
 				D602A3B11225D696006F87FC /* Application.m in Sources */,
 				D602A4161225ECA2006F87FC /* Timer.m in Sources */,
+				D6E0A8B81229F56800D83B2E /* RandomFloat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
