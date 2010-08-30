@@ -11,6 +11,7 @@
 #import "VectorFieldPositionController.h"
 #import "SinPositionColorController.h"
 #import "ParticleEmitter.h"
+#import "FollowParticleCameraController.h"
 
 @implementation VectorFieldEmitterFactory
 
@@ -21,13 +22,14 @@
 			  0, 0, 0, /* look at the origin */
 			  0, 0, 1); /* positive Y up vector */
 	
-	const int numberOfParticles = 32768;
+	const int numberOfParticles = 65536;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
 	Color3D* colors = malloc(sizeof(Color3D) * numberOfParticles);
 
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];	
 	[controllers addObject: [[VectorFieldPositionController alloc] initWithVertices:particles]];	
-	[controllers addObject: [[SinPositionColorController alloc] init:particles withColors:colors andScale: 0.5]];
+	[controllers addObject: [[SinPositionColorController alloc] init:particles withColors:colors andScale: 1]];
+	[controllers addObject: [[FollowParticleCameraController alloc] initWithPositionToFollow:[particles getVertices]]];
 	
 	return [[ParticleEmitter alloc] init: particles withColors:colors withControllers:controllers];
 }

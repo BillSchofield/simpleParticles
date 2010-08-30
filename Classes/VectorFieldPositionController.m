@@ -36,7 +36,7 @@
 -(void) update{
 	int numberOfVertices = [vertices getNumberOfVertices];
 	Vector3D* positions = [vertices getVertices];
-	float scale = 1.0/20;
+	float scale = 1.0/10;
 	for (int i=0; i<numberOfVertices; ++i) {
 		Vector3D* currentPosition = &positions[i];
 //		Vector3D velocity = Vector3DMake(tan(currentPosition->x*scale), sin(currentPosition->y*scale), tan (currentPosition->z*scale));
