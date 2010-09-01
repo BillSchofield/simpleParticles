@@ -32,7 +32,7 @@
 -(void) next {
 	[particleEmitter release];
 	particleEmitter = [[emitterFactories objectAtIndex:currentEmitterFactoryIndex] create];
-	currentEmitterFactoryIndex++;
+	++currentEmitterFactoryIndex;
 	if (currentEmitterFactoryIndex >= [emitterFactories count]){
 		currentEmitterFactoryIndex = 0;
 	}

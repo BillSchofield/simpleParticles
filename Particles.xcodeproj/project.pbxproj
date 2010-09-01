@@ -143,6 +143,8 @@
 				D6F0CE5B1215041E0009075B /* Emitters */,
 				D6F0CC6E121447E50009075B /* Framework */,
 				D6AF628D12122E4E00FFC158 /* UnitTests */,
+				D602A3AF1225D696006F87FC /* Application.h */,
+				D602A3B01225D696006F87FC /* Application.m */,
 				1F92F5E90FDFF83200548BE8 /* GLViewController.h */,
 				1F92F5EA0FDFF83200548BE8 /* GLViewController.m */,
 				D6F0CB3A121380DD0009075B /* VertexDrawer.h */,
@@ -153,14 +155,10 @@
 				D6F6ECA212174AA30008C46F /* Spawner.m */,
 				D6B7D330121CB2F70029B9CF /* Plane.h */,
 				D6B7D331121CB2F70029B9CF /* Plane.m */,
-				D602A3AF1225D696006F87FC /* Application.h */,
-				D602A3B01225D696006F87FC /* Application.m */,
 				D602A4141225ECA2006F87FC /* Timer.h */,
 				D602A4151225ECA2006F87FC /* Timer.m */,
 				D6E0A8B61229F56800D83B2E /* RandomFloat.h */,
 				D6E0A8B71229F56800D83B2E /* RandomFloat.m */,
-				D6E0A95A122A0D8000D83B2E /* FollowParticleCameraController.h */,
-				D6E0A95B122A0D8000D83B2E /* FollowParticleCameraController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -260,6 +258,8 @@
 				D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m */,
 				D6AF6314121300BB00FFC158 /* Controller.h */,
 				D6AF6315121300BB00FFC158 /* Controller.m */,
+				D6E0A95A122A0D8000D83B2E /* FollowParticleCameraController.h */,
+				D6E0A95B122A0D8000D83B2E /* FollowParticleCameraController.m */,
 				D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */,
 				D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */,
 				D6B7D463121D89E30029B9CF /* RandomFrictionController.h */,
