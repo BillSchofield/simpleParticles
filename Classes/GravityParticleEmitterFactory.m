@@ -14,6 +14,7 @@
 #import "RandomFrictionController.h"
 #import "RandomVelocityJitterController.h"
 #import "AccelerationFromAccelerometerController.h"
+#import "FixedCameraController.h"
 
 @implementation GravityParticleEmitterFactory
 
@@ -25,10 +26,9 @@
 	return self;
 }
 - (id) create{
-	glLoadIdentity(); 
-	gluLookAt(0, 4, 0, /* look from camera XYZ */
-			  0, 0, 0, /* look at the origin */
-			  0, 0, 1); /* positive Y up vector */
+	Vector3D cameraPosition = {0, 4, 0};
+	Vector3D cameraTarget = {0, 0, 0};
+	Vector3D cameraUp = {0, 0, 1};
 	
 	const int numberOfParticles = 8192;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
@@ -36,6 +36,7 @@
 	Vertex3D* velocities = malloc(sizeof(Vertex3D) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 
+	[controllers addObject: [[FixedCameraController alloc] initAtPosition: &cameraPosition withTarget: &cameraTarget andUpDirection: &cameraUp]];
 	[controllers addObject: [[CollideWithBoxAndBounceController alloc] initWithVertices: particles withVelocities:velocities]];
 	[controllers addObject: [[RandomVelocityJitterController alloc] initWithVelocities:velocities andNumberOfVelocities:numberOfParticles andWithTimer: timer]];	
 	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: acceleration andWithTimer: timer]];

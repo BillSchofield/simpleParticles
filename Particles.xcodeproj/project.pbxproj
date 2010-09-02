@@ -22,6 +22,8 @@
 		D602A3B11225D696006F87FC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A3B01225D696006F87FC /* Application.m */; };
 		D602A4161225ECA2006F87FC /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A4151225ECA2006F87FC /* Timer.m */; };
 		D653EE391219FE5D00096B44 /* BounceInsideBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653EE381219FE5D00096B44 /* BounceInsideBoxController.m */; };
+		D66648BD122F1A16001C2C34 /* FixedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66648BC122F1A16001C2C34 /* FixedCameraController.m */; };
+		D6664933122F2B5A001C2C34 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = D6664932122F2B5A001C2C34 /* Camera.m */; };
 		D6AF628412122BA200FFC158 /* AccelerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */; };
 		D6AF628512122BA200FFC158 /* PolarCoordinatePositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */; };
 		D6AF628612122BA200FFC158 /* PositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628312122BA200FFC158 /* PositionColorController.m */; };
@@ -74,6 +76,10 @@
 		D602A4151225ECA2006F87FC /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		D653EE371219FE5D00096B44 /* BounceInsideBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceInsideBoxController.h; sourceTree = "<group>"; };
 		D653EE381219FE5D00096B44 /* BounceInsideBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceInsideBoxController.m; sourceTree = "<group>"; };
+		D66648BB122F1A16001C2C34 /* FixedCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedCameraController.h; sourceTree = "<group>"; };
+		D66648BC122F1A16001C2C34 /* FixedCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedCameraController.m; sourceTree = "<group>"; };
+		D6664931122F2B5A001C2C34 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		D6664932122F2B5A001C2C34 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 		D6AF627E12122BA200FFC158 /* AccelerationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerationController.h; sourceTree = "<group>"; };
 		D6AF627F12122BA200FFC158 /* AccelerationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerationController.m; sourceTree = "<group>"; };
 		D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolarCoordinatePositionController.h; sourceTree = "<group>"; };
@@ -142,9 +148,10 @@
 				D6F0CDC91214F6580009075B /* Controllers */,
 				D6F0CE5B1215041E0009075B /* Emitters */,
 				D6F0CC6E121447E50009075B /* Framework */,
-				D6AF628D12122E4E00FFC158 /* UnitTests */,
 				D602A3AF1225D696006F87FC /* Application.h */,
 				D602A3B01225D696006F87FC /* Application.m */,
+				D6664931122F2B5A001C2C34 /* Camera.h */,
+				D6664932122F2B5A001C2C34 /* Camera.m */,
 				1F92F5E90FDFF83200548BE8 /* GLViewController.h */,
 				1F92F5EA0FDFF83200548BE8 /* GLViewController.m */,
 				D6F0CB3A121380DD0009075B /* VertexDrawer.h */,
@@ -222,13 +229,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D6AF628D12122E4E00FFC158 /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UnitTests;
-			sourceTree = "<group>";
-		};
 		D6F0CC6E121447E50009075B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +258,8 @@
 				D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m */,
 				D6AF6314121300BB00FFC158 /* Controller.h */,
 				D6AF6315121300BB00FFC158 /* Controller.m */,
+				D66648BB122F1A16001C2C34 /* FixedCameraController.h */,
+				D66648BC122F1A16001C2C34 /* FixedCameraController.m */,
 				D6E0A95A122A0D8000D83B2E /* FollowParticleCameraController.h */,
 				D6E0A95B122A0D8000D83B2E /* FollowParticleCameraController.m */,
 				D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */,
@@ -386,6 +388,8 @@
 				D602A4161225ECA2006F87FC /* Timer.m in Sources */,
 				D6E0A8B81229F56800D83B2E /* RandomFloat.m in Sources */,
 				D6E0A95C122A0D8000D83B2E /* FollowParticleCameraController.m in Sources */,
+				D66648BD122F1A16001C2C34 /* FixedCameraController.m in Sources */,
+				D6664933122F2B5A001C2C34 /* Camera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

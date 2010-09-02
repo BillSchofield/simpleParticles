@@ -8,10 +8,11 @@
 
 #import "Controller.h"
 #import "OpenGLCommon.h"
+#import "Camera.h"
 
 @interface FollowParticleCameraController : Controller {
 	Vector3D* position;
-	Vector3D oldPosition;
+	Camera* camera;
 }
 -(id)initWithPositionToFollow: (Vector3D*)sourceVector; 
 

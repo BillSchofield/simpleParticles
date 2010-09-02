@@ -17,11 +17,6 @@
 
 - (id) create
 {
-	glLoadIdentity(); 
-	gluLookAt(0, 6, 2, /* look from camera XYZ */
-			  0, 0, 0, /* look at the origin */
-			  0, 0, 1); /* positive Y up vector */
-	
 	const int numberOfParticles = 65536;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
 	Color3D* colors = malloc(sizeof(Color3D) * numberOfParticles);

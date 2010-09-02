@@ -1,20 +1,16 @@
 #import "FollowParticleCameraController.h"
 
+static Vector3D up = {0, 0, 1};
+static Vector3D origin = {0, 0, 0};
 
 @implementation FollowParticleCameraController
 -(id)initWithPositionToFollow: (Vector3D*)sourceVector {
 	position = sourceVector;
-	oldPosition = *position;
+	camera = [[Camera alloc] initAtPosition:position withTarget:position andUpDirection: &up];
 	return self;
 }
 
 -(void) update {
-	glLoadIdentity();
-	Vector3D directionToAimCamera = Vector3DMakeWithStartAndEndPoints(oldPosition, *position);
-	oldPosition = *position;
-	gluLookAt(position->x, position->y, position->z,
-			  directionToAimCamera.x, directionToAimCamera.y, directionToAimCamera.z, 
-			  0, 0, 1);
-	
+	[camera moveCameraTo: position withTarget: &origin andUpDirection: &up];
 }
 @end
