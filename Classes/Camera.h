@@ -1,5 +1,4 @@
-#import "OpenGLCommon.h"
-
+#import "Vector3f.h"
 
 @interface Camera : NSObject {		
 }

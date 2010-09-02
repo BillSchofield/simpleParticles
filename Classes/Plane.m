@@ -1,13 +1,4 @@
-//
-//  Plane.m
-//  Particles
-//
-//  Created by bschofil on 8/18/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "Plane.h"
-
 
 @implementation Plane
 

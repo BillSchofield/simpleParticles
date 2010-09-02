@@ -1,5 +1,5 @@
-#import "OpenGLCommon.h"
 #import "Timer.h"
+#import "Vector3f.h"
 
 @interface GravityParticleEmitterFactory : NSObject {
 	Vector3f* acceleration;

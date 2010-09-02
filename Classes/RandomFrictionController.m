@@ -1,11 +1,3 @@
-//
-//  RandomFrictionController.m
-//  Particles
-//
-//  Created by bschofil on 8/19/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "RandomFrictionController.h"
 #import "RandomFloat.h"
 

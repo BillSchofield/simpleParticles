@@ -1,13 +1,5 @@
-//
-//  AccelerationFromAccelerometerController.h
-//  Particles
-//
-//  Created by bschofil on 8/23/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "Controller.h"
-#import "OpenGLCommon.h"
+#import "Vector3f.h"
 
 @interface AccelerationFromAccelerometerController : Controller< UIAccelerometerDelegate > {
 	Vector3f* acceleration;

@@ -1,11 +1,3 @@
-//
-//  GLViewController.m
-//  Particles
-//
-//  Created by bschofil on 8/6/10.
-//  Copyright ThoughtWorks 2010. All rights reserved.
-//
-
 #import "GLViewController.h"
 #import "ConstantsAndMacros.h"
 

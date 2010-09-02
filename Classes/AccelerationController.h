@@ -1,12 +1,3 @@
-//
-//  AccelerationController.h
-//  Particles
-//
-//  Created by bschofil on 8/8/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
-#import "OpenGLCommon.h"
 #import "Controller.h"
 #import "VertexArray.h"
 #import "Timer.h"

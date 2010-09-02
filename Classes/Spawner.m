@@ -1,26 +1,4 @@
-//
-//  Spawner.m
-//  Particles
-//
-//  Created by bschofil on 8/14/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "Spawner.h"
-
-
-//////////////////////////////////////////////////////////////////////
-//
-// This class manages whether the vertices under its controller exist
-// in the view. The current solution to making a vertex 'unspawned'
-// is to move it far away from the origin and allow the entire vertex
-// array to be drawn. While it is possible that this could be the most
-// efficient thing to do, it is not logically correct and I expect there
-// is a better way.
-//
-//////////////////////////////////////////////////////////////////////
-
-
 
 @implementation Spawner
 

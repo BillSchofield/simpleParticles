@@ -1,11 +1,3 @@
-//
-//  Application.m
-//  Particles
-//
-//  Created by bschofil on 8/25/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "Application.h"
 #import "GravityParticleEmitterFactory.h"
 #import "PolarCoordinateEmitterFactory.h"

@@ -1,16 +1,6 @@
-//
-//  Application.h
-//  Particles
-//
-//  Created by bschofil on 8/25/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
-#import <UIKit/UIKit.h>
-#import "GLView.h"
-#import "OpenGLCommon.h"
 #import "ParticleEmitter.h"
 #import "Timer.h"
+#import "Vector3f.h"
 
 @interface Application : NSObject {
 	ParticleEmitter* particleEmitter;

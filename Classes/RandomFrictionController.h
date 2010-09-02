@@ -1,13 +1,5 @@
-//
-//  RandomFrictionController.h
-//  Particles
-//
-//  Created by bschofil on 8/19/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
-#import "OpenGLCommon.h"
 #import "Timer.h"
+#import "Vector3f.h"
 
 @interface RandomFrictionController : NSObject {
 	Vector3f* velocities;

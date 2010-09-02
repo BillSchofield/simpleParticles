@@ -1,12 +1,4 @@
-//
-//  Plane.h
-//  Particles
-//
-//  Created by bschofil on 8/18/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
-#import "OpenGLCommon.h"
+#import "Vector3f.h"
 
 @interface Plane : NSObject {
 	Vector3f normalVector;

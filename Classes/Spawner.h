@@ -1,14 +1,5 @@
-//
-//  Spawner.h
-//  Particles
-//
-//  Created by bschofil on 8/14/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
 #import "VertexArray.h"
-#import "OpenGLCommon.h"
+#import "Vector3f.h"
 
 @interface Spawner : NSObject {
 	VertexArray* verticies;

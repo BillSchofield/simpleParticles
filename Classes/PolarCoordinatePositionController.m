@@ -1,24 +1,8 @@
-//
-//  PolarCoordinatePositionController.m
-//  Particles
-//
-//  Created by bschofil on 8/8/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "PolarCoordinatePositionController.h"
 
-@interface PolarCoordinatePositionController ()
-@property Vector3f* particles;
-@property size_t numberOfParticles;
-@end
-
-
 @implementation PolarCoordinatePositionController
-@synthesize particles;
-@synthesize numberOfParticles;
 
-- (void) rotateAndScaleVertex: (GLfloat) radius theta: (GLfloat) theta vertex_p: (Vector3f *) vertex_p  
+- (void) rotateAndScaleVertex: (float) radius theta: (float) theta vertex_p: (Vector3f *) vertex_p  
 {
 	vertex_p->x = cos(theta) * radius;
 	vertex_p->y = sin(theta) * radius;	
@@ -43,9 +27,9 @@
 
 -(void) update
 {
-	static GLfloat theta = 0;
-	GLfloat deltaTheta = PI/128;
-	GLfloat thetaIncrement = PI2 / numberOfParticles;
+	static float theta = 0;
+	float deltaTheta = PI/128;
+	float thetaIncrement = PI2 / numberOfParticles;
 	theta += deltaTheta;
 	for (int i=0; i<numberOfParticles; ++i) 
 	{

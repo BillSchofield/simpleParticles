@@ -1,14 +1,6 @@
-//
-//  RandomVelocityJitterController.h
-//  Particles
-//
-//  Created by bschofil on 8/19/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
-#import "OpenGLCommon.h"
 #import "Controller.h"
 #import "Timer.h"
+#import "Vector3f.h"
 
 @interface RandomVelocityJitterController : Controller {
 	Vector3f* velocities;

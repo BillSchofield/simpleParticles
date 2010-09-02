@@ -1,11 +1,3 @@
-//
-//  GravityControllerFactory.m
-//  Particles
-//
-//  Created by bschofil on 8/12/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "GravityParticleEmitterFactory.h"
 #import "AccelerationController.h"
 #import "ConstantColorController.h"

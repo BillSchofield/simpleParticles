@@ -1,5 +1,5 @@
 #import "Camera.h"
-
+#import "OpenGLCommon.h"
 
 @implementation Camera
 

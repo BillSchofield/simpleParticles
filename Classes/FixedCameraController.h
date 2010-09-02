@@ -1,6 +1,6 @@
 #import "Controller.h"
-#import "OpenGLCommon.h"
 #import "Camera.h"
+#import "Vector3f.h"
 
 @interface FixedCameraController : Controller {
 	Camera* camera;
