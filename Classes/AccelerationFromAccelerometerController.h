@@ -10,13 +10,13 @@
 #import "OpenGLCommon.h"
 
 @interface AccelerationFromAccelerometerController : Controller< UIAccelerometerDelegate > {
-	Vector3D* acceleration;
+	Vector3f* acceleration;
 	UIAccelerometer *accelerometer;
 }
 
 @property (nonatomic, retain) UIAccelerometer *accelerometer;
 
--(id)initWithAcceleration: (Vector3D*)accelerationToControl;
+-(id)initWithAcceleration: (Vector3f*)accelerationToControl;
 -(void) update;
 - (void)dealloc;
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;

@@ -12,12 +12,12 @@
 #import "Timer.h"
 
 @interface AccelerationController : Controller {
-	Vertex3D* particles;
+	Vector3f* particles;
 	size_t numberOfParticles;
-	Vertex3D* velocities;
-	Vertex3D* acceleration;
+	Vector3f* velocities;
+	Vector3f* acceleration;
 	Timer* timer;
 }
--(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vertex3D*) sourceVelocities withAcceleration: (Vertex3D*) sourceAcceleration andWithTimer: (Timer*) sourceTimer;
+-(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vector3f*) sourceVelocities withAcceleration: (Vector3f*) sourceAcceleration andWithTimer: (Timer*) sourceTimer;
 -(void) update;
 @end

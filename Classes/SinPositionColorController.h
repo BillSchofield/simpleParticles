@@ -13,7 +13,7 @@
 @interface SinPositionColorController : Controller 
 {
 @private	
-	Vertex3D* particles;
+	Vector3f* particles;
 	size_t numberOfParticles;
 	Color3D* colors;
 	float scale;

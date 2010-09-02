@@ -14,12 +14,12 @@
 
 @interface BounceInsideBoxController : Controller {
 	VertexArray* vertices;
-	Vertex3D* velocities;
+	Vector3f* velocities;
 	Spawner* spawner;
 	NSMutableArray* collisionPlanes;
 	Plane* collisionPlane;
 }
--(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vertex3D*) sourceVelocities withSpawner:(Spawner*) sourceSpawner;
+-(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vector3f*) sourceVelocities withSpawner:(Spawner*) sourceSpawner;
 -(void) update;
 
 @end

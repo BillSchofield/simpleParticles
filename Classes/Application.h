@@ -16,7 +16,7 @@
 	ParticleEmitter* particleEmitter;
 	NSMutableArray* emitterFactories;
 	int currentEmitterFactoryIndex;
-	Vector3D currentAcceleration;
+	Vector3f currentAcceleration;
 	Timer* updateTimer;
 }
 - (id) init;

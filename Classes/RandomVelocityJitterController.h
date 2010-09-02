@@ -11,11 +11,11 @@
 #import "Timer.h"
 
 @interface RandomVelocityJitterController : Controller {
-	Vertex3D* velocities;
+	Vector3f* velocities;
 	int numberOfVelocities;
 	Timer* timer;
 }
--(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer:(Timer*) sourceTimer;
+-(id) initWithVelocities: (Vector3f*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer:(Timer*) sourceTimer;
 -(void) update;
 
 @end

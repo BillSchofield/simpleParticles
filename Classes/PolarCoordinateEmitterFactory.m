@@ -9,9 +9,9 @@
 
 - (id) create
 {
-	Vector3D cameraPosition = {0, 2, 2};
-	Vector3D cameraTarget = {0, 0, 0};
-	Vector3D cameraUp = {0, 0, 1};
+	Vector3f cameraPosition = {0, 2, 2};
+	Vector3f cameraTarget = {0, 0, 0};
+	Vector3f cameraUp = {0, 0, 1};
 
 	const int numberOfParticles = 1024;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];

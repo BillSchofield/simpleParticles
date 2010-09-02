@@ -2,7 +2,7 @@
 
 
 @implementation FixedCameraController
--(id) initAtPosition: (Vector3D*) position withTarget: (Vector3D*) target andUpDirection: (Vector3D*) up {
+-(id) initAtPosition: (Vector3f*) position withTarget: (Vector3f*) target andUpDirection: (Vector3f*) up {
 
 	camera = [[ Camera alloc ] initAtPosition:position withTarget:target andUpDirection:up ];
 	return self;

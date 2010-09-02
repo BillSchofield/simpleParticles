@@ -11,7 +11,7 @@
 
 @implementation CollideWithBoxAndBounceController
 
--(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vertex3D*) sourceVelocities
+-(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vector3f*) sourceVelocities
 {
 	vertices = sourceVertices;
 	velocities = sourceVelocities;
@@ -19,7 +19,7 @@
 	const int numberOfVertices = [vertices getNumberOfVertices];
 	for (int i=0; i<numberOfVertices; ++i) 
 	{
-		Vertex3D particleEmitterPosition = Vertex3DMake(0, 0, 1);
+		Vector3f particleEmitterPosition = Vector3fMake(0, 0, 1);
 		[vertices getVertices][i] = particleEmitterPosition;
 		
 		float angle = [RandomFloat randomFrom:0 to:2 * 3.145926];
@@ -29,12 +29,12 @@
 	}	
 	
 	collisionPlanes = [[NSMutableArray alloc] init];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(1,0,0) andOffset: -1]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(-1,0,0) andOffset: -1]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,1,0) andOffset: -1]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,-1,0) andOffset: -1]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,1) andOffset: -1.5]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,-1) andOffset: -1.5]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(1,0,0) andOffset: -1]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(-1,0,0) andOffset: -1]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(0,1,0) andOffset: -1]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(0,-1,0) andOffset: -1]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(0,0,1) andOffset: -1.5]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(0,0,-1) andOffset: -1.5]];
 		
 	return self;
 }
@@ -44,7 +44,7 @@
 	const int numberOfVertices = [vertices getNumberOfVertices];
 	for (int i=0; i<numberOfVertices; ++i) 
 	{
-		Vertex3D* vertex = &([vertices getVertices][i]);
+		Vector3f* vertex = &([vertices getVertices][i]);
 		for (id plane in collisionPlanes)
 		{
 			if ( [plane isBelow: vertex] )

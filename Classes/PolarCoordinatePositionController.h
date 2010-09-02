@@ -15,7 +15,7 @@
 @private
 	float* radii;
 	float* deltaRadii;
-	Vertex3D* particles;
+	Vector3f* particles;
 	size_t numberOfParticles;
 }
 -(id) initWithVertices: (VertexArray*) vertices;

@@ -25,7 +25,7 @@
 @implementation Spawner
 
 
-- (id) initWithVertices: (VertexArray*) sourceVertices withVelocities: (Vertex3D*) sourceVelocities
+- (id) initWithVertices: (VertexArray*) sourceVertices withVelocities: (Vector3f*) sourceVelocities
 {
 	verticies = sourceVertices;
 	velocities = sourceVelocities;
@@ -42,7 +42,7 @@
 	int i = [self claimUnusedVertex];
 	if (i >= 0)
 	{
-		Vertex3D particleEmitterPosition = Vertex3DMake(0, 0, -1);
+		Vector3f particleEmitterPosition = Vector3fMake(0, 0, -1);
 		[verticies getVertices][i] = particleEmitterPosition;
 		float angle = (random()%6283)/1000.0;
 		velocities[i].x = cos(angle)/6;
@@ -56,7 +56,7 @@
 	int indexOfNewVertex = indexOfUnusedList;
 	if (indexOfNewVertex >= 0)
 	{
-		Vertex3D* firstUnusedVertex = &([verticies getVertices][indexOfNewVertex]);
+		Vector3f* firstUnusedVertex = &([verticies getVertices][indexOfNewVertex]);
 		indexOfUnusedList = firstUnusedVertex->x;
 	}
 	return indexOfNewVertex;
@@ -64,7 +64,7 @@
 
 - (void) despawn: (int) i  
 {
-	Vertex3D* vertexToDespawn = &([verticies getVertices][i]);
+	Vector3f* vertexToDespawn = &([verticies getVertices][i]);
 	//Track index in x component
 	vertexToDespawn->x = indexOfUnusedList;
 	// Move vertex far from the origin

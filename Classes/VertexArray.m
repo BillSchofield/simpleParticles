@@ -13,12 +13,12 @@
 - (id) init: (int) size
 {
 	numberOfVertices = size;
-	vertices = malloc(sizeof(Vertex3D) * numberOfVertices);
+	vertices = malloc(sizeof(Vector3f) * numberOfVertices);
 	
 	return self;
 }
 
-- (Vertex3D*) getVertices
+- (Vector3f*) getVertices
 {
 	return vertices;
 }

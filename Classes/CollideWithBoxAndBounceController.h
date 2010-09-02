@@ -14,10 +14,10 @@
 
 @interface CollideWithBoxAndBounceController : Controller {
 	VertexArray* vertices;
-	Vertex3D* velocities;
+	Vector3f* velocities;
 	NSMutableArray* collisionPlanes;
 }
--(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vertex3D*) sourceVelocities;
+-(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vector3f*) sourceVelocities;
 -(void) update;
 
 @end

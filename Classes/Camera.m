@@ -3,12 +3,12 @@
 
 @implementation Camera
 
--(id) initAtPosition: (Vector3D*) position withTarget: (Vector3D*) target andUpDirection: (Vector3D*) up {
+-(id) initAtPosition: (Vector3f*) position withTarget: (Vector3f*) target andUpDirection: (Vector3f*) up {
 	[self moveCameraTo: position withTarget: target andUpDirection: up];
 	return self;
 }
 
--(void) moveCameraTo: (Vector3D*) position withTarget: (Vector3D*) target andUpDirection: (Vector3D*) up {
+-(void) moveCameraTo: (Vector3f*) position withTarget: (Vector3f*) target andUpDirection: (Vector3f*) up {
 	glLoadIdentity(); 
 	gluLookAt(position->x, position->y, position->z,
 			  target->x, target->y, target->z,

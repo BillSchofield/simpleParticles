@@ -10,21 +10,21 @@
 
 
 @implementation BounceInsideBoxController
--(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vertex3D*) sourceVelocities withSpawner:(Spawner*) sourceSpawner
+-(id) initWithVertices: (VertexArray*) sourceVertices withVelocities:(Vector3f*) sourceVelocities withSpawner:(Spawner*) sourceSpawner
 {
 	vertices = sourceVertices;
 	velocities = sourceVelocities;
 	spawner = sourceSpawner;
 	[spawner retain];
 	
-	collisionPlane = [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,1) andOffset: -2];
+	collisionPlane = [[Plane alloc] initWithNormalVector: Vector3fMake(0,0,1) andOffset: -2];
 	collisionPlanes = [[NSMutableArray alloc] init];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(1,0,0) andOffset: -2]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(-1,0,0) andOffset: -2]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,1,0) andOffset: -2]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,-1,0) andOffset: -2]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,1) andOffset: -2]];
-	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vertex3DMake(0,0,-1) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(1,0,0) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(-1,0,0) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(0,1,0) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(0,-1,0) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(0,0,1) andOffset: -2]];
+	[collisionPlanes addObject: [[Plane alloc] initWithNormalVector: Vector3fMake(0,0,-1) andOffset: -2]];
 	
 
 	return self;
@@ -35,12 +35,12 @@
 	const int numberOfVertices = [vertices getNumberOfVertices];
 	for (int i=0; i<numberOfVertices; ++i) 
 	{
-		Vertex3D* vertex = &([vertices getVertices][i]);
+		Vector3f* vertex = &([vertices getVertices][i]);
 		for (id plane in collisionPlanes)
 		{
 			if ( [plane isBelow: vertex] )
 			{
-				Vertex3DSet(&velocities[i], 0, 0, 0);
+				Vector3fSet(&velocities[i], 0, 0, 0);
 				[plane movePointToPlane: vertex];
 				
 //				if (fabs(velocities[i].z) < 0.05)

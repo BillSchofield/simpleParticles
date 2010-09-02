@@ -2,9 +2,9 @@
 #import "Timer.h"
 
 @interface GravityParticleEmitterFactory : NSObject {
-	Vector3D* acceleration;
+	Vector3f* acceleration;
 	Timer* timer;
 }
-- (id) initWithGravity: (Vector3D*) sourceAcceleration andWithTimer: (Timer*) sourceTimer;
+- (id) initWithGravity: (Vector3f*) sourceAcceleration andWithTimer: (Timer*) sourceTimer;
 - (id) create;
 @end

@@ -11,7 +11,7 @@
 
 @implementation RandomFrictionController
 
--(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer: (Timer*) sourceTimer
+-(id) initWithVelocities: (Vector3f*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer: (Timer*) sourceTimer
 {
 	velocities = sourceVelocities;
 	numberOfVelocities = sourceNumberOfVelocities;
@@ -30,7 +30,7 @@
 	for (int i=0; i<numberOfVelocities; ++i) 
 	{
 		float dragCoefficient = 1 - ((1 - frictionCoefficients[i]) * [timer timeSinceLastUpdateInSeconds]);
-		Vector3DScale(&velocities[i], dragCoefficient);
+		Vector3fScale(&velocities[i], dragCoefficient);
 	}
 }
 

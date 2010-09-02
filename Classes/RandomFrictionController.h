@@ -10,11 +10,11 @@
 #import "Timer.h"
 
 @interface RandomFrictionController : NSObject {
-	Vertex3D* velocities;
+	Vector3f* velocities;
 	float* frictionCoefficients;
 	int numberOfVelocities;
 	Timer* timer;
 }
--(id) initWithVelocities: (Vertex3D*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer: (Timer*) sourceTimer;
+-(id) initWithVelocities: (Vector3f*) sourceVelocities andNumberOfVelocities: (int) sourceNumberOfVelocities andWithTimer: (Timer*) sourceTimer;
 -(void) update;
 @end

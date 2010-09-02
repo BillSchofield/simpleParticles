@@ -9,7 +9,7 @@
 #import "PolarCoordinatePositionController.h"
 
 @interface PolarCoordinatePositionController ()
-@property Vertex3D* particles;
+@property Vector3f* particles;
 @property size_t numberOfParticles;
 @end
 
@@ -18,7 +18,7 @@
 @synthesize particles;
 @synthesize numberOfParticles;
 
-- (void) rotateAndScaleVertex: (GLfloat) radius theta: (GLfloat) theta vertex_p: (Vertex3D *) vertex_p  
+- (void) rotateAndScaleVertex: (GLfloat) radius theta: (GLfloat) theta vertex_p: (Vector3f *) vertex_p  
 {
 	vertex_p->x = cos(theta) * radius;
 	vertex_p->y = sin(theta) * radius;	
@@ -56,7 +56,7 @@
 	}
 	for (int i=0; i<numberOfParticles; ++i) 
 	{
-		Vertex3D* currentVertex = &particles[i];
+		Vector3f* currentVertex = &particles[i];
 		[self rotateAndScaleVertex: radii[i] theta: theta + thetaIncrement * i vertex_p: currentVertex];
 	}
 }

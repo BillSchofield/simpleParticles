@@ -11,9 +11,9 @@
 #import "Camera.h"
 
 @interface FollowParticleCameraController : Controller {
-	Vector3D* position;
+	Vector3f* position;
 	Camera* camera;
 }
--(id)initWithPositionToFollow: (Vector3D*)sourceVector; 
+-(id)initWithPositionToFollow: (Vector3f*)sourceVector; 
 
 @end

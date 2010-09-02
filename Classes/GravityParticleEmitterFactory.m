@@ -19,21 +19,21 @@
 @implementation GravityParticleEmitterFactory
 
 
-- (id) initWithGravity: (Vector3D*) sourceAcceleration andWithTimer: (Timer*) sourceTimer {
+- (id) initWithGravity: (Vector3f*) sourceAcceleration andWithTimer: (Timer*) sourceTimer {
 	acceleration = sourceAcceleration;
 	timer = sourceTimer;
 	
 	return self;
 }
 - (id) create{
-	Vector3D cameraPosition = {0, 4, 0};
-	Vector3D cameraTarget = {0, 0, 0};
-	Vector3D cameraUp = {0, 0, 1};
+	Vector3f cameraPosition = {0, 4, 0};
+	Vector3f cameraTarget = {0, 0, 0};
+	Vector3f cameraUp = {0, 0, 1};
 	
 	const int numberOfParticles = 8192;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
 	Color3D* colors = malloc(sizeof(Color3D) * numberOfParticles);
-	Vertex3D* velocities = malloc(sizeof(Vertex3D) * numberOfParticles);
+	Vector3f* velocities = malloc(sizeof(Vector3f) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 
 	[controllers addObject: [[FixedCameraController alloc] initAtPosition: &cameraPosition withTarget: &cameraTarget andUpDirection: &cameraUp]];

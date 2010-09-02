@@ -12,14 +12,14 @@
 @implementation AccelerationFromAccelerometerController
 @synthesize accelerometer;
 
--(id)initWithAcceleration: (Vector3D*)accelerationToControl {
+-(id)initWithAcceleration: (Vector3f*)accelerationToControl {
 	acceleration = accelerationToControl;
 
 	self.accelerometer = [UIAccelerometer sharedAccelerometer];
 	self.accelerometer.updateInterval = .1;
 	self.accelerometer.delegate = self;
 	
-	Vector3DSet(acceleration, 0, 0, -2);
+	Vector3fSet(acceleration, 0, 0, -2);
 	return self;
 }
 
@@ -30,7 +30,7 @@
 		time = 0;
 		float pitch = [RandomFloat randomFrom: 0.0 to: PI2];
 		float yaw = [RandomFloat randomFrom: 0.0 to: PI2];
-		Vector3DRotateToDirection(pitch, yaw, acceleration);	
+		Vector3fRotateToDirection(pitch, yaw, acceleration);	
 	}
 }
 
@@ -41,7 +41,7 @@
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)updateAcceleration {
-	Vector3DSet(acceleration, -updateAcceleration.x, updateAcceleration.z, updateAcceleration.y);
+	Vector3fSet(acceleration, -updateAcceleration.x, updateAcceleration.z, updateAcceleration.y);
 }
 
 @end

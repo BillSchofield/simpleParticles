@@ -10,7 +10,7 @@
 
 @implementation AccelerationController
 
--(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vertex3D*) sourceVelocities withAcceleration: (Vertex3D*) sourceAcceleration andWithTimer: (Timer*) sourceTimer {
+-(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vector3f*) sourceVelocities withAcceleration: (Vector3f*) sourceAcceleration andWithTimer: (Timer*) sourceTimer {
 	particles = [vertices getVertices];
 	numberOfParticles = [vertices getNumberOfVertices];
 	acceleration = sourceAcceleration;
@@ -22,8 +22,8 @@
 -(void) update {
 	float timeScale = [timer timeSinceLastUpdateInSeconds];
 	for (int i=0; i<numberOfParticles; ++i) {
-		Vector3DScaleAndAccumulate(&velocities[i], timeScale, acceleration);
-		Vector3DScaleAndAccumulate(&particles[i], timeScale, &velocities[i]);
+		Vector3fScaleAndAccumulate(&velocities[i], timeScale, acceleration);
+		Vector3fScaleAndAccumulate(&particles[i], timeScale, &velocities[i]);
 	}
 }
 @end
