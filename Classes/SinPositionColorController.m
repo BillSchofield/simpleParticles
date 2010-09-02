@@ -10,7 +10,7 @@
 
 
 @implementation SinPositionColorController
--(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate andScale: (float) sourceScale
+-(id) init: (VertexArray*) positions withColors:(Color*) colorsToUpdate andScale: (float) sourceScale
 {
 	particles = [positions getVertices];
 	colors = colorsToUpdate;
@@ -24,9 +24,9 @@
 	float inverseScale = 1.0/scale;
 	for (int i=0; i<numberOfParticles; ++i) 
 	{		
-		colors[i].red = fastSinf(particles[i].x * inverseScale);
-		colors[i].green = fastSinf(particles[i].y * inverseScale);
-		colors[i].blue = fastSinf(particles[i].z * inverseScale);
+		colors[i].red = sin(particles[i].x * inverseScale);
+		colors[i].green = sin(particles[i].y * inverseScale);
+		colors[i].blue = sin(particles[i].z * inverseScale);
 		colors[i].alpha = 1.0;
 	}
 }

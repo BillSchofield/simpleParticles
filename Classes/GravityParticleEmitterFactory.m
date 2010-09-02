@@ -15,6 +15,7 @@
 #import "RandomVelocityJitterController.h"
 #import "AccelerationFromAccelerometerController.h"
 #import "FixedCameraController.h"
+#import "Color.h"
 
 @implementation GravityParticleEmitterFactory
 
@@ -32,7 +33,7 @@
 	
 	const int numberOfParticles = 8192;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
-	Color3D* colors = malloc(sizeof(Color3D) * numberOfParticles);
+	Color* colors = malloc(sizeof(Color) * numberOfParticles);
 	Vector3f* velocities = malloc(sizeof(Vector3f) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 

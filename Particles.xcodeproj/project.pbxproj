@@ -25,6 +25,7 @@
 		D66648BD122F1A16001C2C34 /* FixedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66648BC122F1A16001C2C34 /* FixedCameraController.m */; };
 		D6664933122F2B5A001C2C34 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = D6664932122F2B5A001C2C34 /* Camera.m */; };
 		D666493E122F2E04001C2C34 /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = D666493D122F2E04001C2C34 /* Vector3f.m */; };
+		D66649F8122F3D97001C2C34 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D66649F7122F3D97001C2C34 /* Color.m */; };
 		D6AF628412122BA200FFC158 /* AccelerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */; };
 		D6AF628512122BA200FFC158 /* PolarCoordinatePositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */; };
 		D6AF628612122BA200FFC158 /* PositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628312122BA200FFC158 /* PositionColorController.m */; };
@@ -83,6 +84,8 @@
 		D6664932122F2B5A001C2C34 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 		D666493C122F2E04001C2C34 /* Vector3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3f.h; sourceTree = "<group>"; };
 		D666493D122F2E04001C2C34 /* Vector3f.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector3f.m; sourceTree = "<group>"; };
+		D66649F6122F3D97001C2C34 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		D66649F7122F3D97001C2C34 /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
 		D6AF627E12122BA200FFC158 /* AccelerationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerationController.h; sourceTree = "<group>"; };
 		D6AF627F12122BA200FFC158 /* AccelerationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerationController.m; sourceTree = "<group>"; };
 		D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolarCoordinatePositionController.h; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 				D6E0A8B71229F56800D83B2E /* RandomFloat.m */,
 				D666493C122F2E04001C2C34 /* Vector3f.h */,
 				D666493D122F2E04001C2C34 /* Vector3f.m */,
+				D66649F6122F3D97001C2C34 /* Color.h */,
+				D66649F7122F3D97001C2C34 /* Color.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				D66648BD122F1A16001C2C34 /* FixedCameraController.m in Sources */,
 				D6664933122F2B5A001C2C34 /* Camera.m in Sources */,
 				D666493E122F2E04001C2C34 /* Vector3f.m in Sources */,
+				D66649F8122F3D97001C2C34 /* Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

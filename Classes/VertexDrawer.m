@@ -11,7 +11,7 @@
 
 @implementation VertexDrawer
 
-- (void) Draw: (VertexArray*) vertexArray colorArray: (Color3D *) colorArray
+- (void) Draw: (VertexArray*) vertexArray colorArray: (Color *) colorArray
 {
 	glVertexPointer(3, GL_FLOAT, 0, [vertexArray getVertices]);
 	glColorPointer(4, GL_FLOAT, 0, colorArray);

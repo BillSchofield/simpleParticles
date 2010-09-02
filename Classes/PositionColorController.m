@@ -1,16 +1,8 @@
-//
-//  RadiusParticleColorController.m
-//  Particles
-//
-//  Created by bschofil on 8/8/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "PositionColorController.h"
 
 @implementation PositionColorController
 
--(id) init: (VertexArray*) positions withColors:(Color3D*) colorsToUpdate andScale: (float) sourceScale
+-(id) init: (VertexArray*) positions withColors:(Color*) colorsToUpdate andScale: (float) sourceScale
 {
 	particles = [positions getVertices];
 	colors = colorsToUpdate;

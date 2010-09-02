@@ -1,11 +1,3 @@
-//
-//  ConstantColorController.m
-//  Particles
-//
-//  Created by bschofil on 8/12/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "ConstantColorController.h"
 
 
@@ -18,7 +10,7 @@
 	return (random()%largeNumber)*difference/largeNumber + lowerBound;
 }
 
--(id) initWithColors:(Color3D*) colors withNumberOfColors: (int) numberOfColors;
+-(id) initWithColors:(Color*) colors withNumberOfColors: (int) numberOfColors;
 {
 	for (int i=0; i<numberOfColors; ++i) 
 	{		

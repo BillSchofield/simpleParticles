@@ -1,16 +1,8 @@
-//
-//  ParticleEmitter.m
-//  Particles
-//
-//  Created by bschofil on 8/11/10.
-//  Copyright 2010 ThoughtWorks. All rights reserved.
-//
-
 #import "ParticleEmitter.h"
 
 @implementation ParticleEmitter
 
-- (id) init: (VertexArray *) particlesIn withColors: (Color3D *) colorsIn withControllers: (NSMutableArray *) controllersIn  
+- (id) init: (VertexArray *) particlesIn withColors: (Color*) colorsIn withControllers: (NSMutableArray *) controllersIn  
 {
 	particles = particlesIn;
 	colors = colorsIn;

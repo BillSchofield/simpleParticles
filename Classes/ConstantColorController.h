@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "Controller.h"
-#import "OpenGLCommon.h"
+#import "Color.h"
 
 @interface ConstantColorController : Controller 
 {
 }
--(id) initWithColors:(Color3D*) colors withNumberOfColors: (int) numberOfColors;
+-(id) initWithColors:(Color*) colors withNumberOfColors: (int) numberOfColors;
 -(void) update;
 @end

@@ -15,7 +15,7 @@
 
 	const int numberOfParticles = 1024;
 	VertexArray* particles = [[VertexArray alloc] init: numberOfParticles];
-	Color3D* colors = malloc(sizeof(Color3D) * numberOfParticles);
+	Color* colors = malloc(sizeof(Color) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 	
 	[controllers addObject: [[FixedCameraController alloc] initAtPosition: &cameraPosition withTarget: &cameraTarget andUpDirection: &cameraUp]];
