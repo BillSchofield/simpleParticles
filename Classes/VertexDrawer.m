@@ -1,5 +1,9 @@
 #import "VertexDrawer.h"
-#import "OpenGLCommon.h"
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR || TARGET_OS_EMBEDDED
+#import <OpenGLES/ES1/gl.h>
+#else
+#import <OpenGL/OpenGL.h>
+#endif
 
 @implementation VertexDrawer
 

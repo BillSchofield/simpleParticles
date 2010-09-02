@@ -13,7 +13,6 @@
 #import <OpenGL/OpenGL.h>
 #endif
 #import "ConstantsAndMacros.h"
-#import "Vector3f.h"
 
 @class OpenGLWaveFrontMaterial;
 #pragma mark -
