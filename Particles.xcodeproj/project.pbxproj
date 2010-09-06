@@ -20,10 +20,9 @@
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		D602A3B11225D696006F87FC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A3B01225D696006F87FC /* Application.m */; };
-		D602A4161225ECA2006F87FC /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A4151225ECA2006F87FC /* Timer.m */; };
 		D653EE391219FE5D00096B44 /* BounceInsideBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653EE381219FE5D00096B44 /* BounceInsideBoxController.m */; };
 		D66648BD122F1A16001C2C34 /* FixedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66648BC122F1A16001C2C34 /* FixedCameraController.m */; };
-		D6664933122F2B5A001C2C34 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = D6664932122F2B5A001C2C34 /* Camera.m */; };
+		D6664933122F2B5A001C2C34 /* GLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D6664932122F2B5A001C2C34 /* GLCamera.m */; };
 		D666493E122F2E04001C2C34 /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = D666493D122F2E04001C2C34 /* Vector3f.m */; };
 		D66649F8122F3D97001C2C34 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D66649F7122F3D97001C2C34 /* Color.m */; };
 		D6AF628412122BA200FFC158 /* AccelerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */; };
@@ -39,6 +38,29 @@
 		D6B7D68812232B9A0029B9CF /* AccelerationFromAccelerometerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */; };
 		D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D72812233A590029B9CF /* SinPositionColorController.m */; };
 		D6B8F8321216227300E79E18 /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
+		D6D8E3131232FB79001242CC /* AccelerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */; };
+		D6D8E31D1232FC03001242CC /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF6315121300BB00FFC158 /* Controller.m */; };
+		D6D8E3BF1233F5C5001242CC /* CollideWithBoxAndBounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m */; };
+		D6D8E3C01233F5C7001242CC /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D66649F7122F3D97001C2C34 /* Color.m */; };
+		D6D8E3C11233F5CC001242CC /* ConstantColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CE2D1214FCA60009075B /* ConstantColorController.m */; };
+		D6D8E3C21233F5D6001242CC /* FixedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66648BC122F1A16001C2C34 /* FixedCameraController.m */; };
+		D6D8E3C31233F5D9001242CC /* FollowParticleCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E0A95B122A0D8000D83B2E /* FollowParticleCameraController.m */; };
+		D6D8E3C51233F5E4001242CC /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
+		D6D8E3C91233F5F0001242CC /* PositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628312122BA200FFC158 /* PositionColorController.m */; };
+		D6D8E3CD1233F5FA001242CC /* SinPositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D72812233A590029B9CF /* SinPositionColorController.m */; };
+		D6D8E3CE1233F5FF001242CC /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
+		D6D8E3CF1233F601001242CC /* Spawner.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6ECA212174AA30008C46F /* Spawner.m */; };
+		D6D8E3D11233F606001242CC /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = D666493D122F2E04001C2C34 /* Vector3f.m */; };
+		D6D8E3D31233F611001242CC /* VectorFieldPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D50C121E159B0029B9CF /* VectorFieldPositionController.m */; };
+		D6D8E4491233FA4A001242CC /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D331121CB2F70029B9CF /* Plane.m */; };
+		D6D8E44A1233FA4D001242CC /* RandomFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E0A8B71229F56800D83B2E /* RandomFloat.m */; };
+		D6D8E4581233FA88001242CC /* VertexArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CCC012145B3C0009075B /* VertexArray.m */; };
+		D6D8E4EB12343EF3001242CC /* NSDateTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8E4EA12343EF3001242CC /* NSDateTimer.m */; };
+		D6D8E4EC12343EF3001242CC /* NSDateTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8E4EA12343EF3001242CC /* NSDateTimer.m */; };
+		D6D8E50612344E6B001242CC /* FakeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8E50512344E6B001242CC /* FakeTimer.m */; };
+		D6D8E51812345149001242CC /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8E51712345149001242CC /* Timer.m */; };
+		D6D8E51912345149001242CC /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8E51712345149001242CC /* Timer.m */; };
+		D6D8E58E12346DEC001242CC /* AccelerationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8E58D12346DEC001242CC /* AccelerationControllerTests.m */; };
 		D6E0A8B81229F56800D83B2E /* RandomFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E0A8B71229F56800D83B2E /* RandomFloat.m */; };
 		D6E0A95C122A0D8000D83B2E /* FollowParticleCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E0A95B122A0D8000D83B2E /* FollowParticleCameraController.m */; };
 		D6F0CAC2121372C20009075B /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
@@ -57,8 +79,8 @@
 		1D6058910D05DD3D006BFB54 /* Particles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Particles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F92F5E80FDFF83200548BE8 /* ConstantsAndMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantsAndMacros.h; sourceTree = "<group>"; };
-		1F92F5E90FDFF83200548BE8 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLViewController.h; path = Classes/GLViewController.h; sourceTree = SOURCE_ROOT; };
-		1F92F5EA0FDFF83200548BE8 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLViewController.m; path = Classes/GLViewController.m; sourceTree = SOURCE_ROOT; };
+		1F92F5E90FDFF83200548BE8 /* GLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
+		1F92F5EA0FDFF83200548BE8 /* GLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
 		1F92F5EB0FDFF83200548BE8 /* OpenGLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCommon.h; sourceTree = "<group>"; };
 		1F99BC40116CBBE800AD7B28 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		1FF404F20FF2AC4B00D17C20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,13 +97,12 @@
 		D602A3AF1225D696006F87FC /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 		D602A3B01225D696006F87FC /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
 		D602A4141225ECA2006F87FC /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
-		D602A4151225ECA2006F87FC /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		D653EE371219FE5D00096B44 /* BounceInsideBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceInsideBoxController.h; sourceTree = "<group>"; };
 		D653EE381219FE5D00096B44 /* BounceInsideBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceInsideBoxController.m; sourceTree = "<group>"; };
 		D66648BB122F1A16001C2C34 /* FixedCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedCameraController.h; sourceTree = "<group>"; };
 		D66648BC122F1A16001C2C34 /* FixedCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedCameraController.m; sourceTree = "<group>"; };
-		D6664931122F2B5A001C2C34 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
-		D6664932122F2B5A001C2C34 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		D6664931122F2B5A001C2C34 /* GLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCamera.h; sourceTree = "<group>"; };
+		D6664932122F2B5A001C2C34 /* GLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCamera.m; sourceTree = "<group>"; };
 		D666493C122F2E04001C2C34 /* Vector3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3f.h; sourceTree = "<group>"; };
 		D666493D122F2E04001C2C34 /* Vector3f.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector3f.m; sourceTree = "<group>"; };
 		D66649F6122F3D97001C2C34 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
@@ -112,6 +133,16 @@
 		D6B7D72812233A590029B9CF /* SinPositionColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinPositionColorController.m; sourceTree = "<group>"; };
 		D6B8F8301216227300E79E18 /* SpawnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnController.h; sourceTree = "<group>"; };
 		D6B8F8311216227300E79E18 /* SpawnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnController.m; sourceTree = "<group>"; };
+		D6D8E30B1232FB0C001242CC /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D8E30C1232FB0C001242CC /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		D6D8E45F1233FCA0001242CC /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		D6D8E4E912343EF3001242CC /* NSDateTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateTimer.h; sourceTree = "<group>"; };
+		D6D8E4EA12343EF3001242CC /* NSDateTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateTimer.m; sourceTree = "<group>"; };
+		D6D8E50412344E6B001242CC /* FakeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeTimer.h; sourceTree = "<group>"; };
+		D6D8E50512344E6B001242CC /* FakeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeTimer.m; sourceTree = "<group>"; };
+		D6D8E51712345149001242CC /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		D6D8E58C12346DEC001242CC /* AccelerationControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerationControllerTests.h; sourceTree = "<group>"; };
+		D6D8E58D12346DEC001242CC /* AccelerationControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerationControllerTests.m; sourceTree = "<group>"; };
 		D6E0A8B61229F56800D83B2E /* RandomFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomFloat.h; sourceTree = "<group>"; };
 		D6E0A8B71229F56800D83B2E /* RandomFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomFloat.m; sourceTree = "<group>"; };
 		D6E0A95A122A0D8000D83B2E /* FollowParticleCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowParticleCameraController.h; sourceTree = "<group>"; };
@@ -145,6 +176,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D8E3081232FB0C001242CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -154,28 +192,11 @@
 				D6F0CDC91214F6580009075B /* Controllers */,
 				D6F0CE5B1215041E0009075B /* Emitters */,
 				D6F0CC6E121447E50009075B /* Framework */,
+				D6D8E33F1232FE28001242CC /* Renderer */,
+				D6D8E3401232FEA4001242CC /* Simulation */,
+				D6D8E50212344E18001242CC /* Tests */,
 				D602A3AF1225D696006F87FC /* Application.h */,
 				D602A3B01225D696006F87FC /* Application.m */,
-				D6664931122F2B5A001C2C34 /* Camera.h */,
-				D6664932122F2B5A001C2C34 /* Camera.m */,
-				1F92F5E90FDFF83200548BE8 /* GLViewController.h */,
-				1F92F5EA0FDFF83200548BE8 /* GLViewController.m */,
-				D6F0CB3A121380DD0009075B /* VertexDrawer.h */,
-				D6F0CB3B121380DD0009075B /* VertexDrawer.m */,
-				D6F0CCBF12145B3C0009075B /* VertexArray.h */,
-				D6F0CCC012145B3C0009075B /* VertexArray.m */,
-				D6F6ECA112174AA30008C46F /* Spawner.h */,
-				D6F6ECA212174AA30008C46F /* Spawner.m */,
-				D6B7D330121CB2F70029B9CF /* Plane.h */,
-				D6B7D331121CB2F70029B9CF /* Plane.m */,
-				D602A4141225ECA2006F87FC /* Timer.h */,
-				D602A4151225ECA2006F87FC /* Timer.m */,
-				D6E0A8B61229F56800D83B2E /* RandomFloat.h */,
-				D6E0A8B71229F56800D83B2E /* RandomFloat.m */,
-				D666493C122F2E04001C2C34 /* Vector3f.h */,
-				D666493D122F2E04001C2C34 /* Vector3f.m */,
-				D66649F6122F3D97001C2C34 /* Color.h */,
-				D66649F7122F3D97001C2C34 /* Color.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -184,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Particles.app */,
+				D6D8E30B1232FB0C001242CC /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +227,7 @@
 				1F99BC3D116CBBE700AD7B28 /* Resources-iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				D6D8E30C1232FB0C001242CC /* UnitTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -237,6 +260,62 @@
 				1FF404F20FF2AC4B00D17C20 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6D8E33F1232FE28001242CC /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8E45F1233FCA0001242CC /* Camera.h */,
+				D6664931122F2B5A001C2C34 /* GLCamera.h */,
+				D6664932122F2B5A001C2C34 /* GLCamera.m */,
+				1F92F5E90FDFF83200548BE8 /* GLViewController.h */,
+				1F92F5EA0FDFF83200548BE8 /* GLViewController.m */,
+				D6F0CB3A121380DD0009075B /* VertexDrawer.h */,
+				D6F0CB3B121380DD0009075B /* VertexDrawer.m */,
+				D6F0CCBF12145B3C0009075B /* VertexArray.h */,
+				D6F0CCC012145B3C0009075B /* VertexArray.m */,
+				D666493C122F2E04001C2C34 /* Vector3f.h */,
+				D666493D122F2E04001C2C34 /* Vector3f.m */,
+				D66649F6122F3D97001C2C34 /* Color.h */,
+				D66649F7122F3D97001C2C34 /* Color.m */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+		D6D8E3401232FEA4001242CC /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8E4E912343EF3001242CC /* NSDateTimer.h */,
+				D6D8E4EA12343EF3001242CC /* NSDateTimer.m */,
+				D6B7D330121CB2F70029B9CF /* Plane.h */,
+				D6B7D331121CB2F70029B9CF /* Plane.m */,
+				D6E0A8B61229F56800D83B2E /* RandomFloat.h */,
+				D6E0A8B71229F56800D83B2E /* RandomFloat.m */,
+				D6F6ECA112174AA30008C46F /* Spawner.h */,
+				D6F6ECA212174AA30008C46F /* Spawner.m */,
+				D602A4141225ECA2006F87FC /* Timer.h */,
+				D6D8E51712345149001242CC /* Timer.m */,
+			);
+			name = Simulation;
+			sourceTree = "<group>";
+		};
+		D6D8E50212344E18001242CC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8E58C12346DEC001242CC /* AccelerationControllerTests.h */,
+				D6D8E58D12346DEC001242CC /* AccelerationControllerTests.m */,
+				D6D8E50312344E2F001242CC /* TestDoubles */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		D6D8E50312344E2F001242CC /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				D6D8E50412344E6B001242CC /* FakeTimer.h */,
+				D6D8E50512344E6B001242CC /* FakeTimer.m */,
+			);
+			name = TestDoubles;
 			sourceTree = "<group>";
 		};
 		D6F0CC6E121447E50009075B /* Framework */ = {
@@ -334,6 +413,24 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* Particles.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D6D8E30A1232FB0C001242CC /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D8E30F1232FB0D001242CC /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				D6D8E3061232FB0C001242CC /* Resources */,
+				D6D8E3071232FB0C001242CC /* Sources */,
+				D6D8E3081232FB0C001242CC /* Frameworks */,
+				D6D8E3091232FB0C001242CC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = D6D8E30B1232FB0C001242CC /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -347,6 +444,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Particles */,
+				D6D8E30A1232FB0C001242CC /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -361,7 +459,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6D8E3061232FB0C001242CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D6D8E3091232FB0C001242CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -395,13 +516,42 @@
 				D6B7D68812232B9A0029B9CF /* AccelerationFromAccelerometerController.m in Sources */,
 				D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */,
 				D602A3B11225D696006F87FC /* Application.m in Sources */,
-				D602A4161225ECA2006F87FC /* Timer.m in Sources */,
 				D6E0A8B81229F56800D83B2E /* RandomFloat.m in Sources */,
 				D6E0A95C122A0D8000D83B2E /* FollowParticleCameraController.m in Sources */,
 				D66648BD122F1A16001C2C34 /* FixedCameraController.m in Sources */,
-				D6664933122F2B5A001C2C34 /* Camera.m in Sources */,
+				D6664933122F2B5A001C2C34 /* GLCamera.m in Sources */,
 				D666493E122F2E04001C2C34 /* Vector3f.m in Sources */,
 				D66649F8122F3D97001C2C34 /* Color.m in Sources */,
+				D6D8E4EC12343EF3001242CC /* NSDateTimer.m in Sources */,
+				D6D8E51912345149001242CC /* Timer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D8E3071232FB0C001242CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D8E3131232FB79001242CC /* AccelerationController.m in Sources */,
+				D6D8E31D1232FC03001242CC /* Controller.m in Sources */,
+				D6D8E3BF1233F5C5001242CC /* CollideWithBoxAndBounceController.m in Sources */,
+				D6D8E3C01233F5C7001242CC /* Color.m in Sources */,
+				D6D8E3C11233F5CC001242CC /* ConstantColorController.m in Sources */,
+				D6D8E3C21233F5D6001242CC /* FixedCameraController.m in Sources */,
+				D6D8E3C31233F5D9001242CC /* FollowParticleCameraController.m in Sources */,
+				D6D8E3C51233F5E4001242CC /* ParticleEmitter.m in Sources */,
+				D6D8E3C91233F5F0001242CC /* PositionColorController.m in Sources */,
+				D6D8E3CD1233F5FA001242CC /* SinPositionColorController.m in Sources */,
+				D6D8E3CE1233F5FF001242CC /* SpawnController.m in Sources */,
+				D6D8E3CF1233F601001242CC /* Spawner.m in Sources */,
+				D6D8E3D11233F606001242CC /* Vector3f.m in Sources */,
+				D6D8E3D31233F611001242CC /* VectorFieldPositionController.m in Sources */,
+				D6D8E4491233FA4A001242CC /* Plane.m in Sources */,
+				D6D8E44A1233FA4D001242CC /* RandomFloat.m in Sources */,
+				D6D8E4581233FA88001242CC /* VertexArray.m in Sources */,
+				D6D8E4EB12343EF3001242CC /* NSDateTimer.m in Sources */,
+				D6D8E50612344E6B001242CC /* FakeTimer.m in Sources */,
+				D6D8E51812345149001242CC /* Timer.m in Sources */,
+				D6D8E58E12346DEC001242CC /* AccelerationControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +620,64 @@
 			};
 			name = Release;
 		};
+		D6D8E30D1232FB0C001242CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D6D8E30E1232FB0C001242CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +695,15 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6D8E30F1232FB0D001242CC /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D8E30D1232FB0C001242CC /* Debug */,
+				D6D8E30E1232FB0C001242CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,5 @@
 //
-//  Timer.m
+//  NSDateTimer.h
 //  Particles
 //
 //  Created by bschofil on 9/5/10.
@@ -8,16 +8,9 @@
 
 #import "Timer.h"
 
-@implementation Timer
--(id)init {
-	return self;
-}
-
--(void) update{
-}
-
--(double) lastUpdateTimeInSeconds{
-	return 0;
+@interface NSDateTimer : Timer {
+	double timeOfLastUpdate;
+	double timeUpdateInterval;
 }
 
 @end

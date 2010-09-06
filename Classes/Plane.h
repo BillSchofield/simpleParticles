@@ -1,3 +1,4 @@
+#import <Foundation/Foundation.h> 
 #import "Vector3f.h"
 
 @interface Plane : NSObject {

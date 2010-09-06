@@ -2,10 +2,11 @@
 #import "GravityParticleEmitterFactory.h"
 #import "PolarCoordinateEmitterFactory.h"
 #import "VectorFieldEmitterFactory.h"
+#import "NSDateTimer.h"
 
 @implementation Application
 -(id) init{
-	updateTimer = [[Timer alloc] init];
+	updateTimer = [[NSDateTimer alloc] init];
 	emitterFactories = [[NSMutableArray alloc] init];
 	[emitterFactories addObject: [[GravityParticleEmitterFactory alloc] initWithGravity: &currentAcceleration andWithTimer: updateTimer]];
 	[emitterFactories addObject: [VectorFieldEmitterFactory alloc]];

@@ -13,6 +13,7 @@
 #import "ParticleEmitter.h"
 #import "FollowParticleCameraController.h"
 #import "Color.h"
+#import "GLCamera.h"
 
 @implementation VectorFieldEmitterFactory
 
@@ -25,7 +26,7 @@
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];	
 	[controllers addObject: [[VectorFieldPositionController alloc] initWithVertices:particles]];	
 	[controllers addObject: [[SinPositionColorController alloc] init:particles withColors:colors andScale: 1]];
-	[controllers addObject: [[FollowParticleCameraController alloc] initWithPositionToFollow:[particles getVertices]]];
+	[controllers addObject: [[FollowParticleCameraController alloc] initWithCamera: [GLCamera alloc] andPositionToFollow:[particles getVertices]]];
 	
 	return [[ParticleEmitter alloc] init: particles withColors:colors withControllers:controllers];
 }

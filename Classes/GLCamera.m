@@ -1,4 +1,4 @@
-#import "Camera.h"
+#import "GLCamera.h"
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR || TARGET_OS_EMBEDDED
 #import <OpenGLES/ES1/gl.h>
 #else
@@ -20,7 +20,7 @@ static inline void gluLookAt(float eyex, float eyey, float eyez,
 	z[1] = eyey - centery;
 	z[2] = eyez - centerz;
 	mag = sqrtf(z[0] * z[0] + z[1] * z[1] + z[2] * z[2]);
-	if (mag) {			/* mpichler, 19950515 */
+	if (mag) {
 		z[0] /= mag;
 		z[1] /= mag;
 		z[2] /= mag;
@@ -40,12 +40,7 @@ static inline void gluLookAt(float eyex, float eyey, float eyez,
 	y[0] = z[1] * x[2] - z[2] * x[1];
 	y[1] = -z[0] * x[2] + z[2] * x[0];
 	y[2] = z[0] * x[1] - z[1] * x[0];
-	
-	/* mpichler, 19950515 */
-	/* cross product gives area of parallelogram, which is < 1.0 for
-	 * non-perpendicular unit-length vectors; so normalize x, y here
-	 */
-	
+		
 	mag = sqrtf(x[0] * x[0] + x[1] * x[1] + x[2] * x[2]);
 	if (mag) {
 		x[0] /= mag;
@@ -85,7 +80,7 @@ static inline void gluLookAt(float eyex, float eyey, float eyez,
 	
 }
 
-@implementation Camera
+@implementation GLCamera
 
 -(id) initAtPosition: (Vector3f*) position withTarget: (Vector3f*) target andUpDirection: (Vector3f*) up {
 	[self moveCameraTo: position withTarget: target andUpDirection: up];

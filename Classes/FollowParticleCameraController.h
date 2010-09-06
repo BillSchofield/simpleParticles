@@ -4,8 +4,8 @@
 
 @interface FollowParticleCameraController : Controller {
 	Vector3f* position;
-	Camera* camera;
+	id<Camera> camera;
 }
--(id)initWithPositionToFollow: (Vector3f*)sourceVector; 
+-(id)initWithCamera: (id<Camera>) sourceCamera andPositionToFollow: (Vector3f*)sourceVector;
 
 @end

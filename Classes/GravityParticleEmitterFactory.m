@@ -8,6 +8,7 @@
 #import "AccelerationFromAccelerometerController.h"
 #import "FixedCameraController.h"
 #import "Color.h"
+#import "GLCamera.h"
 
 @implementation GravityParticleEmitterFactory
 
@@ -29,7 +30,7 @@
 	Vector3f* velocities = malloc(sizeof(Vector3f) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 
-	[controllers addObject: [[FixedCameraController alloc] initAtPosition: &cameraPosition withTarget: &cameraTarget andUpDirection: &cameraUp]];
+	[controllers addObject: [[FixedCameraController alloc] initWithCamera: [GLCamera alloc] atPosition: &cameraPosition withTarget: &cameraTarget andUpDirection: &cameraUp]];
 	[controllers addObject: [[CollideWithBoxAndBounceController alloc] initWithVertices: particles withVelocities:velocities]];
 	[controllers addObject: [[RandomVelocityJitterController alloc] initWithVelocities:velocities andNumberOfVelocities:numberOfParticles andWithTimer: timer]];	
 	[controllers addObject: [[AccelerationController alloc] initWithVertices:particles withVelocities: velocities withAcceleration: acceleration andWithTimer: timer]];

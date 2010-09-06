@@ -3,7 +3,7 @@
 #import "PositionColorController.h"
 #import "ParticleEmitter.h"
 #import "FixedCameraController.h"
-
+#import "GLCamera.h"
 
 @implementation PolarCoordinateEmitterFactory
 
@@ -18,7 +18,7 @@
 	Color* colors = malloc(sizeof(Color) * numberOfParticles);
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];
 	
-	[controllers addObject: [[FixedCameraController alloc] initAtPosition: &cameraPosition withTarget: &cameraTarget andUpDirection: &cameraUp]];
+	[controllers addObject: [[FixedCameraController alloc] initWithCamera: [GLCamera alloc] atPosition: &cameraPosition withTarget: &cameraTarget andUpDirection: &cameraUp]];
 	[controllers addObject: [[PolarCoordinatePositionController alloc] initWithVertices:particles]];
 	[controllers addObject: [[PositionColorController alloc] init:particles withColors:colors andScale: 1.0]];
 	

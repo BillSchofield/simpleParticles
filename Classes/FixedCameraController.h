@@ -3,9 +3,9 @@
 #import "Vector3f.h"
 
 @interface FixedCameraController : Controller {
-	Camera* camera;
+	id<Camera> camera;
 
 }
--(id) initAtPosition: (Vector3f*) position withTarget: (Vector3f*) target andUpDirection: (Vector3f*) up;
+-(id) initWithCamera: (id<Camera>) sourceCamera atPosition: (Vector3f*) position withTarget: (Vector3f*) target andUpDirection: (Vector3f*) up;
 -(void)update;
 @end

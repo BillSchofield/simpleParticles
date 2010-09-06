@@ -5,13 +5,12 @@
 //  Created by bschofil on 8/25/10.
 //  Copyright 2010 ThoughtWorks. All rights reserved.
 //
+#import <Foundation/Foundation.h> 
 
 @interface Timer : NSObject {
-	double timeOfLastUpdate;
-	double timeUpdateInterval;
 }
 -(id) init;
 -(void) update;
--(double) timeSinceLastUpdateInSeconds;
+-(double) lastUpdateTimeInSeconds;
 
 @end

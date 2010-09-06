@@ -21,7 +21,7 @@
 {
 	for (int i=0; i<numberOfVelocities; ++i) 
 	{
-		float dragCoefficient = 1 - ((1 - frictionCoefficients[i]) * [timer timeSinceLastUpdateInSeconds]);
+		float dragCoefficient = 1 - ((1 - frictionCoefficients[i]) * [timer lastUpdateTimeInSeconds]);
 		Vector3fScale(&velocities[i], dragCoefficient);
 	}
 }
