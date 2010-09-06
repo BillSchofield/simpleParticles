@@ -7,10 +7,17 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-
+#import "AccelerationController.h"
+#import "FakeTimer.h"
 
 @interface AccelerationControllerTests : SenTestCase {
-
+	Vector3f initialPosition;
+	Vector3f initialVelocity;
+	VertexArray* positions;
+	Vector3f* velocities;
+	Vector3f acceleration;
+	FakeTimer* timer;
+	AccelerationController* controller;
 }
 
 @end
