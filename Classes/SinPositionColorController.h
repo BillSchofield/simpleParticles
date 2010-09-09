@@ -8,9 +8,8 @@
 	Vector3f* particles;
 	size_t numberOfParticles;
 	Color* colors;
-	float scale;
 }
--(id) init: (VertexArray*) positions withColors:(Color*) colorsToUpdate andScale: (float) sourceScale;
+-(id) init: (VertexArray*) positions withColors:(Color*) colorsToUpdate;
 -(void) update;
 
 @end

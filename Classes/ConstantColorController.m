@@ -14,10 +14,10 @@
 {
 	for (int i=0; i<numberOfColors; ++i) 
 	{		
-		colors[i].red = [self randomFrom:0.0 toMaximum:1.0];
-		colors[i].green	= [self randomFrom:0.0 toMaximum:1.0];
-		colors[i].blue = [self randomFrom:0.0 toMaximum:1.0];
-		colors[i].alpha = [self randomFrom:0.4 toMaximum:1.0];
+		colors[i].red = 255 * [self randomFrom:0.0 toMaximum:1.0];
+		colors[i].green	= 255 * [self randomFrom:0.0 toMaximum:1.0];
+		colors[i].blue = 255 * [self randomFrom:0.0 toMaximum:1.0];
+		colors[i].alpha = 255 * [self randomFrom:0.4 toMaximum:1.0];
 	}
 	
 	return self;

@@ -2,24 +2,22 @@
 
 
 @implementation SinPositionColorController
--(id) init: (VertexArray*) positions withColors:(Color*) colorsToUpdate andScale: (float) sourceScale
+-(id) init: (VertexArray*) positions withColors:(Color*) colorsToUpdate
 {
 	particles = [positions getVertices];
 	colors = colorsToUpdate;
 	numberOfParticles = [positions getNumberOfVertices];
-	scale = sourceScale;
 	return self;
 }
 
 -(void) update
 {
-	float inverseScale = 1.0/scale;
 	for (int i=0; i<numberOfParticles; ++i) 
 	{		
-		colors[i].red = sin(particles[i].x * inverseScale);
-		colors[i].green = sin(particles[i].y * inverseScale);
-		colors[i].blue = sin(particles[i].z * inverseScale);
-		colors[i].alpha = 1.0;
+		colors[i].red = (127 * sin(particles[i].x)) + 127;
+		colors[i].green = (127 * sin(particles[i].y)) + 127;
+		colors[i].blue = (127 * sin(particles[i].z)) + 127;
+		colors[i].alpha = 255;
 	}
 }
 

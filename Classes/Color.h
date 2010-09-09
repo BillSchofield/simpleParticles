@@ -1,8 +1,8 @@
 
 
 typedef struct {
-	float	red;
-	float	green;
-	float	blue;
-	float	alpha;
+	unsigned char	red;
+	unsigned char	green;
+	unsigned char	blue;
+	unsigned char	alpha;
 } Color;

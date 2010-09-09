@@ -25,7 +25,7 @@
 
 	NSMutableArray *controllers = [[NSMutableArray alloc] init];	
 	[controllers addObject: [[VectorFieldPositionController alloc] initWithVertices:particles]];	
-	[controllers addObject: [[SinPositionColorController alloc] init:particles withColors:colors andScale: 1]];
+	[controllers addObject: [[SinPositionColorController alloc] init:particles withColors:colors]];
 	[controllers addObject: [[FollowParticleCameraController alloc] initWithCamera: [GLCamera alloc] andPositionToFollow:[particles getVertices]]];
 	
 	return [[ParticleEmitter alloc] init: particles withColors:colors withControllers:controllers];
