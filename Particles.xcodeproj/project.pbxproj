@@ -22,6 +22,8 @@
 		D602A3B11225D696006F87FC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A3B01225D696006F87FC /* Application.m */; };
 		D632B22D123D9DE000D4980D /* ParticleTrailEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D632B22C123D9DE000D4980D /* ParticleTrailEmitter.m */; };
 		D632B22E123D9DE000D4980D /* ParticleTrailEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D632B22C123D9DE000D4980D /* ParticleTrailEmitter.m */; };
+		D632B288123DB2D000D4980D /* ParticleTrailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D632B287123DB2D000D4980D /* ParticleTrailController.m */; };
+		D632B289123DB2D000D4980D /* ParticleTrailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D632B287123DB2D000D4980D /* ParticleTrailController.m */; };
 		D66648BD122F1A16001C2C34 /* FixedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66648BC122F1A16001C2C34 /* FixedCameraController.m */; };
 		D6664933122F2B5A001C2C34 /* GLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D6664932122F2B5A001C2C34 /* GLCamera.m */; };
 		D666493E122F2E04001C2C34 /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = D666493D122F2E04001C2C34 /* Vector3f.m */; };
@@ -98,6 +100,8 @@
 		D602A4141225ECA2006F87FC /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		D632B22B123D9DE000D4980D /* ParticleTrailEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleTrailEmitter.h; sourceTree = "<group>"; };
 		D632B22C123D9DE000D4980D /* ParticleTrailEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleTrailEmitter.m; sourceTree = "<group>"; };
+		D632B286123DB2D000D4980D /* ParticleTrailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleTrailController.h; sourceTree = "<group>"; };
+		D632B287123DB2D000D4980D /* ParticleTrailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleTrailController.m; sourceTree = "<group>"; };
 		D66648BB122F1A16001C2C34 /* FixedCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedCameraController.h; sourceTree = "<group>"; };
 		D66648BC122F1A16001C2C34 /* FixedCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedCameraController.m; sourceTree = "<group>"; };
 		D6664931122F2B5A001C2C34 /* GLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCamera.h; sourceTree = "<group>"; };
@@ -346,6 +350,8 @@
 				D66648BC122F1A16001C2C34 /* FixedCameraController.m */,
 				D6E0A95A122A0D8000D83B2E /* FollowParticleCameraController.h */,
 				D6E0A95B122A0D8000D83B2E /* FollowParticleCameraController.m */,
+				D632B286123DB2D000D4980D /* ParticleTrailController.h */,
+				D632B287123DB2D000D4980D /* ParticleTrailController.m */,
 				D6AF628012122BA200FFC158 /* PolarCoordinatePositionController.h */,
 				D6AF628112122BA200FFC158 /* PolarCoordinatePositionController.m */,
 				D6B7D463121D89E30029B9CF /* RandomFrictionController.h */,
@@ -525,6 +531,7 @@
 				D6D8E4EC12343EF3001242CC /* NSDateTimer.m in Sources */,
 				D6D8E51912345149001242CC /* Timer.m in Sources */,
 				D632B22E123D9DE000D4980D /* ParticleTrailEmitter.m in Sources */,
+				D632B288123DB2D000D4980D /* ParticleTrailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +560,7 @@
 				D6D8E51812345149001242CC /* Timer.m in Sources */,
 				D6D8E58E12346DEC001242CC /* AccelerationControllerTests.m in Sources */,
 				D632B22D123D9DE000D4980D /* ParticleTrailEmitter.m in Sources */,
+				D632B289123DB2D000D4980D /* ParticleTrailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +572,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: William Schofield (FR6N428QCL)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -571,8 +580,9 @@
 				GCC_PREFIX_HEADER = Particles_Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "Particles-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Particles;
-				SDKROOT = iphonesimulator3.2;
+				SDKROOT = iphonesimulator4.1;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -582,13 +592,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: William Schofield (FR6N428QCL)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Particles_Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "Particles-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Particles;
-				SDKROOT = iphonesimulator3.2;
+				SDKROOT = iphonesimulator4.1;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
