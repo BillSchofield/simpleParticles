@@ -20,7 +20,8 @@
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		D602A3B11225D696006F87FC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A3B01225D696006F87FC /* Application.m */; };
-		D653EE391219FE5D00096B44 /* BounceInsideBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = D653EE381219FE5D00096B44 /* BounceInsideBoxController.m */; };
+		D632B22D123D9DE000D4980D /* ParticleTrailEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D632B22C123D9DE000D4980D /* ParticleTrailEmitter.m */; };
+		D632B22E123D9DE000D4980D /* ParticleTrailEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D632B22C123D9DE000D4980D /* ParticleTrailEmitter.m */; };
 		D66648BD122F1A16001C2C34 /* FixedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66648BC122F1A16001C2C34 /* FixedCameraController.m */; };
 		D6664933122F2B5A001C2C34 /* GLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D6664932122F2B5A001C2C34 /* GLCamera.m */; };
 		D666493E122F2E04001C2C34 /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = D666493D122F2E04001C2C34 /* Vector3f.m */; };
@@ -37,7 +38,6 @@
 		D6B7D510121E19550029B9CF /* VectorFieldEmitterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D50F121E19550029B9CF /* VectorFieldEmitterFactory.m */; };
 		D6B7D68812232B9A0029B9CF /* AccelerationFromAccelerometerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */; };
 		D6B7D72912233A590029B9CF /* SinPositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D72812233A590029B9CF /* SinPositionColorController.m */; };
-		D6B8F8321216227300E79E18 /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
 		D6D8E3131232FB79001242CC /* AccelerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF627F12122BA200FFC158 /* AccelerationController.m */; };
 		D6D8E31D1232FC03001242CC /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF6315121300BB00FFC158 /* Controller.m */; };
 		D6D8E3BF1233F5C5001242CC /* CollideWithBoxAndBounceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m */; };
@@ -48,7 +48,6 @@
 		D6D8E3C51233F5E4001242CC /* ParticleEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CAC1121372C20009075B /* ParticleEmitter.m */; };
 		D6D8E3C91233F5F0001242CC /* PositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AF628312122BA200FFC158 /* PositionColorController.m */; };
 		D6D8E3CD1233F5FA001242CC /* SinPositionColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D72812233A590029B9CF /* SinPositionColorController.m */; };
-		D6D8E3CE1233F5FF001242CC /* SpawnController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B8F8311216227300E79E18 /* SpawnController.m */; };
 		D6D8E3CF1233F601001242CC /* Spawner.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6ECA212174AA30008C46F /* Spawner.m */; };
 		D6D8E3D11233F606001242CC /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = D666493D122F2E04001C2C34 /* Vector3f.m */; };
 		D6D8E3D31233F611001242CC /* VectorFieldPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7D50C121E159B0029B9CF /* VectorFieldPositionController.m */; };
@@ -97,8 +96,8 @@
 		D602A3AF1225D696006F87FC /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 		D602A3B01225D696006F87FC /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
 		D602A4141225ECA2006F87FC /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
-		D653EE371219FE5D00096B44 /* BounceInsideBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceInsideBoxController.h; sourceTree = "<group>"; };
-		D653EE381219FE5D00096B44 /* BounceInsideBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceInsideBoxController.m; sourceTree = "<group>"; };
+		D632B22B123D9DE000D4980D /* ParticleTrailEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleTrailEmitter.h; sourceTree = "<group>"; };
+		D632B22C123D9DE000D4980D /* ParticleTrailEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticleTrailEmitter.m; sourceTree = "<group>"; };
 		D66648BB122F1A16001C2C34 /* FixedCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedCameraController.h; sourceTree = "<group>"; };
 		D66648BC122F1A16001C2C34 /* FixedCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedCameraController.m; sourceTree = "<group>"; };
 		D6664931122F2B5A001C2C34 /* GLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCamera.h; sourceTree = "<group>"; };
@@ -131,8 +130,6 @@
 		D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerationFromAccelerometerController.m; sourceTree = "<group>"; };
 		D6B7D72712233A590029B9CF /* SinPositionColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinPositionColorController.h; sourceTree = "<group>"; };
 		D6B7D72812233A590029B9CF /* SinPositionColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinPositionColorController.m; sourceTree = "<group>"; };
-		D6B8F8301216227300E79E18 /* SpawnController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpawnController.h; sourceTree = "<group>"; };
-		D6B8F8311216227300E79E18 /* SpawnController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpawnController.m; sourceTree = "<group>"; };
 		D6D8E30B1232FB0C001242CC /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D8E30C1232FB0C001242CC /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		D6D8E45F1233FCA0001242CC /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
@@ -341,8 +338,6 @@
 				D6AF627F12122BA200FFC158 /* AccelerationController.m */,
 				D6B7D68612232B9A0029B9CF /* AccelerationFromAccelerometerController.h */,
 				D6B7D68712232B9A0029B9CF /* AccelerationFromAccelerometerController.m */,
-				D653EE371219FE5D00096B44 /* BounceInsideBoxController.h */,
-				D653EE381219FE5D00096B44 /* BounceInsideBoxController.m */,
 				D6B7D424121D7A0C0029B9CF /* CollideWithBoxAndBounceController.h */,
 				D6B7D425121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m */,
 				D6AF6314121300BB00FFC158 /* Controller.h */,
@@ -357,8 +352,6 @@
 				D6B7D464121D89E30029B9CF /* RandomFrictionController.m */,
 				D6B7D4A9121DA01D0029B9CF /* RandomVelocityJitterController.h */,
 				D6B7D4AA121DA01D0029B9CF /* RandomVelocityJitterController.m */,
-				D6B8F8301216227300E79E18 /* SpawnController.h */,
-				D6B8F8311216227300E79E18 /* SpawnController.m */,
 				D6B7D50B121E159B0029B9CF /* VectorFieldPositionController.h */,
 				D6B7D50C121E159B0029B9CF /* VectorFieldPositionController.m */,
 			);
@@ -389,6 +382,8 @@
 				D6F0CDCB1214F6D40009075B /* PolarCoordinateEmitterFactory.m */,
 				D6B7D50E121E19550029B9CF /* VectorFieldEmitterFactory.h */,
 				D6B7D50F121E19550029B9CF /* VectorFieldEmitterFactory.m */,
+				D632B22B123D9DE000D4980D /* ParticleTrailEmitter.h */,
+				D632B22C123D9DE000D4980D /* ParticleTrailEmitter.m */,
 			);
 			name = Emitters;
 			sourceTree = "<group>";
@@ -438,7 +433,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Particles" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -504,9 +506,7 @@
 				D6F0CCC112145B3C0009075B /* VertexArray.m in Sources */,
 				D6F0CDCC1214F6D40009075B /* PolarCoordinateEmitterFactory.m in Sources */,
 				D6F0CE2E1214FCA60009075B /* ConstantColorController.m in Sources */,
-				D6B8F8321216227300E79E18 /* SpawnController.m in Sources */,
 				D6F6ECA312174AA30008C46F /* Spawner.m in Sources */,
-				D653EE391219FE5D00096B44 /* BounceInsideBoxController.m in Sources */,
 				D6B7D332121CB2F70029B9CF /* Plane.m in Sources */,
 				D6B7D426121D7A0C0029B9CF /* CollideWithBoxAndBounceController.m in Sources */,
 				D6B7D465121D89E30029B9CF /* RandomFrictionController.m in Sources */,
@@ -524,6 +524,7 @@
 				D66649F8122F3D97001C2C34 /* Color.m in Sources */,
 				D6D8E4EC12343EF3001242CC /* NSDateTimer.m in Sources */,
 				D6D8E51912345149001242CC /* Timer.m in Sources */,
+				D632B22E123D9DE000D4980D /* ParticleTrailEmitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +542,6 @@
 				D6D8E3C51233F5E4001242CC /* ParticleEmitter.m in Sources */,
 				D6D8E3C91233F5F0001242CC /* PositionColorController.m in Sources */,
 				D6D8E3CD1233F5FA001242CC /* SinPositionColorController.m in Sources */,
-				D6D8E3CE1233F5FF001242CC /* SpawnController.m in Sources */,
 				D6D8E3CF1233F601001242CC /* Spawner.m in Sources */,
 				D6D8E3D11233F606001242CC /* Vector3f.m in Sources */,
 				D6D8E3D31233F611001242CC /* VectorFieldPositionController.m in Sources */,
@@ -552,6 +552,7 @@
 				D6D8E50612344E6B001242CC /* FakeTimer.m in Sources */,
 				D6D8E51812345149001242CC /* Timer.m in Sources */,
 				D6D8E58E12346DEC001242CC /* AccelerationControllerTests.m in Sources */,
+				D632B22D123D9DE000D4980D /* ParticleTrailEmitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

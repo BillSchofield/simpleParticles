@@ -42,9 +42,10 @@
 -(void) update
 {
 	const int numberOfVertices = [vertices getNumberOfVertices];
+	Vector3f* positions = [vertices getVertices];
 	for (int i=0; i<numberOfVertices; ++i) 
 	{
-		Vector3f* vertex = &([vertices getVertices][i]);
+		Vector3f* vertex = &(positions[i]);
 		for (id plane in collisionPlanes)
 		{
 			if ( [plane isBelow: vertex] )

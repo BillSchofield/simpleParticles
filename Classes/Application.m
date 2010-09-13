@@ -1,4 +1,5 @@
 #import "Application.h"
+#import "ParticleTrailEmitter.h"
 #import "GravityParticleEmitterFactory.h"
 #import "PolarCoordinateEmitterFactory.h"
 #import "VectorFieldEmitterFactory.h"
@@ -8,6 +9,7 @@
 -(id) init{
 	updateTimer = [[NSDateTimer alloc] init];
 	emitterFactories = [[NSMutableArray alloc] init];
+//	[emitterFactories addObject: [[ParticleTrailEmitter alloc] initWithGravity: &currentAcceleration andWithTimer: updateTimer]];
 	[emitterFactories addObject: [[GravityParticleEmitterFactory alloc] initWithGravity: &currentAcceleration andWithTimer: updateTimer]];
 	[emitterFactories addObject: [VectorFieldEmitterFactory alloc]];
 	[emitterFactories addObject: [PolarCoordinateEmitterFactory alloc]];

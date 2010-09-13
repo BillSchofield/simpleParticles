@@ -3,8 +3,7 @@
 @implementation AccelerationController
 
 -(id) initWithVertices: (VertexArray*) vertices withVelocities: (Vector3f*) sourceVelocities withAcceleration: (Vector3f*) sourceAcceleration andWithTimer: (Timer*) sourceTimer {
-	particles = [vertices getVertices];
-	numberOfParticles = [vertices getNumberOfVertices];
+	particles = vertices;
 	acceleration = sourceAcceleration;
 	velocities = sourceVelocities;
 	timer = sourceTimer;	
@@ -13,9 +12,11 @@
 
 -(void) update {
 	double timeScale = [timer lastUpdateTimeInSeconds];
-	for (int i=0; i<numberOfParticles; ++i) {
+	Vector3f* positions = [particles getVertices];
+	int numberOfPositions = [particles getNumberOfVertices];
+	for (int i=0; i<numberOfPositions; ++i) {
 		Vector3fScaleAndAccumulate(&velocities[i], timeScale, acceleration);
-		Vector3fScaleAndAccumulate(&particles[i], timeScale, &velocities[i]);
+		Vector3fScaleAndAccumulate(&positions[i], timeScale, &velocities[i]);
 	}
 }
 @end

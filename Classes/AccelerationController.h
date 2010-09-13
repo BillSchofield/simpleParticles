@@ -3,8 +3,7 @@
 #import "Timer.h"
 
 @interface AccelerationController : Controller {
-	Vector3f* particles;
-	size_t numberOfParticles;
+	VertexArray* particles;
 	Vector3f* velocities;
 	Vector3f* acceleration;
 	Timer* timer;
