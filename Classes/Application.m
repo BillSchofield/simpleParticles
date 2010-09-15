@@ -9,10 +9,10 @@
 -(id) init{
 	updateTimer = [[NSDateTimer alloc] init];
 	emitterFactories = [[NSMutableArray alloc] init];
-	[emitterFactories addObject: [[ParticleTrailEmitter alloc] initWithGravity: &currentAcceleration andWithTimer: updateTimer]];
+//	[emitterFactories addObject: [[ParticleTrailEmitter alloc] initWithGravity: &currentAcceleration andWithTimer: updateTimer]];
 //	[emitterFactories addObject: [[GravityParticleEmitterFactory alloc] initWithGravity: &currentAcceleration andWithTimer: updateTimer]];
-//	[emitterFactories addObject: [VectorFieldEmitterFactory alloc]];
-//	[emitterFactories addObject: [PolarCoordinateEmitterFactory alloc]];
+	[emitterFactories addObject: [VectorFieldEmitterFactory alloc]];
+	[emitterFactories addObject: [PolarCoordinateEmitterFactory alloc]];
 	[self next];
 	return self;
 }

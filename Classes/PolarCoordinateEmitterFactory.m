@@ -4,6 +4,7 @@
 #import "ParticleEmitter.h"
 #import "FixedCameraController.h"
 #import "GLCamera.h"
+#import "ConstantColorController.h"
 
 @implementation PolarCoordinateEmitterFactory
 

@@ -13,11 +13,13 @@
 @implementation VectorFieldPositionController
 
 - (void) spawnParticle: (int) i positions: (Vector3f *) positions  {
-  Vector3fSet(
+	float spawnPoint = 3.0;
+	float offset = 0.1;
+	Vector3fSet(
 					&positions[i], 
-					[RandomFloat randomFrom: -.1 to: .1],
-					[RandomFloat randomFrom: -.1 to: .1],
-					[RandomFloat randomFrom: -.1 to: .1]
+					[RandomFloat randomFrom: spawnPoint to: spawnPoint + offset],
+					[RandomFloat randomFrom: spawnPoint to: spawnPoint + offset],
+					[RandomFloat randomFrom: spawnPoint to: spawnPoint + offset]
 					);
 
 }
@@ -29,6 +31,7 @@
 		[self spawnParticle: i positions: positions];
 	}
 
+	indexOfParticleToRespawn = 0;
 	
 	return self;
 }
@@ -42,10 +45,13 @@
 //		Vector3f velocity = Vector3fMake(tan(currentPosition->x*scale), sin(currentPosition->y*scale), tan (currentPosition->z*scale));
 		Vector3f velocity = Vector3fMake(sin(currentPosition->y), sin(currentPosition->z), sin(currentPosition->x));
 //		Vector3f velocity = Vector3fMake(sin(currentPosition->y + currentPosition->z), sin(currentPosition->x + currentPosition->z), sin(currentPosition->x + currentPosition->y));
-		Vector3fScaleAndAccumulate(currentPosition, scale, &velocity);
-		if (Vector3fMagnitude(*currentPosition) > 10.) {
-			[self spawnParticle: i positions: positions];
-		}
+		Vector3fScaleAndAccumulate(currentPosition, scale, &velocity);		
+	}
+	for (int i=0; i<64; ++i) {
+		[self spawnParticle: indexOfParticleToRespawn++ positions: positions];
+		if (indexOfParticleToRespawn >= numberOfVertices) {
+			indexOfParticleToRespawn = 0;
+		} 		
 	}
 }
 

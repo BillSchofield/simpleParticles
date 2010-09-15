@@ -13,6 +13,7 @@
 @interface VectorFieldPositionController : Controller 
 {
 	VertexArray* vertices;
+	int indexOfParticleToRespawn;
 }
 -(id) initWithVertices: (VertexArray*) sourceVertices;
 -(void) update;
